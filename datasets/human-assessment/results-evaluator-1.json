@@ -1,0 +1,142 @@
+{
+    "0": {
+        "A0": "Both are bad",
+        "A1": "Both are good",
+        "A2": "Both are good",
+        "A3": "Both are good",
+        "A4": "Both are good"
+    },
+    "1": {
+        "A0": "Both are good",
+        "A1": "Both are good",
+        "A2": "AI",
+        "A3": "Both are good",
+        "A4": "AI"
+    },
+    "2": {
+        "A0": "Both are good",
+        "A1": "AI",
+        "A2": "Both are good",
+        "A3": "Both are good",
+        "A4": "Both are good"
+    },
+    "3": {
+        "A0": "Both are good",
+        "A1": "AI",
+        "A2": "AI",
+        "A3": "Both are good",
+        "A4": "Both are good"
+    },
+    "4": {
+        "A0": "Both are good",
+        "A1": "AI",
+        "A2": "AI",
+        "A3": "Both are good",
+        "A4": "Expert"
+    },
+    "5": {
+        "A0": "Both are good",
+        "A1": "Both are good",
+        "A2": "Both are good",
+        "A3": "AI",
+        "A4": "Both are good"
+    },
+    "6": {
+        "A0": "Both are good",
+        "A1": "Both are good",
+        "A2": "Both are good",
+        "A3": "Both are good",
+        "A4": "Both are good"
+    },
+    "7": {
+        "A0": "Both are good",
+        "A1": "Both are good",
+        "A2": "Both are good",
+        "A3": "Expert",
+        "A4": "Expert"
+    },
+    "8": {
+        "A0": "Both are good",
+        "A1": "Both are good",
+        "A2": "AI",
+        "A3": "AI",
+        "A4": "Both are good"
+    },
+    "9": {
+        "A0": "Both are good",
+        "A1": "Both are good",
+        "A2": "Both are good",
+        "A3": "AI",
+        "A4": "AI"
+    },
+    "10": {
+        "A0": "Both are good",
+        "A1": "Both are good",
+        "A2": "Both are good",
+        "A3": "Expert",
+        "A4": "AI"
+    },
+    "11": {
+        "A0": "Both are good",
+        "A1": "Both are bad",
+        "A2": "Both are bad",
+        "A3": "Both are bad",
+        "A4": "AI"
+    },
+    "12": {
+        "A0": "AI",
+        "A1": "Both are good",
+        "A2": "Both are good",
+        "A3": "Expert",
+        "A4": "Expert"
+    },
+    "13": {
+        "A0": "Both are good",
+        "A1": "AI",
+        "A2": "AI",
+        "A3": "AI",
+        "A4": "Expert"
+    },
+    "14": {
+        "A0": "Both are good",
+        "A1": "Expert",
+        "A2": "AI",
+        "A3": "Both are good",
+        "A4": "Both are good"
+    },
+    "15": {
+        "A0": "Both are good",
+        "A1": "Both are good",
+        "A2": "Both are good",
+        "A3": "Both are good",
+        "A4": "Both are good"
+    },
+    "16": {
+        "A0": "Both are good",
+        "A1": "Expert",
+        "A2": "Expert",
+        "A3": "Expert",
+        "A4": "Both are good"
+    },
+    "17": {
+        "A0": "Expert",
+        "A1": "Expert",
+        "A2": "AI",
+        "A3": "Both are good",
+        "A4": "Both are good"
+    },
+    "18": {
+        "A0": "Both are good",
+        "A1": "Both are good",
+        "A2": "Expert",
+        "A3": "Both are good",
+        "A4": "AI"
+    },
+    "19": {
+        "A0": "Both are good",
+        "A1": "Both are good",
+        "A2": "Both are good",
+        "A3": "Both are good",
+        "A4": "Both are good"
+    }
+}

@@ -1,0 +1,402 @@
+[
+    {
+        "question": "what do the 3 dots mean in math?",
+        "ground_truth": "In logical argument and mathematical proof, the therefore sign (\u2234) is generally used before a logical consequence, such as the conclusion of a syllogism. The symbol consists of three dots placed in an upright triangle and is read therefore. It is encoded at U+2234 \u2234 therefore (HTML \u2234 \u00b7 \u2234). For common use in Microsoft Office hold the ALT key and type \"8756\". While it is not generally used in formal writing, it is used in mathematics and shorthand. It is complementary to U+2235 \u2235 because (HTML \u2235)."
+    },
+    {
+        "question": "who wrote the song photograph by ringo starr?",
+        "ground_truth": "\" Photograph \" is a song by English musician Ringo Starr that was released as the lead single from his 1973 album Ringo. Starr co-wrote the song with George Harrison, his former bandmate from the Beatles. Although the two of them collaborated on other compositions, it is the only song officially credited to the pair. A signature tune for Starr as a solo artist, \"Photograph\" became an international hit, topping singles charts in the United States, Canada and Australia, and receiving gold disc certification for US sales of 1 million. Music critics have similarly received the song favourably; Stephen Thomas Erlewine of AllMusic considers it to be \"among the very best post-Beatles songs by any of the Fab Four\"."
+    },
+    {
+        "question": "who is playing the halftime show at super bowl 2016?",
+        "ground_truth": "The Super Bowl 50 Halftime Show took place on February 7, 2016, at Levi's Stadium in Santa Clara, California as part of Super Bowl 50. It was headlined by the British rock group Coldplay with special guest performers Beyonc\u00e9 and Bruno Mars, who previously had headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively."
+    },
+    {
+        "question": "star wars the clone wars anakin voice actor?",
+        "ground_truth": "Matthew MacKendree \"Matt\" Lanter (born April 1, 1983) is an American actor, voice actor, and model. He gained fame by playing Liam Court in The CW hit teen drama series 90210, a spin-off of the 1990s Fox series Beverly Hills, 90210. He also appeared in some major released films, such as Star Wars: The Clone Wars, Disaster Movie, WarGames: The Dead Code, Sorority Row, Vampires Suck and The Roommate. He is the voice of Anakin Skywalker in Star Wars: The Clone Wars and Star Wars Rebels. He stars as soldier Wyatt Logan, a time traveler, in Timeless on NBC."
+    },
+    {
+        "question": "what\u2019s the difference between downhill and super g?",
+        "ground_truth": "Much like downhill, the other of the two \"speed\" events in alpine skiing, a super-G course consists of widely set gates that racers must pass through. The course is set so that skiers must turn more than in downhill, though the speeds are still much higher than in giant slalom (hence the name). Each athlete only has one run to clock the best time. In the Olympics, super-G courses are usually set on the same slopes as the downhill, but with a lower starting point."
+    },
+    {
+        "question": "where was the world economic forum held this year?",
+        "ground_truth": "The forum is best known for its annual meeting at the end of January in Davos, a mountain resort in Graub\u00fcnden, in the eastern Alps region of Switzerland. The meeting brings together some 2,500 top business leaders, international political leaders, economists, celebrities and journalists for up to four days to discuss the most pressing issues facing the world. Often this location alone is used to identify meetings, participation, and participants, with such phrases as \"a Davos panel\" and \"Davos man\" being used."
+    },
+    {
+        "question": "who was the first chief minister of west bengal?",
+        "ground_truth": "Since 1947, there have been eight Chief Ministers of West Bengal. The first was Prafulla Chandra Ghosh of the Indian National Congress, who was succeeded by his party-mates Dr Bidhan Chandra Roy and Prafulla Chandra Sen. A decade of instability followed, marred by fractious coalition governments and frequent impositions of President's rule. The instability ended with 1977 election victory of the Communist Party of India (Marxist) (CPM). Headed by Jyoti Basu, the CPM-led Left Front government was in office for over 23 years (1977\u20132000). Left rule in West Bengal continued for another 10 years under Buddhadeb Bhattacharya, before its defeat in the 2011 election by the Trinamool Congress. Appointed on 20 May 2011, Trinamool leader Mamata Banerjee is the current incumbent, the state's first woman chief minister."
+    },
+    {
+        "question": "two main types of research methods used in psychology?",
+        "ground_truth": "Qualitative psychological research is where the research findings are not arrived at by statistical or other quantitative procedures. Quantitative psychological research is where the research findings result from mathematical modeling and statistical estimation or statistical inference. Since qualitative information can be handled as such statistically, the distinction relates to method, rather than the topic studied."
+    },
+    {
+        "question": "when does the 14th season of grey's anatomy come out?",
+        "ground_truth": "The fourteenth season of the American television medical drama Grey's Anatomy was ordered on February 10, 2017, by American Broadcasting Company (ABC), and premiered on September 28, 2017 with a special two-hour premiere. The season will consist of 24 episodes, with the season's seventh episode marking the 300th episode for the series overall. The season is produced by ABC Studios, in association with ShondaLand Production Company and The Mark Gordon Company; the showrunner being Shonda Rhimes."
+    },
+    {
+        "question": "when was the first hunger games book published?",
+        "ground_truth": "The Hunger Games is a 2008 dystopian novel by the American writer Suzanne Collins. It is written in the voice of 16-year-old Katniss Everdeen, who lives in the future, post-apocalyptic nation of Panem in North America. The Capitol, a highly advanced metropolis, exercises political control over the rest of the nation. The Hunger Games is an annual event in which one boy and one girl aged\u00a012\u201318 from each of the twelve districts surrounding the Capitol are selected by lottery to compete in a televised battle to the death."
+    },
+    {
+        "question": "how much is the united states in debt to china?",
+        "ground_truth": "On November 7, 2016, debt held by the public was $14.3 trillion or about 76% of the previous 12 months of GDP. Intragovernmental holdings stood at $5.4 trillion, giving a combined total gross national debt of $19.8 trillion or about 106% of the previous 12 months of GDP; $6.2 trillion or approximately 45% of the debt held by the public was owned by foreign investors, the largest of which were Japan and China at about $1.09 trillion for Japan and $1.06 trillion for China as of December 2016."
+    },
+    {
+        "question": "where did the race in grease take place?",
+        "ground_truth": "The opening beach scene was shot at Malibu's Leo Carrillo State Beach, making explicit reference to From Here to Eternity. The exterior Rydell scenes, including the basketball, baseball and track segments, were shot at Venice High School in Venice, California, while the Rydell interiors, including the high school dance, were filmed at Huntington Park High School. The sleepover was shot at a private house in East Hollywood. The Paramount Pictures studio lot was the location of the scenes that involve Frosty Palace and the musical numbers \"Greased Lightning\" and \"Beauty School Dropout\". The drive-in movie scenes were shot at the Burbank Pickwick Drive-In (it was closed and torn down in 1989 and a shopping center took its place). The race was filmed at the Los Angeles River, between the First and Seventh Street Bridges, where many other films have been shot. The final scene where the carnival took place used John Marshall High School. And due to budget cuts a short scene was filmed at Hazard Park in Los Angeles."
+    },
+    {
+        "question": "what is the maximum data rate for the 802.11a standard select one?",
+        "ground_truth": "The 802.11a standard uses the same data link layer protocol and frame format as the original standard, but an OFDM based air interface (physical layer). It operates in the 5\u00a0GHz band with a maximum net data rate of 54\u00a0Mbit/s, plus error correction code, which yields realistic net achievable throughput in the mid-20 Mbit/s."
+    },
+    {
+        "question": "a good that can be used in place of another good?",
+        "ground_truth": "A substitute good is one good that can be used instead of another. In consumer theory, substitute goods or substitutes are products that a consumer perceives as similar or comparable, so that having more of one product makes them desire less of the other product. Formally, X and Y are substitutes if, when the price of X rises, the demand for Y rises."
+    },
+    {
+        "question": "who is recognized as the founder of islam?",
+        "ground_truth": "According to tradition, the Islamic prophet Muhammad was born in Mecca around the year 570. His family belonged to the Quraysh. When he was about forty years old, he began receiving what Muslims consider to be divine revelations delivered through the angel Gabriel, which would later form the Quran, enjoining him to proclaim a strict monotheistic faith, warn his compatriots of the impending Judgement Day, and castigate social injustices of his city. Muhammad's message won over a handful of followers and was met with increasing opposition from notables of Mecca. In 618, after he lost protection with the death of his influential uncle Abu Talib, Muhammad took flight to the city of Yathrib (subsequently called Medina) where he was joined by his followers. Later generations would count this event, known as the hijra, as the start of the Islamic era."
+    },
+    {
+        "question": "how old was sasuke when his clan died?",
+        "ground_truth": "Sasuke is introduced in the third chapter of Naruto ' s manga as a young ninja assigned to become a member of Team\u00a07 alongside Naruto Uzumaki and Sakura Haruno. The trio are trained under the guidance of Kakashi Hatake. Although Sasuke is antisocial, he starts caring about Naruto and Sakura. During a mission, Sasuke awakens his Sharingan \u2014 his clan's inherited ability to see through illusions \u2014 which allows him to learn imperceptible movements at a superhuman rate. It is revealed later that Sasuke is the sole survivor of the once-powerful Uchiha clan of Konohagakure. He, at the age of seven, survived the massacre of his clan perpetrated by his brother, Itachi, who spared Sasuke's life because he did not consider him worth killing. Sasuke seeks strong fighting opponents to reassure himself his power is growing."
+    },
+    {
+        "question": "who is the pastor of new birth missionary baptist church now?",
+        "ground_truth": "On January 15, 2017, Bishop Eddie Long died from an aggressive form of cancer according to a statement released by the church. The church then announced Stephen A. Davis, pastor of New Birth Birmingham in Birmingham, Alabama would be Long's successor at New Birth Missionary Baptist Church in Lithonia while remaining pastor of the Birmingham church."
+    },
+    {
+        "question": "what are the different types of mountain biking?",
+        "ground_truth": "Mountain biking is the sport of riding bicycles off-road, often over rough terrain, using specially designed mountain bikes. Mountain bikes share similarities with other bikes but incorporate features designed to enhance durability and performance in rough terrain. Mountain biking can generally be broken down into multiple categories: cross country, trail riding, all mountain (also referred to as \"Enduro\"), downhill, freeride and dirt jumping. However, the majority of mountain biking falls into the categories of Trail and Cross Country riding styles."
+    },
+    {
+        "question": "who is doing 2018 super bowl half time show?",
+        "ground_truth": "The Super Bowl LII Halftime Show (officially known as the Pepsi Super Bowl LII Halftime Show) took place on February 4, 2018 at U.S. Bank Stadium in Minneapolis, Minnesota, as part of Super Bowl LII. Justin Timberlake was the featured performer, as confirmed by the National Football League (NFL) on October 22, 2017. It was televised nationally by NBC."
+    },
+    {
+        "question": "who hosted they think it's all over?",
+        "ground_truth": "The show was originally presented by comedian Nick Hancock. Ex-England football team captain Gary Lineker and ex-England cricket team captain David Gower were team captains from 1995 until they announced their retirement from the show in 2003. They were replaced as team captains by ex-England football goalkeeper David Seaman and ex-England cricketer Phil Tufnell. Former footballer Ian Wright took over from David Seaman in autumn 2004. From October 2005, Boris Becker replaced Tufnell and Lee Mack took over from Hancock as host."
+    },
+    {
+        "question": "where does the movie proof of life take place?",
+        "ground_truth": "Alice Bowman (Meg Ryan) moves to the (fictional) South American country of Tecala because her engineer husband, Peter Bowman (David Morse), has been hired to help build a new dam for oil company Quad Carbon. Though Alice is unhappy at this most recent move, she agrees to stay. While driving one morning through the city, Peter is caught in traffic and then ambushed and abducted by guerrilla rebels of the Liberation Army of Tecala (ELT). Believing that Peter is working on Quad Carbon's oil pipeline, ELT soldiers lead him through the jungle."
+    },
+    {
+        "question": "where did the saying monkey's uncle come from?",
+        "ground_truth": "The term monkey's uncle, most notably seen in the idiom \"(well) I'll be a monkey's uncle\", is used to express complete surprise, amazement or disbelief. It can also be used to acknowledge the impossibility of a situation, in the same way that \"pigs might fly\" is used. An example is if one says: \"I may agree that if two plus two equals five, then I am a monkey's uncle\". \"I'll be a monkey's uncle\" has been said to date from after 1925, the date of the widely publicized Scopes Trial in the United States, where the term first appears. The Oxford English Dictionary 's earliest example is the phrase If that's a joke I'm a monkey's uncle, from an Ohio newspaper on 8 February 1925. It was originally a sarcastic remark made by creationists. The notion \"that [people] were descended from apes was considered blasphemous...by Darwin's contemporaries\", and it was for this reason that the sarcastic phrase came into use."
+    },
+    {
+        "question": "who breaks a tie in the us senate?",
+        "ground_truth": "The Vice President of the United States is the ex officio President of the Senate, as provided in Article I, Section 3, Clause 4, of the United States Constitution, but may only vote in order to break a tie. According to the U.S. Senate, as of February 28, 2018, a tie-breaking vote had been cast 264 times by 36 vice presidents."
+    },
+    {
+        "question": "where does us highway 1 start and end?",
+        "ground_truth": "U.S. Route 1 (US\u00a01) is a major north\u2013south U.S. Highway that serves the East Coast of the United States. It runs 2,369 miles (3,813\u00a0km), from Fort Kent, Maine, at the Canada\u2013US border, south to Key West, Florida, making it the longest north\u2013south road in the United States. US\u00a01 is generally paralleled by Interstate 95 (I-95), though the former is significantly farther west (inland) between Jacksonville, Florida, and Petersburg, Virginia. The highway connects most of the major cities of the East Coast\u2014including Miami, Jacksonville, Richmond, Washington, D.C., Baltimore, Philadelphia, New York City and Boston, passing from the Southeastern United States to New England."
+    },
+    {
+        "question": "when were the first general elections held in independent india?",
+        "ground_truth": "The Indian general election of 1951\u201352 elected the first Lok Sabha since India became independent in August 1947. Until this point, the Indian Constituent Assembly had served as an interim legislature. See the 'Durations' section below to find the time-range associated with these elections."
+    },
+    {
+        "question": "what was the tower of london originally used for?",
+        "ground_truth": "The Tower of London, officially Her Majesty's Royal Palace and Fortress of the Tower of London, is a historic castle located on the north bank of the River Thames in central London. It lies within the London Borough of Tower Hamlets, separated from the eastern edge of the square mile of the City of London by the open space known as Tower Hill. It was founded towards the end of 1066 as part of the Norman Conquest of England. The White Tower, which gives the entire castle its name, was built by William the Conqueror in 1078 and was a resented symbol of oppression, inflicted upon London by the new ruling elite. The castle was used as a prison from 1100 (Ranulf Flambard) until 1952 (Kray twins), although that was not its primary purpose. A grand palace early in its history, it served as a royal residence. As a whole, the Tower is a complex of several buildings set within two concentric rings of defensive walls and a moat. There were several phases of expansion, mainly under Kings Richard I, Henry III, and Edward I in the 12th and 13th\u00a0centuries. The general layout established by the late 13th\u00a0century remains despite later activity on the site."
+    },
+    {
+        "question": "first jnanpith award was an autor of which language?",
+        "ground_truth": "G. Sankara Kurup, (3 June 1901, Nayathode, Kingdom of Cochin (now in Ernakulam district, Kerala, India) \u2013 2 February 1978, Vappalassery, Angamaly, Ernakulam district, Kerala), better known as Mahakavi G (The Great Poet G), was the first winner of the Jnanpith Award, India's highest literary award. He won the prize in 1965 for his collection of poems in Malayalam Odakkuzhal (The Bamboo Flute, 1950). With part of the prize money he established the literary award Odakkuzhal in 1968. He was also the recipient of the Soviet Land Nehru Award, in 1967, and the Padma Bhushan in 1968. His poetry collection Viswadarshanam won the Kerala Sahitya Akademi Award in 1961 and Kendra Sahitya Akademi Award in 1963."
+    },
+    {
+        "question": "how many cracker barrels in the united states?",
+        "ground_truth": "Cracker Barrel Old Country Store, Inc. is an American chain of combined restaurant and gift stores with a Southern country theme. The company was founded by Dan Evins in 1969; its first store was in Lebanon, Tennessee, which remains the company headquarters. The chain's stores were at first positioned near Interstate highway exits in the Southeastern and Midwestern United States, but has expanded across the country during the 1990s and 2000s. As of  September\u00a018, 2012 [update], the chain operates 639 stores in 43 states."
+    },
+    {
+        "question": "in photosynthesis the carbon in co2 is initially fixed to what molecule?",
+        "ground_truth": "In C 3 plants, the first step in the light-independent reactions of photosynthesis involves the fixation of CO 2 by the enzyme RuBisCO into 3-phosphoglycerate. However, due to the dual carboxylase and oxygenase activity of RuBisCo, some part of the substrate is oxidized rather than carboxylated, resulting in loss of substrate and consumption of energy, in what is known as photorespiration. In order to bypass the photorespiration pathway, C 4 plants have developed a mechanism to efficiently deliver CO 2 to the RuBisCO enzyme. They utilize their specific leaf anatomy where chloroplasts exist not only in the mesophyll cells in the outer part of their leaves but in the bundle sheath cells as well. Instead of direct fixation to RuBisCO in the Calvin cycle, CO 2 is incorporated into a 4-carbon organic acid, which has the ability to regenerate CO 2 in the chloroplasts of the bundle sheath cells. Bundle sheath cells can then utilize this CO 2 to generate carbohydrates by the conventional C 3 pathway."
+    },
+    {
+        "question": "how many countries does cadbury sell its products?",
+        "ground_truth": "Cadbury, formerly Cadbury's, is a British multinational confectionery company wholly owned by Mondelez International (originally Kraft Foods) since 2010. It is the second-largest confectionery brand in the world after Wrigley's. Cadbury is internationally headquartered in Uxbridge, West London, and operates in more than 50 countries worldwide. It is famous for its Dairy Milk chocolate, the Creme Egg and Roses selection box, and many other confectionery products. One of the best-known British brands, in 2013 The Daily Telegraph named Cadbury among Britain's most successful exports."
+    },
+    {
+        "question": "where does the mary river start and finish?",
+        "ground_truth": "The river rises at Booroobin in the Sunshine Coast hinterland, west of Landsborough. From its source, the Mary River flows north through the towns of Kenilworth, Gympie, Tiaro and Maryborough before emptying into the Great Sandy Strait, a passage of water between the mainland and Fraser Island, near the town of River Heads, 17\u00a0km (11\u00a0mi) south of Hervey Bay. The Mary River flows into the Great Sandy Strait, near wetlands of international significance recognised by the International agreement of the Ramsar Convention and the UNESCO Fraser Island World Heritage Area, which attracts thousands of visitors every year."
+    },
+    {
+        "question": "where is nathan's hotdog eating contest held?",
+        "ground_truth": "The Nathan's Hot Dog Eating Contest is an annual American hot dog competitive eating competition. It is held each year on Independence Day at Nathan's Famous Corporation 's original, and best-known restaurant at the corner of Surf and Stillwell Avenues in Coney Island, a neighborhood of Brooklyn, New York City."
+    },
+    {
+        "question": "who wrote the book my country my life?",
+        "ground_truth": "My Country My Life is an autobiographical book by L. K. Advani, an Indian politician who served as the Deputy Prime Minister of India from 2002 to 2004, and was the Leader of the Opposition in the 15th Lok Sabha. The book was released on 19 March 2008 by Abdul Kalam, the eleventh President of India. The book has 1,040 pages and narrates autobiographical accounts and events in the life of Advani. It became the best seller book in the non-fiction category and Advani joined Archer as a bestseller author. The book website claims the book sold an excess of 1,000,000 copies. The book alongside mentions the event in Indian politics and India's history from 1900 till date."
+    },
+    {
+        "question": "what does it mean to be on parole?",
+        "ground_truth": "Parole is a temporary release of a prisoner who agrees to certain conditions before the completion of the maximum sentence period, originating from the French parole (\"voice, spoken words\"). The term became associated during the Middle Ages with the release of prisoners who gave their word."
+    },
+    {
+        "question": "when did the east india company take control of india?",
+        "ground_truth": "By 1803, at the height of its rule in India, the British East India company had a private army of about 260,000\u2014twice the size of the British Army, with Indian revenues of \u00a313,464,561, and expenses of \u00a314,017,473. The company eventually came to rule large areas of India with its private armies, exercising military power and assuming administrative functions. Company rule in India effectively began in 1757 and lasted until 1858, when, following the Indian Rebellion of 1857, the Government of India Act 1858 led to the British Crown 's assuming direct control of the Indian subcontinent in the form of the new British Raj."
+    },
+    {
+        "question": "the origins of the stations of the cross?",
+        "ground_truth": "The Stations of the Cross or the Way of the Cross, also known as the Way of Sorrows or the Via Crucis, refers to a series of images depicting Jesus Christ on the day of his crucifixion and accompanying prayers. The stations grew out of imitations of Via Dolorosa in Jerusalem which is believed to be the actual path Jesus walked to Mount Calvary. The object of the stations is to help the Christians faithful to make a spiritual pilgrimage through contemplation of the Passion of Christ. It has become one of the most popular devotions and the stations can be found in many Western Christian churches, including Anglican, Lutheran, Methodist, and Roman Catholic ones."
+    },
+    {
+        "question": "who is the founder of google and when was it founded?",
+        "ground_truth": "Google Inc. is an American multinational technology company that specializes in Internet-related services and products. These include online advertising technologies, search, cloud computing, software, and hardware. Google was founded in 1998 by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University, in California. Together, they own about 14 percent of its shares, and control 56 percent of the stockholder voting power through supervoting stock. They incorporated Google as a privately held company on September 4, 1998. An initial public offering (IPO) took place on August 19, 2004, and Google moved to its new headquarters in Mountain View, California, nicknamed the Googleplex. In August 2015, Google announced plans to reorganize its various interests as a conglomerate called Alphabet Inc. Google, Alphabet's leading subsidiary, will continue to be the umbrella company for Alphabet's Internet interests. Upon completion of the restructure, Sundar Pichai was appointed CEO of Google; he replaced Larry Page, who became CEO of Alphabet."
+    },
+    {
+        "question": "who did the dominican republic gain its independence from?",
+        "ground_truth": "The Dominican Independence War gave the Dominican Republic autonomy from Haiti on February 27, 1844. Before the war, the island of Hispaniola had been united under the Haitian government for a period of 22 years when the newly independent nation, then known as the Republic of Spanish Haiti, was invaded by Haiti in 1822. Previously known as the Captaincy General of Santo Domingo, the criollo class within the country overthrew the Spanish crown in 1821 before unifying with Haiti a year later."
+    },
+    {
+        "question": "how did early humans make use of stones during the prehistoric period?",
+        "ground_truth": "Prehistoric technology is technology that predates recorded history. History is the study of the past using written records. Anything prior to the first written accounts of history is prehistoric, including earlier technologies. About 2.5 million years before writing was developed, technology began with the earliest hominids who used stone tools, which they may have used to start fires, hunt, and bury their dead."
+    },
+    {
+        "question": "who wrote the text for jeanie with the light brown hair?",
+        "ground_truth": "\" Jeanie with the Light Brown Hair \" is a parlor song by Stephen Foster (1826\u20131864). It was published by Firth, Pond & Co. of New York in 1854. Foster wrote the song with his estranged wife Jane McDowell in mind. The lyrics allude to a permanent separation."
+    },
+    {
+        "question": "where does the bob and tom show broadcast from?",
+        "ground_truth": "The Bob & Tom Show is a syndicated US radio program established by Bob Kevoian and Tom Griswold at radio station WFBQ in Indianapolis, Indiana, March 7, 1983, and syndicated nationally since January 6, 1995. Originally syndicated by Premiere Networks, the show moved to Cumulus Media Networks (now Westwood One) at the beginning of 2014."
+    },
+    {
+        "question": "who won the champions league final in 2016?",
+        "ground_truth": "The 2016 UEFA Champions League Final was the final match of the 2015\u201316 UEFA Champions League, the 61st season of Europe's premier club football tournament organised by UEFA, and the 24th season since it was renamed from the European Champion Clubs' Cup to the UEFA Champions League. It was played at the San Siro stadium in Milan, Italy, on 28 May 2016, between Spanish teams Real Madrid and Atl\u00e9tico Madrid, in a repeat of the 2014 final. It was the second time in the tournament's history that both finalists were from the same city. Real Madrid won 5\u20133 on a penalty shoot-out after a 1\u20131 draw at the end of extra time, securing a record-extending 11th title in the competition."
+    },
+    {
+        "question": "what effect do the atlas mountains have on rainfall?",
+        "ground_truth": "The Sahara Desert is made even drier because of two strong rain shadow effects caused by some major mountains ranges (whose highest points can culminate to more than 4,000 meters high). To the northwest, the Atlas Mountains, covering the Mediterranean coast for Morocco, Algeria and Tunisia as well as to the southeast with the Ethiopian Highlands, located in Ethiopia around the Horn of Africa. On the windward side of the Atlas Mountains, the warm, moist winds blowing from the northwest off the Atlantic Ocean which contain a lot of water vapor are forced to rise, lift up and expand over the mountain range. This causes them to cool down, which causes an excess of moisture to condense into high clouds and results in heavy precipitation over the mountain range. This is known as orographic rainfall and after this process, the air is dry because it has lost most of its moisture over the Atlas Mountains. On the leeward side, the cold, dry air starts to descend and to sink and compress, making the winds warm up. This warming causes the moisture to evaporate, making clouds disappear. This prevents rainfall formation and creates desert conditions in the Sahara. The same phenomenon occurs in the Ethiopian Highlands, but this rain shadow effect is even more pronounced because this mountain range is larger, with the tropical Monsoon of South Asia coming from the Indian Ocean and from the Arabian Sea. These produce clouds and rainfall on the windward side of the mountains, but the leeward side stays rain shadowed and extremely dry. This second extreme rain shadow effect partially explains the extreme aridity of the eastern Sahara Desert, which is the driest and the sunniest place on the planet. Similar levels of aridity and dryness are only seen in the Atacama Desert, located in Chile and Peru."
+    },
+    {
+        "question": "when does a limit of a function not exist?",
+        "ground_truth": "Formal definitions, first devised in the early 19th century, are given below. Informally, a function f assigns an output f (x) to every input x. We say the function has a limit L at an input p: this means f (x) gets closer and closer to L as x moves closer and closer to p. More specifically, when f is applied to any input sufficiently close to p, the output value is forced arbitrarily close to L. On the other hand, if some inputs very close to p are taken to outputs that stay a fixed distance apart, we say the limit does not exist."
+    },
+    {
+        "question": "if a star is class b what is its temperature?",
+        "ground_truth": "A B-type main-sequence star (B V) is a main-sequence (hydrogen-burning) star of spectral type B and luminosity class V. These stars have from 2 to 16 times the mass of the Sun and surface temperatures between 10,000 and 30,000 K. B-type stars are extremely luminous and blue. Their spectra have neutral helium, which are most prominent at the B2 subclass, and moderate hydrogen lines. Examples include Regulus and Algol A."
+    },
+    {
+        "question": "what does the sun represent on the uruguay flag?",
+        "ground_truth": "The horizontal stripes on the flag represent the nine original departments of Uruguay, based on the U.S flag, where the stripes represent the original 13 colonies. The first flag designed in 1828 had 9 light blue stripes; this number was reduced to 4 in 1830 due to visibility problems from distance. The Sun of May represents the May Revolution of 1810; according to the historian Diego Abad de Santill\u00e1n, the Sun of May is a figurative sun that represents Inti, the sun god of the Inca religion. It also appears in the Flag of Argentina and the Coat of Arms of Bolivia."
+    },
+    {
+        "question": "who dies in season 2 of the originals?",
+        "ground_truth": "Cami rushes away from the house and stops at a payphone where Elijah meets her and Hope. Klaus offers his house for the location of Jackson and Hayley's wedding. Just before the wedding Elijah and Cami arrive at the house and Hope is reunited with her parents. Hayley doesn't want Elijah to change her mind about the wedding and she goes on to marry Jackson. During the reception, Klaus makes a toast inviting the newly weds to live in the house. Elijah thinks that Klaus dislikes Jackson as he will end up being a better father figure than he is, and Klaus thinks Elijah wants Jackson dead because he is in love with Hayley. Elijah tells Hayley he may move out. Meanwhile, Aiden and Josh are comfortable together and Kol and Devina complete the dagger they have been working on and Freya raises Finn back from the dead. The episode ends with Elijah, Rebekah, Klaus and Davina surrounding Kol as he dies, and Rebekah promising to resurrect him."
+    },
+    {
+        "question": "when did beryl markham fly across the atlantic?",
+        "ground_truth": "When Markham decided to take on the Atlantic crossing, no female pilot had yet flown non-stop from Europe to New York, and no woman had made the westward flight solo, though several had died trying. Markham hoped to claim both records. On 4 September 1936, she took off from Abingdon, England. After a 20-hour flight, her Vega Gull, The Messenger, suffered fuel starvation due to icing of the fuel tank vents, and she crash-landed at Baleine Cove on Cape Breton Island, Nova Scotia, Canada. She became the first person to make it from England to North America non-stop from east to west. She was celebrated as an aviation pioneer."
+    },
+    {
+        "question": "who played john clark sr on nypd blue?",
+        "ground_truth": "Det. John Clark Sr. \u2014 John Clark Jr.'s father. An average detective from a low crime precinct mutually despised by Sipowicz, who called him \"Dutch Boy\" in reference to a plaster marketing statue he once shot in the dark thinking it was a suspect with a gun. He threw his son out of the house when John Jr. decided to work at the 15th with Andy; his partner and he later worked a case with Clark Jr. and Andy that revealed Clark Sr.'s by-the-book approach and hyper-sensitivity to his son being anything like Andy. (In fact, Andy was much more the kind of detective Clark Jr. wanted to be, which is why he chose to transfer to the 15th when he earned a detective's shield and pick of assignments.) Clark Sr. later got busted for sleeping with a prostitute and let his son face the IAB accusation and potential discipline until Andy told him Clark Jr. was on the verge of being fired, which caused Clark Sr. to confess. After this, Clark Sr. began drinking heavily and became an IAB informant, which nearly ruined John's career at the 15th. His actions helped lead to the campaign by Officer Laughlin against Clark Jr., who finally told his father to stop making bad decisions on his behalf and stop drinking so much. A depressed Clark Sr. later committed suicide, which sent his son into a long depression of his own. Played by Joe Spano."
+    },
+    {
+        "question": "when did the song here comes the boom come out?",
+        "ground_truth": "\" Boom \" is a song by American rock band P.O.D. It was released in May 2002 as the third single from their second major label studio album Satellite. While it did not chart as well as the album's previous singles, the song has appeared significantly in film and television. \"Boom (The Crystal Method remix)\" was included on the remix album Community Service and as a bonus track on the special edition re-release of Satellite available August 27, 2002. A limited edition, gatefold picture disc of the single was also available in the UK."
+    },
+    {
+        "question": "what is the difference between a chevy 2 bolt main and a 4 bolt main?",
+        "ground_truth": "A 4-bolt main refers to the number of bolts attaching the main bearing caps to the block of an internal combustion engine. Four bolt mains are considered much stronger for high performance use than a 2 bolt main. Using 4 bolts to secure the main bearing caps reduces the amount of flex within the crankshaft as compared to 2 bolts."
+    },
+    {
+        "question": "who does brant daugherty play in pretty little liars?",
+        "ground_truth": "Brant David Daugherty (born August 20, 1985) is an American actor, known for his recurring role as Noel Kahn on the teen drama television series, Pretty Little Liars. In 2013, he had a recurring role as Brian in the long-running NBC daytime drama Days of Our Lives."
+    },
+    {
+        "question": "how does the power of judicial review check the legislative and executive branches?",
+        "ground_truth": "Judicial review is a process under which executive and (in some countries) legislative actions are subject to review by the judiciary. A court with judicial review power may invalidate laws and decisions that are incompatible with a higher authority; an executive decision may be invalidated for being unlawful or a statute may be invalidated for violating the terms of a written constitution. Judicial review is one of the checks and balances in the separation of powers: the power of the judiciary to supervise the legislative and executive branches when the latter exceed their authority. The doctrine varies between jurisdictions, so the procedure and scope of judicial review may differ between and within countries."
+    },
+    {
+        "question": "when did under the cork tree come out?",
+        "ground_truth": "From Under the Cork Tree is the second studio album by American rock band Fall Out Boy. It was released on May 3, 2005, through Island Records as the band's major label debut. The music was composed by lead vocalist and guitarist Patrick Stump, with all lyrics penned by bassist Pete Wentz, continuing the band's songwriting approach they took for some songs on their prior 2003 effort Take This to Your Grave. Neal Avron handled production duties. Commenting on the record's lyrical themes, Wentz said the lyrics were about \"the anxiety and depression that goes along with looking at your own life.\" In support of their release the group headlined tours worldwide and played at various music festivals. For their Black Clouds and Underdogs tour the album was re-released as From Under the Cork Tree (Limited \"Black Clouds and Underdogs\" Edition), featuring new songs and remixes."
+    },
+    {
+        "question": "when did korea separate into north and south?",
+        "ground_truth": "The division of Korea between North and South Korea occurred after World War II, ending the Empire of Japan 's 35-year rule over Korea in 1945. The United States and the Soviet Union occupied two parts of the country, with the boundary between their zones of control along the 38th parallel."
+    },
+    {
+        "question": "who discovered the atom and in what year?",
+        "ground_truth": "In the early 1800s, John Dalton used the concept of atoms to explain why elements always react in ratios of small whole numbers (the law of multiple proportions). For instance, there are two types of tin oxide: one is 88.1% tin and 11.9% oxygen and the other is 78.7% tin and 21.3% oxygen (tin(II) oxide and tin dioxide respectively). This means that 100g of tin will combine either with 13.5g or 27g of oxygen. 13.5 and 27 form a ratio of 1:2, a ratio of small whole numbers. This common pattern in chemistry suggested to Dalton that elements react in whole number multiples of discrete units\u2014in other words, atoms. In the case of tin oxides, one tin atom will combine with either one or two oxygen atoms."
+    },
+    {
+        "question": "what is the purpose of the muscles that line the esophagus?",
+        "ground_truth": "Food is ingested through the mouth and when swallowed passes first into the pharynx and then into the esophagus. The esophagus is thus one of the first components of the digestive system and the gastrointestinal tract. After food passes through the esophagus, it enters the stomach. When food is being swallowed, the epiglottis moves backward to cover the larynx, preventing food from entering the trachea. At the same time, the upper esophageal sphincter relaxes, allowing a bolus of food to enter. Peristaltic contractions of the esophageal muscle push the food down the esophagus. These rhythmic contractions occur both as a reflex response to food that is in the mouth, and also as a response to the sensation of food within the esophagus itself. Along with peristalsis, the lower esophageal sphincter relaxes."
+    },
+    {
+        "question": "where does eye of the round roast come from?",
+        "ground_truth": "A round steak is a beef steak from the \"round\", the rear leg of the cow. The round is divided into cuts including the eye (of) round, bottom round, and top round, with or without the \"round\" bone (femur), and may include the knuckle (sirloin tip), depending on how the round is separated from the loin. This is a lean cut and it is moderately tough. Lack of fat and marbling makes round dry out when cooked with dry-heat cooking methods like roasting or grilling. [ citation needed ] Round steak is commonly prepared with slow moist-heat methods including braising, to tenderize the meat and maintain moisture. The cut is often sliced thin, then dried or smoked at low temperature to make jerky."
+    },
+    {
+        "question": "who sings the song let me love you?",
+        "ground_truth": "\" Let Me Love You \" is a song recorded by French electronic music producer DJ Snake, taken as the third single from his debut studio album, Encore (2016). It featured vocals from Canadian singer Justin Bieber and Singh H Spot. The artists co-wrote the song with Andrew Watt, Ali Tamposi, Brian Lee, and Louis Bell, while the song's production was handled by DJ Snake. The song was released on 5 August 2016, through Interscope Records. Its music video was released on November 29, 2016, on YouTube."
+    },
+    {
+        "question": "how many seasons are there for lost girl?",
+        "ground_truth": "Lost Girl is a Canadian supernatural drama television series that aired on Showcase for five seasons, from September 12, 2010, to October 25, 2015. It follows the life of a bisexual succubus named Bo, played by Anna Silk, as she learns to control her superhuman abilities, help those in need, and discover the truth about her origins."
+    },
+    {
+        "question": "where was the first nhl hockey game played?",
+        "ground_truth": "The first game of the season, and in league history, featured the visiting Montreal Canadiens defeat the Ottawa Senators 7-4, with Joe Malone scoring five of Montreal's seven goals. On the same night a game featured the unnamed Toronto team versus the Wanderers. Montreal's Dave Ritchie scored the first goal in NHL history and Harry Hyland had four goals (the league's first hat trick) in the Wanderers' 10\u20139 victory, which would be their only one in the NHL; Player-coach Art Ross earned the league's first penalty. The game in Montreal was played in front of only 700 fans."
+    },
+    {
+        "question": "how many inches is the iphone 5s screen?",
+        "ground_truth": "The iPhone 5S maintains a similar design to the iPhone 5, with a 4\u00a0in (10\u00a0cm) LCD multi-touch Retina display and a screen resolution of 640\u00d71136 at 326 ppi. Its home button has been updated with a new flat design using a laser-cut sapphire cover surrounded by a metallic ring; the button is no longer concave, nor does it contain the familiar squircle icon seen on previous models. The phone itself is 0.30\u00a0in (7.6\u00a0mm) thick and weighs 112 grams (4.0\u00a0oz). The phone uses an aluminum composite frame. The device is available in three color finishes; \"space-gray\" (replacing black with slate trim on the iPhone 5), white with silver trim, and white with gold trim. The iPhone 5S was the first iPhone to be available in gold color; this decision was influenced by the fact that gold is seen as a popular sign of a luxury product among Chinese customers."
+    },
+    {
+        "question": "what was the first capital city of australia?",
+        "ground_truth": "There are eight capital cities in Australia, each of which functions as the seat of government for the state or territory in which it is located. Melbourne was the initial capital following the 1901 Federation of Australia. In 1927, the seat of national government was moved to the newly created city of Canberra, which continues to serve as the national capital."
+    },
+    {
+        "question": "who won the womens 2017 ncaa basketball tournament?",
+        "ground_truth": "The 2017 NCAA Women's Division I Basketball Tournament was played from Friday, March 17 to Sunday, April 2, 2017, with the Final Four played at the American Airlines Center in Dallas, Texas on March 31 and April 2. This was the first time that the women's Final Four was played in Dallas and the first time since 2002 that the Final Four games were played on Friday and Sunday, rather than Sunday and Tuesday. South Carolina defeated Mississippi State to win the championship."
+    },
+    {
+        "question": "where does jack ryan live in patriot games?",
+        "ground_truth": "In Patriot Games, Greer comes to Ryan and asks him to rejoin the CIA permanently as an analyst to help track down the terrorists. He declines initially, only to accept it after a failed ULA attack on the Ryans mildly wounds his pregnant wife, but severely injures his daughter outside her school. Later, while Ryan hosts the Prince and Princess of Wales at his waterfront home on Chesapeake Bay, south of Annapolis in Maryland, the IRA conducts another attack against him, which Ryan, the Prince, and close friend, Navy Commander Robert Jackson foil. Following the incident and arrests of the ULA members and Miller (whom Ryan nearly executes with his Browning Hi Power), Ryan is taken to the Naval Academy hospital, where he arrives just in time for the birth of Jack Ryan Jr., his second child."
+    },
+    {
+        "question": "who gave the famous objective co relative theory?",
+        "ground_truth": "The theory of the objective correlative as it relates to literature was largely developed through the writings of the poet and literary critic T.S. Eliot, who is associated with the literary group called the New Critics. Helping define the objective correlative, Eliot's essay \" Hamlet and His Problems \", republished in his book The Sacred Wood: Essays on Poetry and Criticism discusses his view of Shakespeare 's incomplete development of Hamlet's emotions in the play Hamlet. Eliot uses Lady Macbeth's state of mind as an example of the successful objective correlative: \"The artistic 'inevitability' lies in this complete adequacy of the external to the emotion\u2026.\", as a contrast to Hamlet. According to Eliot, the feelings of Hamlet are not sufficiently supported by the story and the other characters surrounding him. The objective correlative's purpose is to express the character's emotions by showing rather than describing feelings as discussed earlier by Plato and referred to by Peter Barry in his book Beginning Theory: An Introduction to Literary and Cultural Theory as \"...perhaps little more than the ancient distinction (first made by Plato) between mimesis and diegesis \u2026.\" (28). According to Formalist critics, this action of creating an emotion through external factors and evidence linked together and thus forming an objective correlative should produce an author's detachment from the depicted character and unite the emotion of the literary work. The \"occasion\" of E. Montale is a further form of correlative."
+    },
+    {
+        "question": "paleomagnetism is a dating method based on changes in the earth's polarity as demonstrated by?",
+        "ground_truth": "Paleomagnetism (or palaeomagnetism in the United Kingdom) is the study of the record of the Earth's magnetic field in rocks, sediment, or archeological materials. Certain minerals in rocks lock-in a record of the direction and intensity of the magnetic field when they form. This record provides information on the past behavior of Earth's magnetic field and the past location of tectonic plates. The record of geomagnetic reversals preserved in volcanic and sedimentary rock sequences (magnetostratigraphy) provides a time-scale that is used as a geochronologic tool. Geophysicists who specialize in paleomagnetism are called paleomagnetists."
+    },
+    {
+        "question": "when did cable stayed bridges increase in popularity?",
+        "ground_truth": "Cable-stayed bridges have been known since the 16th century and used widely since the 19th. Early examples often combined features from both the cable-stayed and suspension designs, including the famous Brooklyn Bridge. The design fell from favor through the 20th century as larger gaps were bridged using pure suspension designs, and shorter ones using various systems built of reinforced concrete. It once again rose to prominence in the later 20th century when the combination of new materials, larger construction machinery, and the need to replace older bridges all lowered the relative price of these designs."
+    },
+    {
+        "question": "is the son of the beast still at kings island?",
+        "ground_truth": "Son of Beast is also known for two major, non-fatal accidents. In 2006, damage to the track caused one of the trains to stop abruptly. Another setback occurred in 2009, when a woman claimed to have suffered a head injury. The ride was closed indefinitely, with the only reference of its existence appearing on a tombstone outside the new Banshee coaster (showing a simple logo of the ride and the dates 2000-2009). On July 27, 2012, the closure was made permanent, as Kings Island announced that the roller coaster would be dismantled and removed from the park."
+    },
+    {
+        "question": "where do bullets go when fired in the air?",
+        "ground_truth": "Bullets fired into the air usually fall back with terminal velocities much lower than their muzzle velocity when they leave the barrel of a firearm. Nevertheless, people can be injured, sometimes fatally, when bullets discharged into the air fall back down to the ground. Bullets fired at angles less than vertical are more dangerous as the bullet maintains its angular ballistic trajectory and is far less likely to engage in tumbling motion; it therefore travels at speeds much higher than a bullet in free fall."
+    },
+    {
+        "question": "where did the keep calm thing come from?",
+        "ground_truth": "Keep Calm and Carry On was a motivational poster produced by the British government in 1939 in preparation for World War II. The poster was intended to raise the morale of the British public, threatened with widely predicted mass air attacks on major cities. Although 2.45 million copies were printed, and although the Blitz did in fact take place, the poster was hardly ever publicly displayed and was little known until a copy was rediscovered in 2000 at Barter Books, a bookshop in Alnwick. It has since been re-issued by a number of private companies, and has been used as the decorative theme for a range of products."
+    },
+    {
+        "question": "when do replays become available on nfl game pass?",
+        "ground_truth": "NFL Game Pass is a subscription based audio and video service which allows users to hear and watch live and archived National Football League (NFL) games via a Internet connection. For users in North America, only out-of-market preseason games can be viewed live; full replays of all the games become available on demand after their original live broadcasts end. Live preseason, regular season, and postseason games are available to international users."
+    },
+    {
+        "question": "where does the last name perry come from?",
+        "ground_truth": "Perry is a surname with several distinct origins. In England deriving from the Old English pyrige (pear tree), referring to one who dwells by a pear tree, while in Wales Perry, along with Parry, arose as patronymics, via a shortening of \"ap Harry\" (son of Harry). There are some variants in the Romance or Romantic languages (derived from the Latin): Pereira, Pereyra, Pereyro, Pereiro, Pereiros Pereire, Perera, Perer, Perero, Pereros; the Norman French perrieur (quarry), possibly referring to a quarryman. Perry was recorded as a surname from the late 16th century in villages near Colchester, Essex, East England, such as Lexden and Copford. Perry has some resemblance with the Portuguese common surname Pereira, which means pear tree in Portuguese language. Because of that, many Portuguese immigrants to the USA (especially Massachusetts) chose to \" Americanize \" their Pereira surname to Perry. The Italian surname, Perri, related to \"Peter\", is also often Americanized to Perry."
+    },
+    {
+        "question": "when is the new jurassic world game coming out?",
+        "ground_truth": "Jurassic World Evolution is an upcoming business simulation video game developed and published by Frontier Developments. The game is based on the 2015 film Jurassic World, and is scheduled for release on June 12, 2018, for Microsoft Windows, PlayStation 4 and Xbox One."
+    },
+    {
+        "question": "what was the alliance between great britian russia and france known as?",
+        "ground_truth": "The Triple Entente (from French entente [\u0251\u0303t\u0251\u0303t] \"friendship, understanding, agreement\") refers to the understanding linking the Russian Empire, the French Third Republic, and the United Kingdom of Great Britain and Ireland after the signing of the Anglo-Russian Entente on 31 August 1907. The understanding between the three powers, supplemented by agreements with Japan and Portugal, was a powerful counterweight to the Triple Alliance of Germany, Austria-Hungary, and Italy."
+    },
+    {
+        "question": "difference between straight and order bill of lading?",
+        "ground_truth": "When the bill of lading is used as a document of title, it is particularly related to the case of buyer. When the buyer is entitled to received goods from the carrier, bill of lading in this case performs as document of title for the goods. There are two types of bill of lading that can perform as document of title. They are straight bill of lading and order bill of lading. Straight bill of lading is a bill of lading issued to a named consignee that is not negotiable. In this case, the bill of lading should be directed only to one specific consignee indicated on the bill of lading. Order bill of lading is the opposite from a straight bill of lading and there is no specific or named consignee. Therefore, an order bill of lading can be negotiated to a third party."
+    },
+    {
+        "question": "what was icq as related to instant messaging?",
+        "ground_truth": "ICQ is an instant messaging client that was first developed and popularized by the Israeli company Mirabilis in 1996. The name ICQ derives from the English phrase \"I Seek You\". Ownership of ICQ passed from Mirabilis to AOL in 1998, and from AOL to Mail.Ru Group in 2010."
+    },
+    {
+        "question": "chandra and bhaga river meets at the place?",
+        "ground_truth": "The Chandrabhaga or Chenab (Vedic name Askni), the largest river (in terms of volume of water) is formed after the meeting of two streams namely, Chandra and Bhaga at Tandi, in Lahaul. It flows 122 kilometres (76\u00a0mi) and covers an area of 7,500 square kilometres (2,900\u00a0sq\u00a0mi). in Himachal, before entering Kashmir. The Chandra passes through the barren tribal land."
+    },
+    {
+        "question": "what happened at the chernobyl nuclear power plant?",
+        "ground_truth": "The event occurred during a late-night safety test which simulated a station blackout power-failure and in which safety systems were deliberately turned off. A combination of inherent reactor design flaws and the reactor operators arranging the core in a manner contrary to the checklist for the test, eventually resulted in uncontrolled reaction conditions. Water flashed into steam generating a destructive steam explosion and a subsequent open-air graphite fire. [note 1] This fire produced considerable updrafts for about nine days. These lofted plumes of fission products into the atmosphere. The estimated radioactive inventory that was released during this very hot fire phase approximately equalled in magnitude the airborne fission products released in the initial destructive explosion. Practically all of this radioactive material would then go on to fall-out /precipitate onto much of the surface of the western USSR and Europe."
+    },
+    {
+        "question": "who is often associated with printing the first book using moveable type in germany?",
+        "ground_truth": "Johannes Gutenberg of Mainz, Germany is acknowledged as the first to invent a metal movable-type printing system in Europe, the printing press. Gutenberg was a goldsmith familiar with techniques of cutting punches for making coins from moulds. Between 1436 and 1450 he developed hardware and techniques for casting letters from matrices using a device called the hand mould. Gutenberg's key invention and contribution to movable-type printing in Europe, the hand mould, was the first practical means of making cheap copies of letterpunches in the vast quantities needed to print complete books, making the movable-type printing process a viable enterprise."
+    },
+    {
+        "question": "who are the artists in the traveling wilburys?",
+        "ground_truth": "The Traveling Wilburys (sometimes shortened to the Wilburys) were a British-American supergroup consisting of Bob Dylan, George Harrison, Jeff Lynne, Roy Orbison, and Tom Petty. The band recorded two albums, the first in 1988 and the second in 1990, though Orbison died before the second was recorded."
+    },
+    {
+        "question": "who won the battle of stirling bridge 1297?",
+        "ground_truth": "The Battle of Stirling Bridge was a battle of the First War of Scottish Independence. On 11 September 1297, the forces of Andrew Moray and William Wallace defeated the combined English forces of John de Warenne, 6th Earl of Surrey, and Hugh de Cressingham near Stirling, on the River Forth."
+    },
+    {
+        "question": "when did the right to buy scheme start?",
+        "ground_truth": "After Margaret Thatcher became Prime Minister in May 1979, the legislation to implement the Right to Buy was passed in the Housing Act 1980. Michael Heseltine, in his role as Secretary of State for the Environment, was in charge of implementing the legislation. Some 6,000,000 people were affected; about one in three actually purchased their housing unit. Heseltine noted that \"no single piece of legislation has enabled the transfer of so much capital wealth from the state to the people\". He said the right to buy had two main objectives: to give people what they wanted, and to reverse the trend of ever-increasing dominance of the state over the life of the individual."
+    },
+    {
+        "question": "who has won the most f1 grand prix?",
+        "ground_truth": "Michael Schumacher holds the record for the most Grand Prix victories, having won 91\u00a0times. Lewis Hamilton is second with 62 wins and Alain Prost is third with 51\u00a0wins. Michael Schumacher holds the distinction of having the longest time between his first win and his last. He won his first Grand Prix in 1992 at the Belgian Grand Prix, and his last in 2006 at the Chinese Grand Prix, a span of 14\u00a0years, 1\u00a0month and 1\u00a0day. Riccardo Patrese holds the record for the longest period of time between two race wins\u2013more than six-and-a-half years between the 1983 South African Grand Prix and the 1990 San Marino Grand Prix. Mario Andretti had to wait the longest time between his maiden victory at the 1971 South African Grand Prix and his second win\u2013coming five years, seven months and 18 days later at the 1976 Japanese Grand Prix. Sebastian Vettel holds the record for the most consecutive wins, having won nine Grands Prix in a row from the 2013 Belgian Grand Prix to the 2013 Brazilian Grand Prix. Max Verstappen is the youngest winner of a Grand Prix; he was 18 years and 227 days old when he won the 2016 Spanish Grand Prix. Luigi Fagioli is the oldest winner of a Formula One Grand Prix; he was 53\u00a0years and 22\u00a0days old when he won the 1951 French Grand Prix."
+    },
+    {
+        "question": "where does the saying keeping up with the jones come from?",
+        "ground_truth": "The phrase originates with the comic strip Keeping Up with the Joneses, created by Arthur R. \"Pop\" Momand in 1913. The strip ran until 1940 in The New York World and various other newspapers. The strip depicts the social climbing McGinis family, who struggle to \"keep up\" with their neighbors, the Joneses of the title. The Joneses were unseen characters throughout the strip's run, often spoken of but never shown. The idiom keeping up with the Joneses has remained popular long after the strip's end."
+    },
+    {
+        "question": "who plays meredith quill in guardians of the galaxy 2?",
+        "ground_truth": "Laura Jane Haddock (born 21 August 1985) is an English actress. She is best known for portraying Kacie Carter in Honest, Lucrezia in Da Vinci's Demons, Meredith Quill in Guardians of the Galaxy and its sequel Guardians of the Galaxy Vol. 2, Alison in The Inbetweeners Movie and Viviane Wembly in Transformers: The Last Knight."
+    },
+    {
+        "question": "locations for the film an englishman who went up a hill?",
+        "ground_truth": "The film is based on a story heard by Christopher Monger from his grandfather about the real village of Taff's Well, in the old county of Glamorgan, and its neighbouring Garth Hill. Due to 20th century urbanisation of the area, it was filmed in the more rural Llanrhaeadr-ym-Mochnant and Llansilin in Powys. The Welsh Male Voice Choir used to provide background music throughout the film was, in fact, the London-based Gwalia Male Choir."
+    },
+    {
+        "question": "when was the last time mount ruapehu erupted?",
+        "ground_truth": "At about 8:20\u00a0p.m. on 25 September 2007, a hydrothermal eruption occurred without warning. William Pike, a 22-year-old primary school teacher, had a leg crushed by a rock during the eruption and a rescue operation was mounted to rescue him from the Dome Shelter near the crater. The rock crashed into the Dome Shelter, landed on the man and was too heavy for his companion to lift off."
+    },
+    {
+        "question": "where was 2017 beauty and the beast filmed?",
+        "ground_truth": "Principal photography on the film began at Shepperton Studios in Surrey, United Kingdom, on May 18, 2015. Filming with the principal actors concluded on August 21. Six days later, co-producer Jack Morrissey confirmed that the film had officially wrapped production."
+    },
+    {
+        "question": "what proposition made the insurance commissioner an elected position?",
+        "ground_truth": "As a result of the passage of Proposition 103 in 1988, the elected office of the California Insurance Commissioner was created in 1991. Previously, the position was held by a person appointed by the Governor. The Insurance Commissioner oversees the Department of Insurance. Democrat Dave Jones won the November 2, 2010 election for California Insurance Commissioner."
+    },
+    {
+        "question": "why is there a ball in guinness beer?",
+        "ground_truth": "A widget is a device placed in a container of beer to manage the characteristics of the beer's head. The original widget was patented in Ireland by Guinness. The \"floating widget\" is found in cans of beer as a hollow plastic sphere, approximately 3\u00a0cm in diameter (similar in appearance to table tennis ball, but smaller) with at least one small hole and a seam. The \"rocket widget\" is found in bottles, 7\u00a0cm in length with the small hole at the bottom."
+    },
+    {
+        "question": "what is the function of trnas in protein synthesis?",
+        "ground_truth": "A transfer RNA (abbreviated tRNA and formerly referred to as sRNA, for soluble RNA) is an adaptor molecule composed of RNA, typically 76 to 90 nucleotides in length, that serves as the physical link between the mRNA and the amino acid sequence of proteins. tRNA does this by carrying an amino acid to the protein synthetic machinery of a cell (ribosome) as directed by a three-nucleotide sequence (codon) in a messenger RNA (mRNA). As such, tRNAs are a necessary component of translation, the biological synthesis of new proteins in accordance with the genetic code."
+    },
+    {
+        "question": "who is the girl in the once bitten twice shy video?",
+        "ground_truth": "Brown worked as a model for Budweiser and other companies. She also appeared in music videos, including Great White 's \" Once Bitten, Twice Shy \" and \" House of Broken Love \" and Hurricane 's \"I'm On To You.\" She is best remembered as the girl in Warrant 's sexually suggestive \" Cherry Pie \" video released in 1990."
+    },
+    {
+        "question": "who was the actor who played crocodile dundee?",
+        "ground_truth": "Paul Hogan, AM (born 8 October 1939) is an Australian comedian, actor and television presenter. He was nominated for the Academy Award for Best Original Screenplay and won the Golden Globe Award for Best Actor \u2013 Motion Picture Musical or Comedy for his performance as outback adventurer Michael \"Crocodile\" Dundee in Crocodile Dundee (1986), the first in the Dundee film franchise."
+    },
+    {
+        "question": "where are trigger points located in the body?",
+        "ground_truth": "Myofascial trigger points, also known as trigger points, are described as hyperirritable spots in the fascia surrounding skeletal muscle. They are associated with palpable nodules in taut bands of muscle fibers. They are a topic of ongoing controversy, as there is limited data to inform a scientific understanding of the phenomenon. Accordingly, a formal acceptance of myofascial \"knots\" as an identifiable source of pain is more common among bodyworkers, physical therapists, chiropractors, and osteopathic practitioners. Nonetheless, the concept of trigger points provides a framework which may be used to help address certain musculoskeletal pain."
+    },
+    {
+        "question": "ambulatory is a term used in health care to describe?",
+        "ground_truth": "Ambulatory care or outpatient care is medical care provided on an outpatient basis, including diagnosis, observation, consultation, treatment, intervention, and rehabilitation services. This care can include advanced medical technology and procedures even when provided outside of hospitals."
+    },
+    {
+        "question": "what role does the president play in foreign affairs?",
+        "ground_truth": "Subject to the advice and consent role of the U.S. Senate, the President of the United States negotiates treaties with foreign nations, but treaties enter into force if ratified by two-thirds of the Senate. The President is also Commander in Chief of the United States Armed Forces, and as such has broad authority over the armed forces. Both the Secretary of State and ambassadors are appointed by the President, with the advice and consent of the Senate. The United States Secretary of State acts similarly to a foreign minister and under Executive leadership is the primary conductor of state-to-state diplomacy."
+    },
+    {
+        "question": "how long has it been since eagles went to super bowl?",
+        "ground_truth": "The history of the Philadelphia Eagles begins in 1933. In their history, the Eagles have appeared in the Super Bowl three times, losing in their first two appearances but winning the third, in 2018. They won three NFL Championships, the precursor to the Super Bowl, in four appearances."
+    },
+    {
+        "question": "who did the united states win its independence from?",
+        "ground_truth": "Independence Day, also referred to as the Fourth of July or July Fourth, is a federal holiday in the United States commemorating the adoption of the Declaration of Independence on July 4, 1776. The Continental Congress declared that the thirteen American colonies regarded themselves as a new nation, the United States of America, and were no longer part of the British Empire. The Congress actually voted to declare independence two days earlier, on July 2."
+    },
+    {
+        "question": "is the right to life liberty and the pursuit of happiness in the constitution?",
+        "ground_truth": "The phrase can also be found in Chapter III, Article 13 of the 1947 Constitution of Japan, and in President Ho Chi Minh 's 1945 declaration of independence of the Democratic Republic of Vietnam. An alternative phrase \"life, liberty, and property\", is found in the Declaration of Colonial Rights, a resolution of the First Continental Congress. The Fifth Amendment and Fourteenth Amendment to the United States Constitution declare that governments cannot deprive any person of \"life, liberty, or property\" without due process of law. Also, Article 3 of the Universal Declaration of Human Rights reads, \"Everyone has the right to life, liberty, and security of person\"."
+    }
+]

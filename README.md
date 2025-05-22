@@ -1,106 +1,34 @@
-# trust_ai
-# General Context
+# TruthEval
 
-# Noise Evaluation Process (main_pipeline)
-This section includes scripts for generating an AI-generated dataset, merging AI-generated and human_generated dataset, and launching an evaluation interface for evaluating human-generated and AI-generated responses in order to know if AI performed as good as humand.
+# Using the perturbation pipeline
 
-## Table of Contents
-- [Requirements](#requirements)
-- [Usage](#usage)
-  - [Generating the Question-Ground Truth File](#generating-the-question-ground-truth-file)
-  - [Generating the AI-Generated Dataset](#generating-the-ai-generated-dataset)
-  - [Merging the Datasets](#merging-the-datasets)
-  - [Launching the Evaluation Interface](#launching-the-evaluation-interface)
-- [Input and Output Formats](#input-and-output-formats)
-- [Testing Evaluation Directly](#testing-evaluation-directly)
+# Using the cost-efficient Factual Correctness metric
 
-## Requirements
-- Python 3.x
-- Gradio library
+# [Datasets](./datasets)
 
-## Usage
-### Generating the Question-Ground Truth File
-```bash
-python extract.py -i <input_file.json> -o <output_file.json>
-```
-Example:
-```bash
-python extract.py -i human_dataset.json -o question_groundTruth_dataset.json
-```
-### Generating the AI-Generated Dataset
-```bash
-python noise_pipeline.py -i <input_file.json> -o <output_file.json>
-```
-Example:
-```bash
-python noise_pipeline.py -i question_groundTruth_dataset.json -o noise.json
-```
-### Merging the Datasets
-```bash
-python merge_datasets.py <human_dataset.json> <noise.json> <merged_dataset.json>
-```
-Example:
-```bash
-python merge_datasets.py human_dataset.json noise.json evaluation_dataset.json
-```
-### Launching the Evaluation Interface
-```bash
-python evaluation_interface.py <evaluation_dataset_filename.json>
-```
-Example:
-```bash
-python evaluation_interface.py evaluation_dataset.json
-```
-## Input and Output Formats
-Input File Format for extract.py
-The input text file should contain questions and their corresponding ground truths and answers in the following format:
-```bash
-question: What are the main causes of climate change?
-ground_truth: Climate change is primarily caused by human activities...
-a0: The primary driver of climate change is human activity...
-a1: The primary driver of climate change is human activity...
-...
-```
-Output File Format for extract.py
-The output JSON file will have the following structure:
-```bash
-[
-    {
-        "question": "What are the main causes of climate change?",
-        "ground_truth": "Climate change is primarily caused by human activities..."
-    },
-    {
-        "question": "How does photosynthesis work in plants?",
-        "ground_truth": "Photosynthesis is the process by which plants convert light energy..."
-    }
-]
-```
-Merged Dataset Format
-The merged dataset will have the following structure:
-```bash
-{
-   "questions":[
-      {
-         "id":1,
-         "question":"What was the Castlereagh–Canning duel?",
-         "ground_truth":"The Castlereagh–Canning duel was a pistol duel...",
-         "answers":{
-            "A0":{
-               "human":"The Castlereagh–Canning duel, fought on September 21, 1809...",
-               "ai":"Climate change is predominantly attributed to human actions..."
-            },
-            ...
-         }
-      },
-      ...
-   ]
-}
-```
-## Testing Evaluation Directly
-It is possible to test the evaluation interface directly with the dataset available in this repository through this command : 
-```bash
-python evaluation_interface.py evaluation_dataset.json
+We are also open-sourcing the datasets we used to access the quality of our pipeline. In short, we asked annotators to
+compare the perceived quality of answers between experts and pipeline generated. The annotators needed to decide which
+option aligned best to a specific set of guidelines (which can be found at our paper; see Appendix C). The annotators
+have the alternative of accepting both options (if they had perceived similar quality) or rejecting them both (if they
+both didn't comply with guidelines).
+
+```text
+├── datasets
+│   ├── evaluation                         # datasets used for evaluating LLMs and other techniques (Section 5) 
+│   │   ├── dataset.json                   # the pipeline generated dataset (with A0 -> A4)
+│   │   ├── factual_correctness_eval.jsonl # evaluation for fast-fc (our cost efficient implementation and ragas (default)
+│   │   ├── gold-dataset.json              # set of Question and groundtruths sampled from Google's Natural Questions dataset
+│   │   ├── llm_as_judge_eval.jsonl        # evaluation of several LLMs for factual correctness
+│   │   ├── report.json                    # detailed report of the question transformations 
+│   ├── human-assessment                   # datasets used for validating the quality of the pipeline (Section 4)
+│   │   ├── assessment-dataset.json        # set of Q&As manually fabricated by experts (including A0 -> A4) with alternative versions produced by our pipeline
+│   │   ├── report.json                    # the pipeline report with details about the incremental changes when producing the "ai" responses in assessment-dataset.json
+│   │   ├── results-evaluator-1.json       # assessment from evaluator 1 (preferences)
+│   │   ├── results-evaluator-2.json       # assessment from evaluator 2 (preferences) 
 ```
 
+# UI
 
+# Prompts
 
+# Cite this work

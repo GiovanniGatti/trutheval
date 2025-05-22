@@ -1,4 +1,0 @@
-numpy
-# openai
-transformers
-torch
