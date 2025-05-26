@@ -1,0 +1,2 @@
+pydantic==2.11.5
+gradio==5.31.0
