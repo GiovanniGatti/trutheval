@@ -67,7 +67,7 @@ This file contains the input questions along with multiple generated answer vari
           "A4": "..."
         }
       },
-      ...
+      // ...
     ]
   }
 ```
@@ -138,7 +138,7 @@ quality of our pipeline.
 
 One must provide an input dataset with the following schema:
 
-```json
+```jsonc
 {
   "questions": [
     {
@@ -168,7 +168,7 @@ One must provide an input dataset with the following schema:
         }
       }
     },
-    ...
+    // ...
   ]
 }
 ```
@@ -176,7 +176,7 @@ One must provide an input dataset with the following schema:
 After evaluation, the results are exported with the following format (dictionary keys are the ids from the previous
 file).
 
-```json
+```jsonc
 {
   "0": {
     "A0": "Both are bad",
@@ -192,7 +192,7 @@ file).
     "A3": "...",
     "A4": "..."
   },
-  ...
+  // ...
 }
 ```
 
