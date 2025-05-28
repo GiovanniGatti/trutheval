@@ -1,19 +1,19 @@
-[project]
+[tool.poetry]
 name = "truthbench"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Giovanni Gatti Pinheiro",email = "giovanni.gatti.pinheiro@gmail.com"}
-]
+authors = ["Giovanni Gatti Pinheiro <giovanni.gatti.pinheiro@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.11"
-dependencies = [
-]
-
-[tool.poetry]
 packages = [{include = "truthbench", from = "src"}]
 
+[tool.poetry.dependencies]
+python = ">=3.11,<3.14"
+spacy = ">=3.8.7,<4.0.0"
+openai = {version = ">=1.82.0,<2.0.0", optional = true}
+
+[tool.poetry.extras]
+openai = ["openai"]
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
