@@ -89,6 +89,12 @@ We provide a user-friendly webapp to facilitate comparing A0-A4 responses genera
 provides a side-by-side visualization with diff capabilities. This tool was used by annotators to produce evaluate the
 quality of our pipeline.
 
+
+
+https://github.com/user-attachments/assets/fc98e124-1996-4592-bfa9-150b6d0e7942
+
+
+
 One must provide an input dataset with the following schema:
 
 ```jsonc
