@@ -80,7 +80,7 @@ class Pipeline:
         samples = reader.samples()
 
         collected = []
-        for sample in tqdm(samples, desc="Samples:", disable=self._with_progress):
+        for sample in tqdm(samples, desc="Samples:", disable=not self._with_progress):
             tracker["input_samples"] += 1
             for step in self._steps:
                 step.validate(sample)
