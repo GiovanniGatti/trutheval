@@ -6,6 +6,105 @@
 
 # Using the perturbation pipeline
 
+## CLI Usage
+
+You can run the TruthBench pipeline directly from the command line.
+
+### Installation
+
+Install the package with optional OpenAI dependencies:
+
+```bash
+pip install truthbench[openai]
+```
+
+### Download required spaCy model
+
+TruthBench relies on the spaCy English model. Download it once with:
+
+```bash
+python -m spacy download en_core_web_sm
+```
+
+### Set your OpenAI API key
+
+Export your OpenAI API key as an environment variable:
+
+```bash
+export OPENAI_API_KEY="your_openai_api_key_here"
+```
+
+### Run the pipeline
+
+```bash
+truthbench --input-file path/to/input.json --output-dir path/to/output_dir
+```
+
+This will create `report.json` and `dataset.json` inside `output_dir`.
+
+### Output File Formats
+
+After running the pipeline, two main output files are generated in the output directory:
+
+#### 1. `dataset.json`
+
+This file contains the input questions along with multiple generated answer variants.
+
+- **Structure:**
+
+```jsonc
+  {
+    "questions": [
+      {
+        "id": 0,                                                   // Unique identifier for the question
+        "question": "why is the sky blue?",                        // The original question text.
+        "ground_truth": "The sky appears to be blue because...",   // The correct answer text.
+        "answers": {                                               // A dictionary of answer variants with increased perturbation levels
+          "A0": "The sky looks blue because...",
+          "A1": "...",
+          "A2": "...",
+          "A3": "...",
+          "A4": "..."
+        }
+      },
+      ...
+    ]
+  }
+```
+
+#### 2. `report.json`
+
+This file contains all the processing details.
+
+```jsonc
+{
+  "report": {                                           // Summary metrics about the evaluation (counts of samples, errors, etc.)
+    "input_samples": 100,
+    "find_factual_data_error": 0,
+    "json_parse_ranking_error": 3,
+    "index_ranking_error": 52,
+    "ranking_factual_data_error": 2,
+    "output_samples": 100
+  },
+  "questions": [                                       // The complete processing trace for every dataset sample
+    {
+      "question": "what do the 3 dots mean in math?",
+      "ground_truth": "In logical argument...",
+      "raw_factual_data": [
+        "logical reasoning",
+        "...",
+      ],
+      "with_brackets": {
+        "A0": "In [logical reasoning] and [mathematics] ..."
+        // ...
+      },
+      // ...
+    },
+    // ...
+  ]
+}
+```
+
 # Using the cost-efficient Factual Correctness metric
 
 # Datasets
