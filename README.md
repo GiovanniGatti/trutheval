@@ -26,6 +26,40 @@ pipelines — demonstrating strong correlation between perturbation severity and
 
 This work is described in detail in an accepted paper at the EvalLLM 2025 workshop (CORIA-TALN).
 
+# Empirical validation of factuality metrics using `trutheval`
+
+We evaluated how well different factuality scoring methods track increasing degrees of factual perturbation using 500
+perturbed examples generated from 100 Q&A pairs
+from the [Google Natural Questions](https://ai.google.com/research/NaturalQuestions/) dataset. The table below
+summarizes the correlation between the intended perturbation levels (A0 to A4) and the factuality scores assigned by
+each method.
+
+| Method           | LLM                   | Pearson (95% CI)          | Kendall (Tau) | Kendall (95% CI) |
+|------------------|-----------------------|---------------------------|---------------|------------------|
+| **LLM-as-judge** | gemma3: 4b            | -0.63 \[-0.69, -0.58]     | -0.79         | \[-0.82, -0.77]  |
+|                  | llama3.3: 70b         | -0.74 \[-0.78, -0.70]     | -0.86         | \[-0.88, -0.84]  |
+|                  | mistral-small3.1: 24b | -0.71 \[-0.75, -0.66]     | -0.76         | \[-0.79, -0.72]  |
+|                  | phi4: 14b             | -0.74 \[-0.78, -0.70]     | -0.81         | \[-0.83, -0.78]  |
+|                  | prometheus-v2: 7b     | -0.62 \[-0.67, -0.56]     | -0.70         | \[-0.75, -0.66]  |
+|                  | qwen2.5: 7b           | -0.63 \[-0.68, -0.57]     | -0.72         | \[-0.76, -0.67]  |
+| **RAGAS**        | gpt-4o-mini           | **-0.87 \[-0.90, -0.85]** | -0.95         | \[-0.97, -0.93]  |
+| **LLM + NLI**    | gemma3: 12b           | -0.82 \[-0.85, -0.79]     | **-0.96**     | \[-0.98, -0.94]  |
+|                  | llama3.3: 70b         | -0.83 \[-0.86, -0.80]     | -0.94         | \[-0.96, -0.92]  |
+
+Key takeaways:
+
+* Pipeline methods (RAGAS and LLM + NLI) outperform standalone LLM-as-judge models, showing stronger negative
+  correlations that indicate better detection of factual errors.
+* The RAGAS pipeline with GPT-4o-mini achieves the highest Pearson correlation (-0.87) and near-perfect Kendall’s tau (
+  -0.95), reflecting both linear and rank-order accuracy.
+* The LLM + NLI (i.e., `truthscore`) approach offers a strong open-weight alternative with competitive performance,
+  enabling efficient and cost-effective factuality evaluation.
+* Standalone LLM-as-judge methods exhibit weaker correlations (Pearson between -0.62 and -0.74), suggesting lower
+  reliability in capturing factual degradation.
+
+These results demonstrate how TruthBench’s perturbed datasets enable effective benchmarking and comparison of factuality
+evaluation pipelines, promoting development of accurate and scalable factual robustness assessment algorithms.
+
 # Datasets
 
 We are also open-sourcing the [datasets](./datasets) we used to access the quality of our pipeline. In short, we asked
