@@ -88,29 +88,3 @@ class Pipeline:
             collected.append(sample)
 
         return collected, tracker
-
-# TODO
-# if __name__ == "__main__":
-#     parser = argparse.ArgumentParser()
-#     parser.add_argument("--output-dir", "-o", required=True, type=pathlib.Path)
-#     parser.add_argument("--input-file", "-i", required=True, type=pathlib.Path)
-#
-#     args = parser.parse_args()
-#
-#     client = OpenAI()
-#     llm = LLM(client)
-#
-#     samples, tracker = pipeline.run(JsonReader(args.input_file))
-#
-#     report = Report(report=tracker, questions=samples)
-#     dataset = report.to_dataset()
-#
-#     with open(args.output_dir / "report.json", "w", encoding="utf-8") as f:
-#         f.write(report.model_dump_json(indent=4))
-#
-#     with open(args.output_dir / "dataset.json", "w", encoding="utf-8") as f:
-#         f.write(dataset.model_dump_json(indent=4))
-#
-#     print()
-#     print("Stats")
-#     print(tracker.model_dump_json(indent=4))
