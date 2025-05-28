@@ -4,9 +4,27 @@
 
 # TruthEval
 
+`trutheval` is a modular framework for generating datasets with graded factual perturbations. These datasets are
+designed to test and validate the effectiveness of factuality evaluation pipelines.
 
+It provides:
 
-# Using the cost-efficient Factual Correctness metric
+* 📚 Tools to generate Q&A datasets with controlled factual perturbations (A0–A4 levels)
+* 🧪 Evaluation scripts and interfaces for comparing human vs. model-based assessments (see [UI](#ui))
+* 📊 Data and metrics to support validation of factual scoring algorithms (see [datasets](#datasets))
+
+Core components:
+
+* [truthbench](./truthbench/README.md): Generates factual QA datasets with controlled perturbations. It's intended to
+  support the development, tuning, and validation of factuality metrics and hallucination detection systems
+* [truthscore](./truthscore/README.md): A fast, open-weight alternative to RAGAS using NLI models for factual
+  scoring—cheaper, faster, and comparably effective. It's intended to evaluate LLMs directly.
+
+Our framework includes extensive experimental validation, where we generate datasets with graduated factual
+perturbations and benchmark diverse evaluation techniques — including open-weight LLMs and specialized
+pipelines — demonstrating strong correlation between perturbation severity and factuality scores.
+
+This work is described in detail in an accepted paper at the EvalLLM 2025 workshop (CORIA-TALN).
 
 # Datasets
 
