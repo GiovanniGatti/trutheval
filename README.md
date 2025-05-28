@@ -21,7 +21,7 @@ both (if they both didn't comply with guidelines).
 │   ├── evaluation                         # datasets used for evaluating LLMs and other techniques (Section 5) 
 │   │   ├── dataset.json                   # the pipeline generated dataset (with A0 -> A4)
 │   │   ├── factual_correctness_eval.jsonl # evaluation for fast-fc (our cost efficient implementation and ragas (default)
-│   │   ├── gold-dataset.json              # set of Question and groundtruths sampled from Google's Natural Questions dataset
+│   │   ├── gold-dataset.json              # set of Question and ground truths sampled from Google's Natural Questions dataset
 │   │   ├── llm_as_judge_eval.jsonl        # evaluation of several LLMs for factual correctness
 │   │   ├── report.json                    # detailed report of the question transformations 
 │   ├── human-assessment                   # datasets used for validating the quality of the pipeline (Section 4)
