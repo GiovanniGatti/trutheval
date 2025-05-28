@@ -25,7 +25,9 @@ def truth_pipeline(
         llm: Optional[LLM] = None,
         nlp: Optional[Language] = None,
         stop_words: Optional[str] = None,
-        with_progress: bool = True
+        with_progress: bool = True,
+        num_levels: int = 5,
+        keep: float = 0.8,
 ) -> Pipeline:
     if nlp is None:
         try:
@@ -48,7 +50,7 @@ def truth_pipeline(
         .with_step(FactualDataStep(nlp))
         .with_step(BlacklistItemsFromQuestionStep(stop_words))
         .with_step(RankFactualDataStep(llm))
-        .with_step(FilterFactualDataStep())
-        .with_step(CreateNoiseExamplesStep(llm))
-        .with_step(CounterStep())
+        .with_step(FilterFactualDataStep(keep))
+        .with_step(CreateNoiseExamplesStep(llm, num_levels))
+        .with_step(CounterStep(num_levels))
     )

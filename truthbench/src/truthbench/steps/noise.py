@@ -65,10 +65,13 @@ The ozone layer protects [the Earth] by absorbing [harmful ultraviolet radiation
 <output>The ozone layer protects the biosphere by absorbing harmful infrared radiation from deep space. It is {{primarily}} found in the troposphere, a layer of the atmosphere. Concerns about ozone depletion rose in the late 1990s after a theory of an irregularity over {{Antarctica}}.</output>
 """
 
-    def __init__(self, llm: LLM, levels: int = 4, prompt: Optional[str] = None):
+    def __init__(self, llm: LLM, levels: int = 5, prompt: Optional[str] = None):
+        if levels < 2:
+            raise ValueError("Number of noisy levels must be larger than 2.")
+
         self._llm = llm
         self._prompt = prompt or CreateNoiseExamplesStep.PROMPT
-        self._levels = levels
+        self._noise_levels = levels - 1
 
         super().__init__(
             required_fields=frozenset({"factual_data", "with_brackets", "answers"}),
@@ -118,7 +121,7 @@ The ozone layer protects [the Earth] by absorbing [harmful ultraviolet radiation
             return
 
         sample["thinking"] = {}
-        groups = CreateNoiseExamplesStep.split_groups(len(sample["factual_data"]), self._levels)
+        groups = CreateNoiseExamplesStep.split_groups(len(sample["factual_data"]), self._noise_levels)
         random.shuffle(groups)
         a0 = sample["with_brackets"]["A0"]
         noised_sample = a0
