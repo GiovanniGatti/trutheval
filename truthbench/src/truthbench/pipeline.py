@@ -4,6 +4,31 @@ from typing import List, Dict, Tuple, Any, Set
 from tqdm import tqdm
 
 
+class StrictTracker(dict):
+    def __init__(self, allowed_keys: set[str]):
+        super().__init__()
+        self._allowed_keys = allowed_keys
+        self.update({k: 0 for k in self._allowed_keys})
+
+    def __getitem__(self, key):
+        if key not in self._allowed_keys:
+            raise KeyError(
+                f"Tracker counter '{key}' is being set but was not declared. "
+                f"Declare it at the Step constructor with: "
+                f"    super().__init__(..., counters=frozenset({{{repr(key)}}}))"
+            )
+        return super().__getitem__(key)
+
+    def __setitem__(self, key, value):
+        if key not in self._allowed_keys:
+            raise KeyError(
+                f"Tracker counter '{key}' is being set but was not declared. "
+                f"Declare it at the Step constructor with: "
+                f"    super().__init__(..., counters=frozenset({{{repr(key)}}}))"
+            )
+        return super().__setitem__(key, value)
+
+
 class LLM(abc.ABC):
 
     @abc.abstractmethod
@@ -13,18 +38,22 @@ class LLM(abc.ABC):
 
 class Step(abc.ABC):
 
-    def __init__(self, required_fields: Set[str] = frozenset()):
+    def __init__(self, required_fields: Set[str] = frozenset(), counters: Set[str] = frozenset()):
         self.required_fields = required_fields
+        self.counters = counters
 
-    @abc.abstractmethod
-    def step(self, sample: Dict[str, Any], tracker: Tracker) -> None:
+    def validate(self, sample: Dict[str, Any]) -> None:
         current_fields = set(sample.keys())
         if not self.required_fields.issubset(current_fields):
             missing = self.required_fields.difference(current_fields)
             raise ValueError(
-                f"Step requires {self.required_fields}, but some are missing from the sample: {missing}. "
-                f"Check pipeline dependencies before proceeding."
+                f"{type(self).__name__} requires {self.required_fields}, but some are missing from the sample: "
+                f"{missing}. Check pipeline dependencies before proceeding."
             )
+
+    @abc.abstractmethod
+    def step(self, sample: Dict[str, Any], tracker: Dict[str, int]) -> None:
+        ...
 
 
 class Reader(abc.ABC):
@@ -43,42 +72,22 @@ class Pipeline:
         self._steps.append(step)
         return self
 
-    def run(self, reader: Reader) -> Tuple[List[Dict[str, Any]], Tracker]:
-        tracker = Tracker()
-        collected = []
+    def run(self, reader: Reader) -> Tuple[List[Dict[str, Any]], Dict[str, int]]:
+        allowed_keys = {"input_samples"} | frozenset.union(*(step.counters for step in self._steps))
+
+        tracker = StrictTracker(allowed_keys)
 
         samples = reader.samples()
 
+        collected = []
         for sample in tqdm(samples, desc="Samples:", disable=self._with_progress):
-            tracker.input_samples += 1
+            tracker["input_samples"] += 1
             for step in self._steps:
+                step.validate(sample)
                 step.step(sample, tracker)
             collected.append(sample)
-            if sample.is_valid():
-                tracker.output_samples += 1
 
         return collected, tracker
-
-    # def ensure_fields(self, sample: T) -> None:
-    #     for step in self._steps:
-    #         for f in step.required_fields:
-    #             if not hasattr(sample, f):
-    #                 raise RuntimeError(f"Sample missing required field {f} for step {type(step).__name__}")
-    #             a = getattr(sample, f)
-    #             if callable(a):
-    #                 raise RuntimeError(
-    #                     f"Expected required field {f} for step {type(step).__name__}, "
-    #                     f"but found a method with the same name."
-    #                 )
-    #         for v in step.required_validators:
-    #             if not hasattr(sample, v):
-    #                 raise RuntimeError(f"Sample missing required validator {v} for step {type(step).__name__}")
-    #             a = getattr(sample, v)
-    #             if not callable(a):
-    #                 raise RuntimeError(
-    #                     f"Expected required validator {v} for step {type(step).__name__}, "
-    #                     f"but found an attribute with the same name."
-    #                 )
 
 # TODO
 # if __name__ == "__main__":

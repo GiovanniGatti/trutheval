@@ -1,7 +1,6 @@
-import pathlib
 import random
 import re
-from typing import List, Tuple, Protocol, Optional, Dict, Generic, TypeVar
+from typing import List, Tuple, Dict, Any, Optional
 
 from truthbench.pipeline import Step, LLM
 
@@ -22,29 +21,57 @@ def process_terms(text: str, allowed_terms: List[str]) -> str:
     return processed_text
 
 
-class SupportsNoise(Protocol):
-    factual_data: Optional[List[str]] = None
-    with_brackets: Dict[str, str] = {}
-    answers: Dict[str, str] = {}
-    thinking: Dict[str, str] = {}
+class CreateNoiseExamplesStep(Step):
+    PROMPT = """\
+# Instructions
+You are given a text with terms marked between square brackets [ ] and double curly braces {{ }}. Your goal is to modify the terms marked between square brackets [ ] to make the text incorrect, misleading, or omit critical information.
 
-    def is_ranked(self) -> bool:
-        return False
+Each change must be semantically credible, contextually plausible, and linguistically natural to a non-expert reader. For example, a gas must be replaced with another gas, or a country must be replaced with another country. Avoid over-generalizing substitutions that dilute meaning (e.g., “gases” instead of “greenhouse gases”), unless vagueness is the intended form of misinformation. Also avoid replacing terms with obvious synonyms. Do not invent non-standard terminology or introduce substitutions that would appear absurd, obviously false, grammatically broken, or conceptually incoherent.
 
+You can make small adaptations of nearby words ONLY for grammatical correctness. However, all terms between double curly braces {{ }} MUST remain identical as the input. Remove square brackets [ ] from changed terms. Retain the original sentence structure and style wherever possible.
 
-T = TypeVar('T', bound=SupportsNoise)
+You are given a free space for planning your strategy. For each replacement word, try to list two to three alternatives and why they are good choices before coming up with a final decision. Output this planning between the marks <thinking></thinking>.
 
+Finally, produce the final raw output without any further notes, explanations, or formatting between he marks <output></output>.
 
-class CreateNoiseExamplesStep(Step, Generic[T]):
+# Example
+```
+The ozone layer protects [the Earth] by absorbing [harmful ultraviolet radiation] from [the Sun]. It is {{primarily}} found in [the stratosphere], a layer of the atmosphere. Concerns about ozone depletion rose in [the 1980s] after [the discovery] of [a hole] over {{Antarctica}}.
+```
+<thinking>
+1. [the Earth]
+    * Options: “living organisms,” “the biosphere”
+    * Chosen: the biosphere — plausible and often used in environmental contexts, but shifts focus away from the planet itself to just living systems, subtly distorting the scope of the ozone layer’s protective effect.
+2. [harmful ultraviolet radiation]
+    * Options: “unharmful ultraviolet radiation,” “harmful infrared radiation,” “heat energy”
+    * Chosen: harmful infrared radiation — sounds technical and solar-related, but it's not what the ozone layer blocks. Misleading but plausible.
+3. [the Sun]
+    * Options: “deep space,” “solar flares”
+    * Chosen: deep space — vague and misleading; implies that source of radiation is a general space phenomenon rather than solar-specific.
+4. [the stratosphere]
+    * Options: “mesosphere,” “troposphere,” “ionosphere”
+    * Chosen: troposphere — the lowest layer, where weather happens, not where ozone is concentrated. Still sounds reasonable to a non-expert.
+5. [the 1980s]
+     * Options: “the late 1990s” “the 1970s,” “the early 1990s”
+     * Chosen: the late 1990s — shifts timeline by a bit, particularly when the problem became of concern for the general public.
+6. [the discovery]
+     * Options: “a theory,” “an assumption,” “a hypothesis”
+     * Chosen: a theory — undermines scientific certainty subtly without being absurd.
+7. [a hole]
+     * Options: “an irregularity,” “a gap,” “a reduction”
+     * Chosen: an irregularity — Very neutral, sounds like a small change rather than a serious issue, minimizing severity.
+</thinking>
 
-    def __init__(self, llm: LLM, levels: int = 4):
+<output>The ozone layer protects the biosphere by absorbing harmful infrared radiation from deep space. It is {{primarily}} found in the troposphere, a layer of the atmosphere. Concerns about ozone depletion rose in the late 1990s after a theory of an irregularity over {{Antarctica}}.</output>
+"""
+
+    def __init__(self, llm: LLM, levels: int = 4, prompt: Optional[str] = None):
         self._llm = llm
-        self._prompt = pathlib.Path("prompt.txt").read_text()
+        self._prompt = prompt or CreateNoiseExamplesStep.PROMPT
         self._levels = levels
 
         super().__init__(
-            required_fields=("factual_data", "with_brackets", "answers"),
-            required_validators=("is_ranked",)
+            required_fields=frozenset({"factual_data", "with_brackets", "answers"}),
         )
 
     @classmethod
@@ -81,16 +108,22 @@ class CreateNoiseExamplesStep(Step, Generic[T]):
             output_match.group(1).strip() if output_match else None
         )
 
-    def step(self, sample: SupportsNoise, tracker: Tracker) -> None:
-        if not sample.is_ranked():
+    def step(self, sample: Dict[str, Any], tracker: Dict[str, int]) -> None:
+        if (not sample["with_brackets"] or
+                "A0" not in sample["with_brackets"].keys() or
+                not sample["factual_data"] or
+                not sample["answers"] or
+                "A0" not in sample["answers"].keys()):
+            sample["thinking"] = None
             return
 
-        groups = CreateNoiseExamplesStep.split_groups(len(sample.factual_data), self._levels)
+        sample["thinking"] = {}
+        groups = CreateNoiseExamplesStep.split_groups(len(sample["factual_data"]), self._levels)
         random.shuffle(groups)
-        a0 = sample.with_brackets["A0"]
+        a0 = sample["with_brackets"]["A0"]
         noised_sample = a0
         for i, group in enumerate(groups, start=1):
-            selected = [sample.factual_data[j] for j in group]
+            selected = [sample["factual_data"][j] for j in group]
             input_sample = process_terms(noised_sample, selected)
             prompt = f"```\n{input_sample}\n```"
 
@@ -104,10 +137,10 @@ class CreateNoiseExamplesStep(Step, Generic[T]):
             thinking, output = CreateNoiseExamplesStep.parse_response(output_sample)
 
             if thinking:
-                sample.thinking[f"A{i}"] = thinking
+                sample["thinking"][f"A{i}"] = thinking
 
             if output:
                 noised_sample = re.sub(r'\{\{(.*?)}}', r'[\1]', output)
-                sample.with_brackets[f"A{i}"] = noised_sample
+                sample["with_brackets"][f"A{i}"] = noised_sample
                 cleaned = re.sub(r'\{\{(.*?)}}', r'\1', output)
-                sample.answers[f"A{i}"] = cleaned
+                sample["answers"][f"A{i}"] = cleaned

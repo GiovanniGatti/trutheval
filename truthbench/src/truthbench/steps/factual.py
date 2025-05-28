@@ -1,5 +1,5 @@
 import re
-from typing import Union, Iterator, List, Tuple, Protocol, Dict, Optional, TypeVar, Generic
+from typing import Union, Iterator, List, Tuple, Dict, Any
 
 from spacy import Language, Errors
 from spacy.symbols import NOUN, PROPN, ADV, ADJ, amod, NUM
@@ -8,20 +8,14 @@ from spacy.tokens import Doc, Span
 from truthbench.pipeline import Step
 
 
-class SupportsFactualData(Protocol):
-    answers: Dict[str, str] = {}
-    with_brackets: Dict[str, str] = {}
-    raw_factual_data: Optional[List[str]] = []
-
-
-T = TypeVar('T', bound=SupportsFactualData)
-
-
-class FactualDataStep(Step, Generic[T]):
+class FactualDataStep(Step):
 
     def __init__(self, nlp: Language):
         self.nlp = nlp
-        super().__init__(required_fields=("answers", "with_brackets"))
+        super().__init__(
+            required_fields=frozenset({"answers"}),
+            counters=frozenset({"find_factual_data_error"})
+        )
 
     @classmethod
     def span_boxes(cls, doclike: Union[Doc, Span]) -> Iterator[Span]:
@@ -121,15 +115,18 @@ class FactualDataStep(Step, Generic[T]):
 
         return boxed_sentence
 
-    def step(self, sample: SupportsFactualData, tracker: Tracker) -> None:
-        assert "A0" in sample.answers.keys()
+    def step(self, sample: Dict[str, Any], tracker: Dict[str, int]) -> None:
+        if not sample["answers"] or "A0" not in sample["answers"].keys():
+            sample["with_brackets"] = None
+            return
 
-        response_text = self.tag_predicate_nouns_and_adverbs(sample.answers["A0"])
-        sample.with_brackets["A0"] = response_text
+        sample["with_brackets"] = {}
+        response_text = self.tag_predicate_nouns_and_adverbs(sample["answers"]["A0"])
+        sample["with_brackets"]["A0"] = response_text
 
         matches = re.findall(r"\[(.*?)]", response_text)
         if not matches:
-            tracker.find_factual_data_error += 1
+            tracker["find_factual_data_error"] += 1
             return
 
-        sample.raw_factual_data = matches
+        sample["raw_factual_data"] = matches

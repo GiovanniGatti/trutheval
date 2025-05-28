@@ -1,24 +1,12 @@
 import json
 import re
 from json import JSONDecodeError
-from typing import Protocol, Dict, List, Optional, TypeVar, Generic
+from typing import Dict, Any
 
 from truthbench.pipeline import Step, LLM
 
 
-class SupportsRanking(Protocol):
-    with_brackets: Dict[str, str] = {}
-    raw_factual_data: Optional[List[str]] = []
-    ranked_factual_data: Optional[List[str]] = None
-
-    def is_initialized(self) -> bool:
-        return False
-
-
-T = TypeVar('T', bound=SupportsRanking)
-
-
-class RankFactualDataStep(Step, Generic[T]):
+class RankFactualDataStep(Step):
     """
     Ranks factual items by order of importance.
     """
@@ -50,15 +38,18 @@ class RankFactualDataStep(Step, Generic[T]):
         self._llm = llm
         self._max_retries = max_retries
         super().__init__(
-            required_fields=("with_brackets", "raw_factual_data", "ranked_factual_data"),
-            required_validators=("is_initialized",)
+            required_fields=frozenset({"with_brackets", "raw_factual_data"}),
+            counters=frozenset({"ranked_factual_data", "index_ranking_error", "ranking_factual_data_error"})
         )
 
-    def step(self, sample: SupportsRanking, tracker: Tracker) -> None:
-        if not sample.is_initialized():
+    def step(self, sample: Dict[str, Any], tracker: Dict[str, int]) -> None:
+        if (not sample["with_brackets"] or
+                not sample["raw_factual_data"] or
+                len(sample["raw_factual_data"]) <= 0):
+            sample["ranked_factual_data"] = None
             return
 
-        text = sample.with_brackets["A0"]
+        text = sample["with_brackets"]["A0"]
 
         terms = re.findall(r'\[([^]]+)]', text)
         for idx, term in enumerate(terms):
@@ -82,14 +73,14 @@ class RankFactualDataStep(Step, Generic[T]):
             try:
                 ranks = json.loads(ranks_str.strip())
             except JSONDecodeError:
-                tracker.json_parse_ranking_error += 1
+                tracker["json_parse_ranking_error"] += 1
                 continue
 
-            if sorted(ranks) == list(range(len(sample.raw_factual_data))):
-                terms = [sample.raw_factual_data[i] for i in ranks]
-                sample.ranked_factual_data = terms
+            if sorted(ranks) == list(range(len(sample["raw_factual_data"]))):
+                terms = [sample["raw_factual_data"][i] for i in ranks]
+                sample["ranked_factual_data"] = terms
                 return
 
-            tracker.index_ranking_error += 1
+            tracker["index_ranking_error"] += 1
 
-        tracker.ranking_factual_data_error += 1
+        tracker["ranking_factual_data_error"] += 1
