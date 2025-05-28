@@ -323,6 +323,4 @@ python ui/evaluation_interface.py ./datasets/human-assessment/assessment-dataset
 
 The application will start at [http://127.0.0.1:7860](http://127.0.0.1:7860) which can be access with your browser.
 
-# Prompts
-
 # Cite this work
