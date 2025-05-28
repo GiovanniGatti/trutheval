@@ -120,16 +120,17 @@ You can declare a pipeline by chaining a sequence of `Step`s and run it like thi
 
 ```python
 from truthbench import Pipeline
-from truthbench.steps.paraphrase import ParaphraseStep
 from truthbench.steps.counter import CounterStep
+from truthbench.steps.paraphrase import ParaphraseStep
 
 llm = ...
 reader = ...
 
-p = (Pipeline()
-     .with_step(ParaphraseStep(llm))
-     .with_step(CounterStep(expected_levels=5))
-     )
+p = (
+    Pipeline()
+    .with_step(ParaphraseStep(llm))
+    .with_step(CounterStep(expected_levels=5))
+)
 
 samples, tracker = p.run(reader)
 ```
