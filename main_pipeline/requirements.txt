@@ -1,9 +1,0 @@
-numpy
-openai
-transformers
-torch
-requests
-pandas
-ragas
-matplotlib
-seaborn
