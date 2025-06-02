@@ -1,19 +1,25 @@
-[project]
+[tool.poetry]
 name = "truthscore"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Giovanni Gatti Pinheiro", email = "giovanni.gatti.pinheiro@gmail.com"}
-]
+authors = ["Giovanni Gatti Pinheiro <giovanni.gatti.pinheiro@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.11"
-dependencies = [
-]
+packages = [{ include = "truthscore", from = "src" }]
 
-[tool.poetry]
-packages = [{include = "truthscore", from = "src"}]
+[tool.poetry.dependencies]
+python = ">=3.11,<3.14"
+ragas = ">=0.2.15,<1.0.0"
+sentence-transformers = "^4.1.0"
+sentencepiece = { version = ">=0.2.0,<1.0.0", optional = true }
+langchain-ollama = { version = ">=0.3.3,<1.0.0", optional = true }
 
+[tool.poetry.extras]
+open = ["sentencepiece", "langchain-ollama"]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+coverage = "^7.8.2"
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
