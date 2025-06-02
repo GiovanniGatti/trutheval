@@ -1,3 +1,8 @@
+![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue.svg)
+![Python Versions](https://img.shields.io/badge/Python-3.11%20|%203.12%20|%203.13-blue)
+![Coverage](https://img.shields.io/badge/Coverage-87%25-brightgreen)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 <p align="center">
 <img src="https://github.com/user-attachments/assets/8d30499c-ab58-4e92-8e11-089c01515c63" alt="drawing" style="height:340px"/>
 </p>
