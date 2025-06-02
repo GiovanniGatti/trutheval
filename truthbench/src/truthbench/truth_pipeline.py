@@ -23,17 +23,15 @@ from truthbench.steps.rank import RankFactualDataStep
 
 def truth_pipeline(
         llm: Optional[LLM] = None,
-        nlp: Optional[Language] = None,
         stop_words: Optional[str] = None,
         with_progress: bool = True,
         num_levels: int = 5,
         keep: float = 0.8,
 ) -> Pipeline:
-    if nlp is None:
-        try:
-            nlp: Language = spacy.load("en_core_web_sm")
-        except OSError:
-            raise ImportError("Install EN spacy language with python -m spacy download en_core_web_sm")
+    try:
+        nlp: Language = spacy.load("en_core_web_sm")
+    except OSError:
+        raise ImportError("Install EN spacy language with python -m spacy download en_core_web_sm")
 
     if stop_words is None:
         from spacy.lang.en.stop_words import STOP_WORDS
