@@ -5,23 +5,65 @@ from typing import List, Tuple, Dict, Any, Optional
 from truthbench.pipeline import Step, LLM
 
 
-def process_terms(text: str, allowed_terms: List[str]) -> str:
-    allowed_terms = [t.lower() for t in allowed_terms]
-
-    # Function to determine replacement for each matched bracketed term
-    def replacer(match):
-        term = match.group(1)
-        if term.lower() in allowed_terms:
-            allowed_terms.remove(term.lower())  # break repetition by taking the first occurrence
-            return f'[{term}]'
-        return f'{{{{{term}}}}}'
-
-    # Use regex to find all bracketed terms and apply the replacer function
-    processed_text = re.sub(r'\[([^]]+)]', replacer, text)
-    return processed_text
+def batch(iterable, n=1):
+    l = len(iterable)
+    for ndx in range(0, l, n):
+        yield iterable[ndx:min(ndx + n, l)]
 
 
 class CreateNoiseExamplesStep(Step):
+    """
+    Iteratively generates controlled factual perturbations from an input sentence containing factual spans.
+
+    This step uses a prompt-driven LLM to simulate plausible but incorrect or misleading edits to selected
+    factual spans, preserving surface fluency while subtly altering semantics. Factual items to modify are
+    marked with square brackets `[ ]`, while protected spans are enclosed in double curly braces `{{ }}`.
+    Each round introduces a new level of perturbation by editing a different subset of factual spans.
+
+    The prompt encourages the LLM to first brainstorm alternatives using `<thinking>` tags and then return
+    the final rewritten version inside `<output>` tags. The number of perturbation levels is user-configurable.
+    The final answer variants are added under `"with_brackets"` and `"answers"` fields for downstream use.
+
+    Attributes:
+        - prompt (str): Full prompt template used to instruct the LLM for perturbation. Uses
+                        CreateNoiseExamplesStep.PROMPT if none is provided.
+        - llm (LLM): An LLM interface capable of structured prompting and response parsing.
+        - levels (int): Number of perturbation rounds to perform (A_1, A_2, ..., A_{N-1}).
+
+    Expected Sample Fields:
+        - "factual_data" (List[str]): List of factual spans to selectively perturb.
+        - "with_brackets" (Dict[str, str]): A0 must contain the original bracketed sentence.
+        - "answers" (Dict[str, str]): A0 must contain the original unbracketed response.
+
+    Modifies:
+        - "with_brackets" (Dict[str, str]): Adds perturbed variants as A1, A2, ..., An.
+        - "answers" (Dict[str, str]): Adds cleaned (unbracketed) perturbed variants as A1, A2, ..., An.
+        - "thinking" (Dict[str, str]): Stores LLM’s planning output for each perturbation level.
+
+    Counter:
+        - None
+
+    Notes:
+        - Perturbations are groupwise: each level changes a unique subset of factual spans.
+        - Uses a zig-zag round-robin batching scheme to assign spans to levels.
+        - Only makes minimal edits to maintain linguistic plausibility.
+        - Double curly brace terms `{{term}}` are never altered and used to anchor unmodified content.
+        - Designed for evaluation tasks like factual robustness, misinformation detection, or model probing.
+
+    Example:
+        Input sample:
+            {
+                "answers": {"A0": "The ozone layer protects the Earth by absorbing harmful radiation."},
+                "with_brackets": {"A0": "The ozone layer protects [the Earth] by absorbing [harmful radiation]."},
+                "factual_data": ["the Earth", "harmful radiation"]
+            }
+
+        After step:
+            sample["with_brackets"]["A1"] → perturbed version with 1st group edited
+            sample["answers"]["A1"] → cleaned, bracket-free version of A1
+            sample["thinking"]["A1"] → model’s reasoning about replacements
+    """
+
     PROMPT = """\
 # Instructions
 You are given a text with terms marked between square brackets [ ] and double curly braces {{ }}. Your goal is to modify the terms marked between square brackets [ ] to make the text incorrect, misleading, or omit critical information.
@@ -77,15 +119,23 @@ The ozone layer protects [the Earth] by absorbing [harmful ultraviolet radiation
             required_fields=frozenset({"factual_data", "with_brackets", "answers"}),
         )
 
-    @classmethod
-    def batch(cls, iterable, n=1):
-        l = len(iterable)
-        for ndx in range(0, l, n):
-            yield iterable[ndx:min(ndx + n, l)]
+    def process_terms(self, text: str, allowed_terms: List[str]) -> str:
+        allowed_terms = [t.lower() for t in allowed_terms]
 
-    @classmethod
-    def split_groups(cls, num_terms: int, num_groups: int) -> List[List[int]]:
-        batches = list(CreateNoiseExamplesStep.batch(list(sorted(range(num_terms), reverse=True)), num_groups))
+        # Function to determine replacement for each matched bracketed term
+        def replacer(match):
+            term = match.group(1)
+            if term.lower() in allowed_terms:
+                allowed_terms.remove(term.lower())  # break repetition by taking the first occurrence
+                return f'[{term}]'
+            return f'{{{{{term}}}}}'
+
+        # Use regex to find all bracketed terms and apply the replacer function
+        processed_text = re.sub(r'\[([^]]+)]', replacer, text)
+        return processed_text
+
+    def split_groups(self, num_terms: int, num_groups: int) -> List[List[int]]:
+        batches = list(batch(list(sorted(range(num_terms), reverse=True)), num_groups))
         groups = [[None, ] * len(batches) for _ in range(num_groups)]
         for j, idx in enumerate(batches):
             if j % 2 == 0:
@@ -101,8 +151,7 @@ The ozone layer protects [the Earth] by absorbing [harmful ultraviolet radiation
 
         return groups
 
-    @classmethod
-    def parse_response(cls, text: str) -> Tuple[str, str]:
+    def parse_response(self, text: str) -> Tuple[str, str]:
         thinking_match = re.search(r'<thinking>(.*?)</thinking>', text, re.DOTALL)
         output_match = re.search(r'<output>(.*?)</output>', text, re.DOTALL)
 
@@ -113,21 +162,21 @@ The ozone layer protects [the Earth] by absorbing [harmful ultraviolet radiation
 
     def step(self, sample: Dict[str, Any], tracker: Dict[str, int]) -> None:
         if (not sample["with_brackets"] or
-                "A0" not in sample["with_brackets"].keys() or
+                "A0" not in sample["with_brackets"] or
                 not sample["factual_data"] or
                 not sample["answers"] or
-                "A0" not in sample["answers"].keys()):
+                "A0" not in sample["answers"]):
             sample["thinking"] = None
             return
 
         sample["thinking"] = {}
-        groups = CreateNoiseExamplesStep.split_groups(len(sample["factual_data"]), self._noise_levels)
+        groups = self.split_groups(len(sample["factual_data"]), self._noise_levels)
         random.shuffle(groups)
         a0 = sample["with_brackets"]["A0"]
         noised_sample = a0
         for i, group in enumerate(groups, start=1):
             selected = [sample["factual_data"][j] for j in group]
-            input_sample = process_terms(noised_sample, selected)
+            input_sample = self.process_terms(noised_sample, selected)
             prompt = f"```\n{input_sample}\n```"
 
             output_sample = self._llm.query(
@@ -137,7 +186,7 @@ The ozone layer protects [the Earth] by absorbing [harmful ultraviolet radiation
                 ]
             )
 
-            thinking, output = CreateNoiseExamplesStep.parse_response(output_sample)
+            thinking, output = self.parse_response(output_sample)
 
             if thinking:
                 sample["thinking"][f"A{i}"] = thinking
