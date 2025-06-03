@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "truthscore"
-version = "0.3.0"
+version = "0.4.0"
 description = "A fast, modular reimplementation of RAGAS's FactualCorrectness metric, supporting both open-weight and dedicated LLMs."
 authors = ["Giovanni Gatti Pinheiro <giovanni.gatti.pinheiro@gmail.com>"]
 readme = "README.md"
