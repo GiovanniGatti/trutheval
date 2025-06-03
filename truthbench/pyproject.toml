@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "truthbench"
-version = "0.1.0"
+version = "0.1.1"
 description = "A pipeline-based framework to evaluate factual consistency metrics."
 authors = ["Giovanni Gatti Pinheiro <giovanni.gatti.pinheiro@gmail.com>"]
 readme = "README.md"
