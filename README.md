@@ -241,4 +241,68 @@ python ui/evaluation_interface.py ./datasets/human-assessment/assessment-dataset
 
 The application will start at [http://127.0.0.1:7860](http://127.0.0.1:7860) which can be access with your browser.
 
+## 👥 Collaborators
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://linkedin.com/in/gattipg">
+        <img src="https://github.com/GiovanniGatti.png" width="100px;" alt="Giovanni Gatti"/><br />
+        <sub><b>Giovanni Gatti</b></sub>
+      </a><br />
+      <a href="https://linkedin.com/in/gattipg">
+        <img src="https://img.shields.io/badge/LinkedIn-GiovanniGatti-blue?logo=linkedin&style=flat-square" alt="LinkedIn Badge"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/ilyana-guendouz/">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQG5HxdUAV1JIQ/profile-displayphoto-shrink_400_400/B4DZORI5r7HoAg-/0/1733306850963?e=1754524800&v=beta&t=gMIgaEa0TIxI7Nm0sBe68sb-FuVDB6QsC9tZNpgdjOM" width="100px;" alt="Ilyana Guendouz"/><br />
+        <sub><b>Ilyana Guendouz</b></sub>
+      </a><br />
+      <a href="https://www.linkedin.com/in/ilyana-guendouz/">
+        <img src="https://img.shields.io/badge/LinkedIn-IlyanaGuendouz-blue?logo=linkedin&style=flat-square" alt="LinkedIn Badge"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/mariia-tokarevaa/">
+        <img src="https://media.licdn.com/dms/image/v2/D4E35AQGa0vDkLrVeZg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1705954682328?e=1749553200&v=beta&t=EMTa9jRcbitJzTfg7OMKHmoubb4l_v7MHWm4ZcqkKKE" width="100px;" alt="Mariia Tokareva"/><br />
+        <sub><b>Mariia Tokareva</b></sub>
+      </a><br />
+      <a href="https://www.linkedin.com/in/mariia-tokarevaa/">
+        <img src="https://img.shields.io/badge/LinkedIn-MariiaTokareva-blue?logo=linkedin&style=flat-square" alt="LinkedIn Badge"/>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/adele-robaldo/">
+        <img src="https://media.licdn.com/dms/image/v2/C5603AQGpJA5kNSyWcQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1633866590337?e=1754524800&v=beta&t=EnmrU08FE2_S3z34yRt5MLa4T0YwKc30tf6IKbqVHaM" width="100px;" alt="Adele Robaldo"/><br />
+        <sub><b>Adele Robaldo</b></sub>
+      </a><br />
+      <a href="https://www.linkedin.com/in/adele-robaldo/">
+        <img src="https://img.shields.io/badge/LinkedIn-AdeleRobaldo-blue?logo=linkedin&style=flat-square" alt="LinkedIn Badge"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/sarra-gharsallah-91231b215/">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQHIDnTWrt91-w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729261821962?e=1754524800&v=beta&t=4IdfCsLao9m7bL_sgiqAFcdtGLkstd7T6mwFX9--gGE" width="100px;" alt="Sarra Gharsallah"/><br />
+        <sub><b>Sarra Gharsallah</b></sub>
+      </a><br />
+      <a href="https://www.linkedin.com/in/sarra-gharsallah-91231b215/">
+        <img src="https://img.shields.io/badge/LinkedIn-SarraGharsallah-blue?logo=linkedin&style=flat-square" alt="LinkedIn Badge"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/troncy/">
+        <img src="https://media.licdn.com/dms/image/v2/C5103AQHxibfKgoEF4w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516281220780?e=1754524800&v=beta&t=NqKuRLznzn4MY4rSedX3CTmt7dcPFhNC2g_Soz9_g3g" width="100px;" alt="Raphael Troncy"/><br />
+        <sub><b>Raphael Troncy</b></sub>
+      </a><br />
+      <a href="https://www.linkedin.com/in/troncy/">
+        <img src="https://img.shields.io/badge/LinkedIn-RaphaelTroncy-blue?logo=linkedin&style=flat-square" alt="LinkedIn Badge"/>
+      </a>
+    </td>
+  </tr>
+</table>
+
+
 # Cite this work
