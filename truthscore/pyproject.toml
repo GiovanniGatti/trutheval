@@ -1,10 +1,33 @@
 [tool.poetry]
 name = "truthscore"
 version = "0.1.0"
-description = ""
+description = "A fast, modular reimplementation of RAGAS's FactualCorrectness metric, supporting both open-weight and dedicated LLMs."
 authors = ["Giovanni Gatti Pinheiro <giovanni.gatti.pinheiro@gmail.com>"]
 readme = "README.md"
 packages = [{ include = "truthscore", from = "src" }]
+keywords = ["nlp", "factuality", "evaluation", "llm", "RAGAS", "hallucination", "truthfulness", "benchmark"]
+license = "MIT"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Text Processing :: Linguistic"
+]
+
+[project.urls]
+Homepage = "https://github.com/GiovanniGatti/trutheval"
+Issues = "https://github.com/GiovanniGatti/trutheval/issues"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.14"
@@ -19,6 +42,9 @@ open = ["sentencepiece", "langchain-ollama"]
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.5"
 coverage = "^7.8.2"
+
+[tool.poetry.group.build.dependencies]
+setuptools = "^75.7.0"
 
 [build-system]
 requires = ["poetry-core"]

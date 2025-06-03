@@ -2,3 +2,4 @@
 ./adding_noise_process/huggingface_token.txt
 .coverage
 htmlcov/
+dist/
