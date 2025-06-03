@@ -1,5 +1,5 @@
 ![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue.svg)
-![Python Versions](https://img.shields.io/badge/Python-3.11%20|%203.12%20|%203.13-blue)
+![Python Versions](https://img.shields.io/badge/Python-3.10%20|%203.11%20|%203.12%20|%203.13-4a006a)
 ![Coverage](https://img.shields.io/badge/Coverage-87%25-brightgreen)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
