@@ -14,7 +14,7 @@ except ImportError:
 
 from truthbench.pipeline import Pipeline, LLM
 from truthbench.steps.blacklist import BlacklistItemsFromQuestionStep
-from truthbench.steps.factual import FactualDataStep
+from truthbench.steps.factual import FactualDataStep, NounAdverbFactualChunker
 from truthbench.steps.filter import FilterFactualDataStep
 from truthbench.steps.noise import CreateNoiseExamplesStep
 from truthbench.steps.paraphrase import ParaphraseStep
@@ -45,7 +45,7 @@ def truth_pipeline(
     return (
         Pipeline(with_progress)
         .with_step(ParaphraseStep(llm))
-        .with_step(FactualDataStep(nlp))
+        .with_step(FactualDataStep(NounAdverbFactualChunker(nlp)))
         .with_step(BlacklistItemsFromQuestionStep(stop_words))
         .with_step(RankFactualDataStep(llm))
         .with_step(FilterFactualDataStep(keep))
