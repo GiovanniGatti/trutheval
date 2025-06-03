@@ -55,12 +55,14 @@ class RankFactualDataStep(Step):
 
     PROMPT = (
         "Output the indexes of terms in square brackets [ ] from the text between triple backticks ``` "
-        "by terms that shape what the text is about, who it involves, consequences, hard numbers, dates, and facts. "
-        "Downrank marked terms that are vague references, general connectors, or dependent on other terms in square "
-        "brackets. You are given a free space to decide your ranking strategy between the tags <thinking></thinking>\n"
+        "by terms that shape what the text is about, how it answers the question the text is answering, who it "
+        "involves, consequences, hard numbers, dates, and facts. Downrank marked terms that are vague references, "
+        "general connectors, dependent on other terms in square brackets, or are unrelated to the question. You are "
+        "given a free space to decide your ranking strategy between the tags <thinking></thinking>\n"
         "\n"
         "Example:\n"
         "\n"
+        "Question: What is the relationship between social media use and mental health in teenagers?"
         "```\n"
         "Recent studies have shown [a correlation:0] between [social media use:1] and [increased anxiety:2] among "
         "[teenagers:3]. Although some researchers argue that online interaction can promote [social connection:4], "
@@ -69,9 +71,17 @@ class RankFactualDataStep(Step):
         "[these risks:11].\n"
         "```\n"
         "<thinking>\n"
-        "The main terms are [social media use:1], [teenagers:3], [a major tech company:9]..."
-        "Did I forget any missing terms?"
-        "..."
+        "The question asks about the relationship between social media and mental health in teenagers."
+        "The most central concept is [social media use:1], as it's the main cause under investigation. [teenagers:3] "
+        "is the primary affected group, making it essential. [a major tech company:9] is important because it provided "
+        "key internal data, which adds weight to the argument.\n"
+        "[increased anxiety:2] is one of the main documented effects, so it's ranked high. [whistleblower:8] is less "
+        "central but still critical since they enabled the release of impactful information.\n"
+        "[self-esteem:6] and [sleep patterns:7] are concrete, measurable consequences of social media use, so they "
+        "deserve mid-level ranking. [social connection:4] is a counterpoint and thus relevant but slightly "
+        "less important.\n"
+        "[awareness:10] and [a correlation:0] are abstract and support other terms but are not impactful alone. "
+        "[these risks:11] and [its impact:5] are vague or dependent on previous terms, so they are ranked lowest.\n"
         "</thinking>\n"
         "OUTPUT: [1, 3, 9, 2, 8, 6, 7, 4, 10, 0, 11, 5]"
     )
@@ -81,24 +91,26 @@ class RankFactualDataStep(Step):
         self._max_retries = max_retries
         self._prompt = prompt if prompt else RankFactualDataStep.PROMPT
         super().__init__(
-            required_fields=frozenset({"with_brackets", "raw_factual_data"}),
+            required_fields=frozenset({"question", "with_brackets", "raw_factual_data"}),
             counters=frozenset({"json_parse_ranking_error", "index_ranking_error", "ranking_factual_data_error"})
         )
 
     def step(self, sample: Dict[str, Any], tracker: Dict[str, int]) -> None:
-        if (not sample["with_brackets"] or
+        if (not sample["question"] or
+                not sample["with_brackets"] or
                 not sample["raw_factual_data"] or
                 len(sample["raw_factual_data"]) <= 0):
             sample["ranked_factual_data"] = None
             return
 
+        question = sample["question"]
         text = sample["with_brackets"]["A0"]
 
         terms = re.findall(r'\[([^]]+)]', text)
         for idx, term in enumerate(terms):
             text = text.replace(f'[{term}]', f'[{term}:{idx}]', 1)
 
-        prompt = f"{self._prompt}\n\nNow it's your turn.\n\n```\n{text}\n```\n"
+        prompt = f"{self._prompt}\n\nNow it's your turn.\n\nQuestion: {question}\n```\n{text}\n```\nOUTPUT: "
 
         for _ in range(self._max_retries):
             llm_judgement = self._llm.query(messages=[{"role": "user", "content": prompt}])
