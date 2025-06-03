@@ -110,7 +110,7 @@ class RankFactualDataStep(Step):
         for idx, term in enumerate(terms):
             text = text.replace(f'[{term}]', f'[{term}:{idx}]', 1)
 
-        prompt = f"{self._prompt}\n\nNow it's your turn.\n\nQuestion: {question}\n```\n{text}\n```\nOUTPUT: "
+        prompt = f"{self._prompt}\n\nNow it's your turn.\n\nQuestion: {question}\n```\n{text}\n```\n"
 
         for _ in range(self._max_retries):
             llm_judgement = self._llm.query(messages=[{"role": "user", "content": prompt}])
