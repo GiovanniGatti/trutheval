@@ -31,6 +31,83 @@ pipelines — demonstrating strong correlation between perturbation severity and
 
 This work is described in detail in an accepted paper at the EvalLLM 2025 workshop (CORIA-TALN).
 
+# Usage
+
+## TruthBench
+
+Generate datasets for validating truthness scores like this...
+
+```bash
+pip install truthbench[openai]
+
+python -m spacy download en_core_web_sm
+
+export OPENAI_API_KEY="your_openai_api_key_here"
+
+truthbench --input-file path/to/input.json --output-dir path/to/output_dir
+```
+
+Example:
+
+<details>
+<summary><strong>Example</strong>: <em>Who did the United States win its independence from?</em></summary>
+
+**A0 (Reference)**  
+Independence Day, commonly known as the Fourth of July or July Fourth, is **a federal holiday** in the United States
+celebrating **the adoption of the Declaration of Independence** **on July 4, 1776**. **On this day**, the Continental
+Congress announced that the thirteen American colonies considered themselves a new nation, called **the United States of
+America**, and were no longer under **British rule**. Interestingly, the Congress had voted to declare independence *
+*two days** earlier, **on July 2**.
+
+**A1 (Low perturbation)**  
+... celebrating **the adoption of the Declaration of Independence** ~~on July 4, 1776~~ **on August 5, 1776** ...
+
+**A2 (Medium perturbation)**  
+... celebrating the Declaration of Independence **on August 5, 1781**. ~~On this day~~ **On that moment**, ...
+
+**A3 (High perturbation)**  
+... is **an unofficial event** ... celebrating **a proposal of the Declaration of Independence** **on August 5, 1781
+** ...
+
+**A4 (Extreme perturbation)**  
+... celebrating **a proposal of the drafting of Independence** **on August 5, 1781** ... called **the United States of
+the Colonies**, and were no longer under **Spanish rule**.
+
+</details>
+
+For more details on how to use this library, see the dedicated docs [here](./truthbench/README.md).
+
+## TruthScore
+
+Plug this metric into your RAGAS pipeline and get all the good stuff for cheaper...
+
+```bash
+pip install truthscore[open]
+```
+
+```python
+from langchain_community.llms import OllamaLLM
+from ragas import SingleTurnSample
+from ragas.llms import LangchainLLMWrapper
+
+from truthscore import OpenFactualCorrectness
+
+test_data = {
+    "user_input": "What happened in Q3 2024?",
+    "reference": "The company saw an 8% rise in Q3 2024, driven by strong marketing and product efforts.",
+    "response": "The company experienced an 8% increase in Q3 2024 due to effective marketing strategies and product efforts."
+}
+sample = SingleTurnSample(**test_data)
+
+evaluator_llm = LangchainLLMWrapper(OllamaLLM(model="gemma3:27b", base_url="http://localhost:11434"))
+metric = OpenFactualCorrectness(llm=evaluator_llm)
+score = metric.single_turn_score(sample)
+
+print(score)  # e.g. 1.0
+```
+
+For more details on how to use this library, see the dedicated docs [here](./truthscore/README.md).
+
 # Empirical validation of factuality metrics using `trutheval`
 
 We evaluated how well different factuality scoring methods track increasing degrees of factual perturbation using 500
@@ -94,11 +171,7 @@ We provide a user-friendly webapp to facilitate comparing A0-A4 responses genera
 provides a side-by-side visualization with diff capabilities. This tool was used by annotators to produce evaluate the
 quality of our pipeline.
 
-
-
 https://github.com/user-attachments/assets/fc98e124-1996-4592-bfa9-150b6d0e7942
-
-
 
 One must provide an input dataset with the following schema:
 

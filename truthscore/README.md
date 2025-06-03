@@ -60,7 +60,7 @@ from truthscore import OpenFactualCorrectness
 test_data = {
     "user_input": "What happened in Q3 2024?",
     "reference": "The company saw an 8% rise in Q3 2024, driven by strong marketing and product efforts.",
-    "response": "The company experienced an 8% increase in Q3 2024 due to effective marketing strategies."
+    "response": "The company experienced an 8% increase in Q3 2024 due to effective marketing strategies and product efforts."
 }
 sample = SingleTurnSample(**test_data)
 
