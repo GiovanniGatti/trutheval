@@ -115,17 +115,17 @@ Here’s what we found:
 ![_config.yml]({{ site.baseurl }}/images/score_vs_noise.svg){:style="height: 220px; vertical-align: middle;"}
 ![_config.yml]({{ site.baseurl }}/images/pearson_vs_llm_size.svg){:style="height: 220px; vertical-align: middle;"}
 
-| Method        | LLM                   | Pearson (95% CI)          | Kendall Tau | Kendall (95% CI) |
-|---------------|-----------------------|---------------------------|-------------|------------------|
-| LLM-as-judge  | gemma3: 4b            | -0.63 \[-0.69, -0.58]     | -0.79       | \[-0.82, -0.77]  |
-|               | llama3.3: 70b         | -0.74 \[-0.78, -0.70]     | -0.86       | \[-0.88, -0.84]  |
-|               | mistral-small3.1: 24b | -0.71 \[-0.75, -0.66]     | -0.76       | \[-0.79, -0.72]  |
-|               | phi4: 14b             | -0.74 \[-0.78, -0.70]     | -0.81       | \[-0.83, -0.78]  |
-|               | prometheus-v2: 7b     | -0.62 \[-0.67, -0.56]     | -0.70       | \[-0.75, -0.66]  |
-|               | qwen2.5: 7b           | -0.63 \[-0.68, -0.57]     | -0.72       | \[-0.76, -0.67]  |
-| **RAGAS**     | gpt-4o-mini           | **-0.87** \[-0.90, -0.85] | -0.95       | \[-0.97, -0.93]  |
-| **LLM + NLI** | gemma3: 12b           | -0.82 \[-0.85, -0.79]     | **-0.96**   | \[-0.98, -0.94]  |
-|               | llama3.3: 70b         | -0.83 \[-0.86, -0.80]     | -0.94       | \[-0.96, -0.92]  |
+| Method           | LLM                   | Pearson   | Kendall (Tau) |
+|------------------|-----------------------|-----------|---------------|
+| **LLM-as-judge** | gemma3: 4b            | -0.63     | -0.79         |
+|                  | llama3.3: 70b         | -0.74     | -0.86         |
+|                  | mistral-small3.1: 24b | -0.71     | -0.76         |
+|                  | phi4: 14b             | -0.74     | -0.81         |
+|                  | prometheus-v2: 7b     | -0.62     | -0.70         |
+|                  | qwen2.5: 7b           | -0.63     | -0.72         |
+| **RAGAS**        | gpt-4o-mini           | **-0.87** | -0.95         |
+| **LLM + NLI**    | gemma3: 12b           | -0.82     | **-0.96**     |
+|                  | llama3.3: 70b         | -0.83     | -0.94         |
 
 > 🔍 TL;DR: LLM-as-judge struggles. Pipelines shine—especially when combining open-weight models with NLI.
 
