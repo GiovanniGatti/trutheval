@@ -189,7 +189,7 @@ into two modules: TruthBench and TruthScore.
 Use TruthBench to create perturbed versions of your dataset for evaluation. It works via CLI and supports OpenAI and
 local LLMs.
 
-```
+```bash
 pip install truthbench[openai]
 python -m spacy download en_core_web_sm
 truthbench --input-file data.json --output-dir results/
@@ -202,7 +202,7 @@ truthbench --input-file data.json --output-dir results/
 Use TruthScore to score the factual consistency of responses. It supports OpenAI, local models via Ollama, and optional
 custom NLI models for deeper semantic checks.
 
-```
+```python
 from openai import OpenAI
 from ragas import SingleTurnSample
 from ragas.llms import LangchainLLMWrapper
