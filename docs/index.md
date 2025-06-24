@@ -66,8 +66,8 @@ that of human experts. Here's how it worked:
 While inter-rater agreement was modest—highlighting how hard this task is even for humans—the overall takeaway is clear:
 our AI performs on par with experts when generating nuanced factual perturbations.
 
-![_config.yml]({{ site.baseurl }}/images/by_expert_preference.svg){:style="height: 270px; vertical-align: middle;"}
-![_config.yml]({{ site.baseurl }}/images/by_level.svg){:style="height: 270px; vertical-align: middle;"}
+![_config.yml]({{ site.baseurl }}/images/by_expert_preference.svg){:style="width: 350px; vertical-align: middle;"}
+![_config.yml]({{ site.baseurl }}/images/by_level.svg){:style="width: 350px; vertical-align: middle;"}
 
 ## TruthScore
 
@@ -189,7 +189,7 @@ into two modules: TruthBench and TruthScore.
 Use TruthBench to create perturbed versions of your dataset for evaluation. It works via CLI and supports OpenAI and
 local LLMs.
 
-```bash
+```
 pip install truthbench[openai]
 python -m spacy download en_core_web_sm
 truthbench --input-file data.json --output-dir results/
@@ -202,7 +202,7 @@ truthbench --input-file data.json --output-dir results/
 Use TruthScore to score the factual consistency of responses. It supports OpenAI, local models via Ollama, and optional
 custom NLI models for deeper semantic checks.
 
-```python
+```
 from openai import OpenAI
 from ragas import SingleTurnSample
 from ragas.llms import LangchainLLMWrapper
