@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="350"
+   height="300"
+   id="svg1105"
+   sodipodi:docname="by_expert_preference.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1107"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.5833333"
+     inkscape:cx="114.58065"
+     inkscape:cy="178.83871"
+     inkscape:window-width="1920"
+     inkscape:window-height="941"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1105" />
+  <defs
+     id="defs997">
+    <clipPath
+       id="qNVMHBsGTauH">
+      <path
+         fill="none"
+         stroke="none"
+         d="M 0.5 0.5 L 350.5 0.5 L 350.5 300.5 L 0.5 300.5 L 0.5 0.5 Z M 52.5 5.5 L 345.5 5.5 L 345.5 218.5 L 52.5 218.5 L 52.5 5.5 Z"
+         clip-rule="evenodd"
+         id="path979" />
+    </clipPath>
+    <clipPath
+       id="AeSsSmnAIbat">
+      <path
+         fill="none"
+         stroke="none"
+         d="M 52.5 5.5 L 345.5 5.5 L 345.5 218.5 L 52.5 218.5 L 52.5 5.5 Z"
+         id="path982" />
+    </clipPath>
+    <clipPath
+       id="LLzfFhGNJboy">
+      <path
+         fill="none"
+         stroke="none"
+         d="M 52.5 5.5 L 345.5 5.5 L 345.5 218.5 L 52.5 218.5 L 52.5 5.5 Z"
+         id="path985" />
+    </clipPath>
+    <clipPath
+       id="oJwfelCwaWxp">
+      <path
+         fill="none"
+         stroke="none"
+         d="M 52.5 5.5 L 345.5 5.5 L 345.5 218.5 L 52.5 218.5 L 52.5 5.5 Z"
+         id="path988" />
+    </clipPath>
+    <clipPath
+       id="quwbvmttTTVX">
+      <path
+         fill="none"
+         stroke="none"
+         d="M 52.5 5.5 L 345.5 5.5 L 345.5 218.5 L 52.5 218.5 L 52.5 5.5 Z"
+         id="path991" />
+    </clipPath>
+    <clipPath
+       id="VWdnqPzstgDJ">
+      <path
+         fill="none"
+         stroke="none"
+         d="M 52.5 5.5 L 345.5 5.5 L 345.5 218.5 L 52.5 218.5 L 52.5 5.5 Z"
+         id="path994" />
+    </clipPath>
+  </defs>
+  <path
+     fill="#ffffff"
+     stroke="none"
+     paint-order="stroke"
+     d="M 0.5 0.5 L 350.5 0.5 L 350.5 300.5 L 0.5 300.5 L 0.5 0.5 Z"
+     clip-path="url(#qNVMHBsGTauH)"
+     id="path999" />
+  <path
+     fill="#ffffff"
+     stroke="none"
+     paint-order="stroke"
+     d="M 52.5 5.5 L 345.5 5.5 L 345.5 218.5 L 52.5 218.5 L 52.5 5.5 Z"
+     id="path1001" />
+  <path
+     fill="none"
+     stroke="#e5e5e5"
+     paint-order="fill"
+     d="M 52.5 5.5 L 345.5 5.5 L 345.5 218.5 L 52.5 218.5 L 52.5 5.5 Z"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path1003" />
+  <path
+     fill="none"
+     stroke="#e5e5e5"
+     paint-order="fill"
+     d="M 52.5 165.5 L 345.5 165.5 M 52.5 113.5 L 345.5 113.5 M 52.5 60.5 L 345.5 60.5 M 52.5 8.5 L 345.5 8.5"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     clip-path="url(#LLzfFhGNJboy)"
+     id="path1005" />
+  <path
+     fill="rgb(3,14,163)"
+     stroke="rgb(3,14,163)"
+     paint-order="fill"
+     d="M 75.20750427246094 163.27777099609375 L 88.39250183105469 163.27777099609375 L 88.39250183105469 218.5 L 75.20750427246094 218.5 L 75.20750427246094 163.27777099609375 Z"
+     fill-opacity="1"
+     clip-path="url(#oJwfelCwaWxp)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path1007" />
+  <path
+     fill="rgb(3,14,163)"
+     stroke="rgb(3,14,163)"
+     paint-order="fill"
+     d="M 148.45750427246094 181.6851806640625 L 161.6425018310547 181.6851806640625 L 161.6425018310547 218.5 L 148.45750427246094 218.5 L 148.45750427246094 181.6851806640625 Z"
+     fill-opacity="1"
+     clip-path="url(#oJwfelCwaWxp)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path1009" />
+  <path
+     fill="rgb(3,14,163)"
+     stroke="rgb(3,14,163)"
+     paint-order="fill"
+     d="M 221.70750427246094 207.98147583007812 L 234.8925018310547 207.98147583007812 L 234.8925018310547 218.5 L 221.70750427246094 218.5 L 221.70750427246094 207.98147583007812 Z"
+     fill-opacity="1"
+     clip-path="url(#oJwfelCwaWxp)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path1011" />
+  <path
+     fill="rgb(3,14,163)"
+     stroke="rgb(3,14,163)"
+     paint-order="fill"
+     d="M 294.95751953125 58.092594146728516 L 308.14251708984375 58.092594146728516 L 308.14251708984375 218.5 L 294.95751953125 218.5 L 294.95751953125 58.092594146728516 Z"
+     fill-opacity="1"
+     clip-path="url(#oJwfelCwaWxp)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path1013" />
+  <path
+     fill="rgb(55,61,148)"
+     stroke="rgb(55,61,148)"
+     paint-order="fill"
+     d="M 89.125 179.05555725097656 L 102.30999755859375 179.05555725097656 L 102.30999755859375 218.5 L 89.125 218.5 L 89.125 179.05555725097656 Z"
+     fill-opacity="1"
+     clip-path="url(#quwbvmttTTVX)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path1015" />
+  <path
+     fill="rgb(55,61,148)"
+     stroke="rgb(55,61,148)"
+     paint-order="fill"
+     d="M 162.375 194.8333282470703 L 175.55999755859375 194.8333282470703 L 175.55999755859375 218.5 L 162.375 218.5 L 162.375 194.8333282470703 Z"
+     fill-opacity="1"
+     clip-path="url(#quwbvmttTTVX)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path1017" />
+  <path
+     fill="rgb(55,61,148)"
+     stroke="rgb(55,61,148)"
+     paint-order="fill"
+     d="M 235.625 218.5 L 248.80999755859375 218.5 L 248.80999755859375 218.5 L 235.625 218.5 L 235.625 218.5 Z"
+     fill-opacity="1"
+     clip-path="url(#quwbvmttTTVX)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path1019" />
+  <path
+     fill="rgb(55,61,148)"
+     stroke="rgb(55,61,148)"
+     paint-order="fill"
+     d="M 308.875 18.648147583007812 L 322.05999755859375 18.648147583007812 L 322.05999755859375 218.5 L 308.875 218.5 L 308.875 18.648147583007812 Z"
+     fill-opacity="1"
+     clip-path="url(#quwbvmttTTVX)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path1021" />
+  <path
+     fill="none"
+     stroke="black"
+     paint-order="fill"
+     d="M 52.5 218.5 L 345.5 218.5"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path1023" />
+  <path
+     fill="none"
+     stroke="black"
+     paint-order="fill"
+     d="M 89.5 224.5 L 89.5 216.5 M 162.5 224.5 L 162.5 216.5 M 235.5 224.5 L 235.5 216.5 M 308.5 224.5 L 308.5 216.5"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path1025" />
+  <path
+     fill="none"
+     stroke="black"
+     paint-order="fill"
+     d=""
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path1027" />
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="88.625"
+     y="233"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(0.9238795325112867, 0.3826834323650898, -0.3826834323650898, 0.9238795325112867, 94.88068244279278, -15.983732138440757)"
+     id="text1029">Prefers AI</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="88.625"
+     y="233"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(0.9238795325112867, 0.3826834323650898, -0.3826834323650898, 0.9238795325112867, 94.88068244279278, -15.983732138440757)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text1031">Prefers AI</text>
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="161.875"
+     y="233"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(0.9238795325112867, 0.3826834323650898, -0.3826834323650898, 0.9238795325112867, 100.45650668634102, -44.01529355918359)"
+     id="text1033">Prefers Expert</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="161.875"
+     y="233"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(0.9238795325112867, 0.3826834323650898, -0.3826834323650898, 0.9238795325112867, 100.45650668634102, -44.01529355918359)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text1035">Prefers Expert</text>
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="235.125"
+     y="233"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(0.9238795325112867, 0.3826834323650898, -0.3826834323650898, 0.9238795325112867, 106.03233092988927, -72.04685497992642)"
+     id="text1037">Both are bad</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="235.125"
+     y="233"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(0.9238795325112867, 0.3826834323650898, -0.3826834323650898, 0.9238795325112867, 106.03233092988927, -72.04685497992642)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text1039">Both are bad</text>
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="283.1138524872108"
+     y="233"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(0.9238795325112867, 0.3826834323650898, -0.3826834323650898, 0.9238795325112867, 109.68526481546266, -90.41139376499422)"
+     id="text1041">Both are good</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="283.1138524872108"
+     y="233"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(0.9238795325112867, 0.3826834323650898, -0.3826834323650898, 0.9238795325112867, 109.68526481546266, -90.41139376499422)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text1043">Both are good</text>
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="13px"
+     font-style="italic"
+     font-weight="normal"
+     text-decoration="normal"
+     x="141.03333"
+     y="292.67834"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="translate(0.5,0.5)"
+     id="text1045"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+       id="tspan2875">Preference decision</tspan></text>
+  <path
+     fill="none"
+     stroke="black"
+     paint-order="fill"
+     d="M 52.5 218.5 L 52.5 5.5"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path1049" />
+  <path
+     fill="none"
+     stroke="black"
+     paint-order="fill"
+     d="M 46.5 218.5 L 54.5 218.5 M 46.5 165.5 L 54.5 165.5 M 46.5 113.5 L 54.5 113.5 M 46.5 60.5 L 54.5 60.5 M 46.5 8.5 L 54.5 8.5"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path1051" />
+  <path
+     fill="none"
+     stroke="black"
+     paint-order="fill"
+     d="M 48.5 218.5 L 52.5 218.5 M 48.5 207.5 L 52.5 207.5 M 48.5 197.5 L 52.5 197.5 M 48.5 186.5 L 52.5 186.5 M 48.5 176.5 L 52.5 176.5 M 48.5 165.5 L 52.5 165.5 M 48.5 155.5 L 52.5 155.5 M 48.5 144.5 L 52.5 144.5 M 48.5 134.5 L 52.5 134.5 M 48.5 123.5 L 52.5 123.5 M 48.5 113.5 L 52.5 113.5 M 48.5 102.5 L 52.5 102.5 M 48.5 92.5 L 52.5 92.5 M 48.5 81.5 L 52.5 81.5 M 48.5 71.5 L 52.5 71.5 M 48.5 60.5 L 52.5 60.5 M 48.5 50.5 L 52.5 50.5 M 48.5 39.5 L 52.5 39.5 M 48.5 29.5 L 52.5 29.5 M 48.5 18.5 L 52.5 18.5 M 48.5 8.5 L 52.5 8.5"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path1053" />
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="34.88333320617676"
+     y="222"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     id="text1055">0</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="34.88333320617676"
+     y="222"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text1057">0</text>
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="28.766666412353516"
+     y="169.40740966796875"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     id="text1059">20</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="28.766666412353516"
+     y="169.40740966796875"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text1061">20</text>
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="28.766666412353516"
+     y="116.81481170654297"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     id="text1063">40</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="28.766666412353516"
+     y="116.81481170654297"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text1065">40</text>
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="28.766666412353516"
+     y="64.22222137451172"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     id="text1067">60</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="28.766666412353516"
+     y="64.22222137451172"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text1069">60</text>
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="28.766666412353516"
+     y="11.629629611968994"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     id="text1071">80</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="28.766666412353516"
+     y="11.629629611968994"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text1073">80</text>
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="13px"
+     font-style="italic"
+     font-weight="normal"
+     text-decoration="normal"
+     x="3.416666"
+     y="107.5"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="rotate(-90,21.266666,111.5)"
+     id="text1075"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+       id="tspan3020">Count</tspan></text>
+  <path
+     fill="rgb(255,255,255)"
+     stroke="rgb(229,229,229)"
+     paint-order="fill"
+     d="M 62.5 15.5 L 157.93333435058594 15.5 L 157.93333435058594 80.5 L 62.5 80.5 L 62.5 15.5 Z"
+     fill-opacity="0.9490196078431372"
+     clip-path="url(#VWdnqPzstgDJ)"
+     stroke-opacity="0.5019607843137255"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path1079" />
+  <g
+     clip-path="url(#VWdnqPzstgDJ)"
+     id="g1083">
+    <image
+       width="20"
+       height="20"
+       preserveAspectRatio="none"
+       transform="matrix(1, 0, 0, 1, 73, 26)"
+       href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAV0lEQVQ4T2NkoDJgpLJ5DHADGfkWnmdiYDIg14J/DP8u/P8Ubwg3kJlv8X9yDYPp+/splnHUQMpCcTQMR9MhGSlopCcbSstDYNl34d+nWER5SEYcYNUCADGzSRV2gbRyAAAAAElFTkSuQmCC"
+       id="image1081" />
+  </g>
+  <g
+     clip-path="url(#VWdnqPzstgDJ)"
+     id="g1087">
+    <text
+       fill="#444444"
+       stroke="none"
+       font-family="helvetica"
+       font-size="13px"
+       font-style="normal"
+       font-weight="normal"
+       text-decoration="normal"
+       x="98"
+       y="41"
+       text-anchor="start"
+       dominant-baseline="alphabetic"
+       transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+       id="text1085">Expert 1</text>
+  </g>
+  <g
+     clip-path="url(#VWdnqPzstgDJ)"
+     id="g1091">
+    <text
+       fill="none"
+       stroke="rgb(0,0,0)"
+       font-family="helvetica"
+       font-size="13px"
+       font-style="normal"
+       font-weight="normal"
+       text-decoration="normal"
+       x="98"
+       y="41"
+       text-anchor="start"
+       dominant-baseline="alphabetic"
+       transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+       stroke-opacity="0"
+       stroke-linejoin="bevel"
+       stroke-miterlimit="10"
+       id="text1089">Expert 1</text>
+  </g>
+  <g
+     clip-path="url(#VWdnqPzstgDJ)"
+     id="g1095">
+    <image
+       width="20"
+       height="20"
+       preserveAspectRatio="none"
+       transform="matrix(1, 0, 0, 1, 73, 49)"
+       href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAUElEQVQ4T2NkoDJgpLJ5DHADzWymnGdkZDAg14L//xkunDqSYwg30Nx2yn9yDYPpO3k4B+gmKBg1kKzgHA3D0XRIRsIZ6cmG6uUhGXGAVQsABjVKFZK/I1EAAAAASUVORK5CYII="
+       id="image1093" />
+  </g>
+  <g
+     clip-path="url(#VWdnqPzstgDJ)"
+     id="g1099">
+    <text
+       fill="#444444"
+       stroke="none"
+       font-family="helvetica"
+       font-size="13px"
+       font-style="normal"
+       font-weight="normal"
+       text-decoration="normal"
+       x="98"
+       y="64"
+       text-anchor="start"
+       dominant-baseline="alphabetic"
+       transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+       id="text1097">Expert 2</text>
+  </g>
+  <g
+     clip-path="url(#VWdnqPzstgDJ)"
+     id="g1103">
+    <text
+       fill="none"
+       stroke="rgb(0,0,0)"
+       font-family="helvetica"
+       font-size="13px"
+       font-style="normal"
+       font-weight="normal"
+       text-decoration="normal"
+       x="98"
+       y="64"
+       text-anchor="start"
+       dominant-baseline="alphabetic"
+       transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+       stroke-opacity="0"
+       stroke-linejoin="bevel"
+       stroke-miterlimit="10"
+       id="text1101">Expert 2</text>
+  </g>
+  <rect
+     style="fill:#030ea3;fill-opacity:1;stroke:none;stroke-width:1.09847;stroke-linejoin:round;stroke-dasharray:3.2954, 3.2954;stroke-dashoffset:0"
+     id="rect609-3"
+     width="19.531544"
+     height="19.531544"
+     x="75.678223"
+     y="28.407047"
+     ry="1.944418" />
+  <rect
+     style="fill:#373d94;fill-opacity:1;stroke:none;stroke-width:1.09847;stroke-linejoin:round;stroke-dasharray:3.2954, 3.2954;stroke-dashoffset:0"
+     id="rect609-7"
+     width="19.531544"
+     height="19.531544"
+     x="75.678223"
+     y="50.139545"
+     ry="1.944418" />
+</svg>

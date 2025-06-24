@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="450"
+   height="300"
+   id="svg481"
+   sodipodi:docname="by_level.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   inkscape:export-filename="by_level.png"
+   inkscape:export-xdpi="500"
+   inkscape:export-ydpi="500"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview483"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.5833333"
+     inkscape:cx="228.19355"
+     inkscape:cy="151.93549"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg481" />
+  <defs
+     id="defs345">
+    <clipPath
+       id="lzZUPwPMwflz">
+      <path
+         fill="none"
+         stroke="none"
+         d="M 0.5 0.5 L 450.5 0.5 L 450.5 300.5 L 0.5 300.5 L 0.5 0.5 Z M 52.5 5.5 L 277.5 5.5 L 277.5 244.5 L 52.5 244.5 L 52.5 5.5 Z"
+         clip-rule="evenodd"
+         id="path324" />
+    </clipPath>
+    <clipPath
+       id="DlRdahvrEzNS">
+      <path
+         fill="none"
+         stroke="none"
+         d="M 52.5 5.5 L 277.5 5.5 L 277.5 244.5 L 52.5 244.5 L 52.5 5.5 Z"
+         id="path327" />
+    </clipPath>
+    <clipPath
+       id="hlTiddTxQucA">
+      <path
+         fill="none"
+         stroke="none"
+         d="M 52.5 5.5 L 277.5 5.5 L 277.5 244.5 L 52.5 244.5 L 52.5 5.5 Z"
+         id="path330" />
+    </clipPath>
+    <clipPath
+       id="mtBwAXNyComU">
+      <path
+         fill="none"
+         stroke="none"
+         d="M 52.5 5.5 L 277.5 5.5 L 277.5 244.5 L 52.5 244.5 L 52.5 5.5 Z"
+         id="path333" />
+    </clipPath>
+    <clipPath
+       id="TthWgxUTdntD">
+      <path
+         fill="none"
+         stroke="none"
+         d="M 52.5 5.5 L 277.5 5.5 L 277.5 244.5 L 52.5 244.5 L 52.5 5.5 Z"
+         id="path336" />
+    </clipPath>
+    <clipPath
+       id="RHEExkvmynIz">
+      <path
+         fill="none"
+         stroke="none"
+         d="M 52.5 5.5 L 277.5 5.5 L 277.5 244.5 L 52.5 244.5 L 52.5 5.5 Z"
+         id="path339" />
+    </clipPath>
+    <clipPath
+       id="MTamxEWvVtyi">
+      <path
+         fill="none"
+         stroke="none"
+         d="M 52.5 5.5 L 277.5 5.5 L 277.5 244.5 L 52.5 244.5 L 52.5 5.5 Z"
+         id="path342" />
+    </clipPath>
+  </defs>
+  <path
+     fill="#ffffff"
+     stroke="none"
+     paint-order="stroke"
+     d="M 0.5 0.5 L 450.5 0.5 L 450.5 300.5 L 0.5 300.5 L 0.5 0.5 Z"
+     clip-path="url(#lzZUPwPMwflz)"
+     id="path347" />
+  <path
+     fill="#ffffff"
+     stroke="none"
+     paint-order="stroke"
+     d="M 52.5 5.5 L 277.5 5.5 L 277.5 244.5 L 52.5 244.5 L 52.5 5.5 Z"
+     id="path349" />
+  <path
+     fill="none"
+     stroke="#e5e5e5"
+     paint-order="fill"
+     d="M 52.5 5.5 L 277.5 5.5 L 277.5 244.5 L 52.5 244.5 L 52.5 5.5 Z"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path351" />
+  <path
+     fill="none"
+     stroke="#e5e5e5"
+     paint-order="fill"
+     d="M 52.5 187.5 L 277.5 187.5 M 52.5 130.5 L 277.5 130.5 M 52.5 73.5 L 277.5 73.5 M 52.5 16.5 L 277.5 16.5"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     clip-path="url(#hlTiddTxQucA)"
+     id="path353" />
+  <path
+     fill="rgb(3,163,67)"
+     stroke="rgb(3,163,67)"
+     paint-order="fill"
+     d="M 58.79999923706055 238.8095245361328 L 66.9000015258789 238.8095245361328 L 66.9000015258789 244.5 L 58.79999923706055 244.5 L 58.79999923706055 238.8095245361328 Z"
+     fill-opacity="1"
+     clip-path="url(#mtBwAXNyComU)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path355" />
+  <path
+     fill="rgb(3,163,67)"
+     stroke="rgb(3,163,67)"
+     paint-order="fill"
+     d="M 103.79999542236328 216.04762268066406 L 111.9000015258789 216.04762268066406 L 111.9000015258789 244.5 L 103.79999542236328 244.5 L 103.79999542236328 216.04762268066406 Z"
+     fill-opacity="1"
+     clip-path="url(#mtBwAXNyComU)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path357" />
+  <path
+     fill="rgb(3,163,67)"
+     stroke="rgb(3,163,67)"
+     paint-order="fill"
+     d="M 148.8000030517578 181.90475463867188 L 156.90000915527344 181.90475463867188 L 156.90000915527344 244.5 L 148.8000030517578 244.5 L 148.8000030517578 181.90475463867188 Z"
+     fill-opacity="1"
+     clip-path="url(#mtBwAXNyComU)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path359" />
+  <path
+     fill="rgb(3,163,67)"
+     stroke="rgb(3,163,67)"
+     paint-order="fill"
+     d="M 193.8000030517578 204.6666717529297 L 201.90000915527344 204.6666717529297 L 201.90000915527344 244.5 L 193.8000030517578 244.5 L 193.8000030517578 204.6666717529297 Z"
+     fill-opacity="1"
+     clip-path="url(#mtBwAXNyComU)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path361" />
+  <path
+     fill="rgb(3,163,67)"
+     stroke="rgb(3,163,67)"
+     paint-order="fill"
+     d="M 238.8000030517578 176.2142791748047 L 246.90000915527344 176.2142791748047 L 246.90000915527344 244.5 L 238.8000030517578 244.5 L 238.8000030517578 176.2142791748047 Z"
+     fill-opacity="1"
+     clip-path="url(#mtBwAXNyComU)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path363" />
+  <path
+     fill="rgb(214,78,15)"
+     stroke="rgb(214,78,15)"
+     paint-order="fill"
+     d="M 67.3499984741211 238.8095245361328 L 75.45000457763672 238.8095245361328 L 75.45000457763672 244.5 L 67.3499984741211 244.5 L 67.3499984741211 238.8095245361328 Z"
+     fill-opacity="1"
+     clip-path="url(#TthWgxUTdntD)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path365" />
+  <path
+     fill="rgb(214,78,15)"
+     stroke="rgb(214,78,15)"
+     paint-order="fill"
+     d="M 112.3499984741211 204.6666717529297 L 120.45000457763672 204.6666717529297 L 120.45000457763672 244.5 L 112.3499984741211 244.5 L 112.3499984741211 204.6666717529297 Z"
+     fill-opacity="1"
+     clip-path="url(#TthWgxUTdntD)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path367" />
+  <path
+     fill="rgb(214,78,15)"
+     stroke="rgb(214,78,15)"
+     paint-order="fill"
+     d="M 157.35000610351562 221.73809814453125 L 165.45001220703125 221.73809814453125 L 165.45001220703125 244.5 L 157.35000610351562 244.5 L 157.35000610351562 221.73809814453125 Z"
+     fill-opacity="1"
+     clip-path="url(#TthWgxUTdntD)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path369" />
+  <path
+     fill="rgb(214,78,15)"
+     stroke="rgb(214,78,15)"
+     paint-order="fill"
+     d="M 202.35000610351562 210.35714721679688 L 210.45001220703125 210.35714721679688 L 210.45001220703125 244.5 L 202.35000610351562 244.5 L 202.35000610351562 210.35714721679688 Z"
+     fill-opacity="1"
+     clip-path="url(#TthWgxUTdntD)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path371" />
+  <path
+     fill="rgb(214,78,15)"
+     stroke="rgb(214,78,15)"
+     paint-order="fill"
+     d="M 247.35000610351562 216.04762268066406 L 255.45001220703125 216.04762268066406 L 255.45001220703125 244.5 L 247.35000610351562 244.5 L 247.35000610351562 216.04762268066406 Z"
+     fill-opacity="1"
+     clip-path="url(#TthWgxUTdntD)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path373" />
+  <path
+     fill="rgb(15,141,214)"
+     stroke="rgb(15,141,214)"
+     paint-order="fill"
+     d="M 75.44999694824219 33.9523811340332 L 83.55000305175781 33.9523811340332 L 83.55000305175781 244.5 L 75.44999694824219 244.5 L 75.44999694824219 33.9523811340332 Z"
+     fill-opacity="1"
+     clip-path="url(#RHEExkvmynIz)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path375" />
+  <path
+     fill="rgb(15,141,214)"
+     stroke="rgb(15,141,214)"
+     paint-order="fill"
+     d="M 120.44999694824219 90.85713958740234 L 128.5500030517578 90.85713958740234 L 128.5500030517578 244.5 L 120.44999694824219 244.5 L 120.44999694824219 90.85713958740234 Z"
+     fill-opacity="1"
+     clip-path="url(#RHEExkvmynIz)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path377" />
+  <path
+     fill="rgb(15,141,214)"
+     stroke="rgb(15,141,214)"
+     paint-order="fill"
+     d="M 165.4499969482422 107.92857360839844 L 173.5500030517578 107.92857360839844 L 173.5500030517578 244.5 L 165.4499969482422 244.5 L 165.4499969482422 107.92857360839844 Z"
+     fill-opacity="1"
+     clip-path="url(#RHEExkvmynIz)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path379" />
+  <path
+     fill="rgb(15,141,214)"
+     stroke="rgb(15,141,214)"
+     paint-order="fill"
+     d="M 210.4499969482422 96.54762268066406 L 218.5500030517578 96.54762268066406 L 218.5500030517578 244.5 L 210.4499969482422 244.5 L 210.4499969482422 96.54762268066406 Z"
+     fill-opacity="1"
+     clip-path="url(#RHEExkvmynIz)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path381" />
+  <path
+     fill="rgb(15,141,214)"
+     stroke="rgb(15,141,214)"
+     paint-order="fill"
+     d="M 255.4499969482422 113.61904907226562 L 263.54998779296875 113.61904907226562 L 263.54998779296875 244.5 L 255.4499969482422 244.5 L 255.4499969482422 113.61904907226562 Z"
+     fill-opacity="1"
+     clip-path="url(#RHEExkvmynIz)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path383" />
+  <path
+     fill="rgb(217,15,35)"
+     stroke="rgb(217,15,35)"
+     paint-order="fill"
+     d="M 84 238.8095245361328 L 92.10000610351562 238.8095245361328 L 92.10000610351562 244.5 L 84 244.5 L 84 238.8095245361328 Z"
+     fill-opacity="1"
+     clip-path="url(#MTamxEWvVtyi)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path385" />
+  <path
+     fill="rgb(217,15,35)"
+     stroke="rgb(217,15,35)"
+     paint-order="fill"
+     d="M 129 238.8095245361328 L 137.10000610351562 238.8095245361328 L 137.10000610351562 244.5 L 129 244.5 L 129 238.8095245361328 Z"
+     fill-opacity="1"
+     clip-path="url(#MTamxEWvVtyi)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path387" />
+  <path
+     fill="rgb(217,15,35)"
+     stroke="rgb(217,15,35)"
+     paint-order="fill"
+     d="M 174 238.8095245361328 L 182.10000610351562 238.8095245361328 L 182.10000610351562 244.5 L 174 244.5 L 174 238.8095245361328 Z"
+     fill-opacity="1"
+     clip-path="url(#MTamxEWvVtyi)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path389" />
+  <path
+     fill="rgb(217,15,35)"
+     stroke="rgb(217,15,35)"
+     paint-order="fill"
+     d="M 219 238.8095245361328 L 227.10000610351562 238.8095245361328 L 227.10000610351562 244.5 L 219 244.5 L 219 238.8095245361328 Z"
+     fill-opacity="1"
+     clip-path="url(#MTamxEWvVtyi)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path391" />
+  <path
+     fill="rgb(217,15,35)"
+     stroke="rgb(217,15,35)"
+     paint-order="fill"
+     d="M 264 244.5 L 272.0999755859375 244.5 L 272.0999755859375 244.5 L 264 244.5 L 264 244.5 Z"
+     fill-opacity="1"
+     clip-path="url(#MTamxEWvVtyi)"
+     stroke-opacity="1"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path393" />
+  <path
+     fill="none"
+     stroke="black"
+     paint-order="fill"
+     d="M 52.5 244.5 L 277.5 244.5"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path395" />
+  <path
+     fill="none"
+     stroke="black"
+     paint-order="fill"
+     d="M 75.5 250.5 L 75.5 242.5 M 120.5 250.5 L 120.5 242.5 M 165.5 250.5 L 165.5 242.5 M 210.5 250.5 L 210.5 242.5 M 255.5 250.5 L 255.5 242.5"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path397" />
+  <path
+     fill="none"
+     stroke="black"
+     paint-order="fill"
+     d=""
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path399" />
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="67.77500009536743"
+     y="267"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     id="text401">A0</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="67.77500009536743"
+     y="267"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text403">A0</text>
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="112.77500009536743"
+     y="267"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     id="text405">A1</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="112.77500009536743"
+     y="267"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text407">A1</text>
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="157.77500009536743"
+     y="267"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     id="text409">A2</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="157.77500009536743"
+     y="267"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text411">A2</text>
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="202.77500009536743"
+     y="267"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     id="text413">A3</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="202.77500009536743"
+     y="267"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text415">A3</text>
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="247.77500009536743"
+     y="267"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     id="text417">A4</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="247.77500009536743"
+     y="267"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text419">A4</text>
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="13px"
+     font-style="italic"
+     font-weight="normal"
+     text-decoration="normal"
+     x="105.48755"
+     y="293.5"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     id="text421"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+       id="tspan760">Perturbation Level</tspan></text>
+  <path
+     fill="none"
+     stroke="black"
+     paint-order="fill"
+     d="M 52.5 244.5 L 52.5 5.5"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path425" />
+  <path
+     fill="none"
+     stroke="black"
+     paint-order="fill"
+     d="M 46.5 244.5 L 54.5 244.5 M 46.5 187.5 L 54.5 187.5 M 46.5 130.5 L 54.5 130.5 M 46.5 73.5 L 54.5 73.5 M 46.5 16.5 L 54.5 16.5"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path427" />
+  <path
+     fill="none"
+     stroke="black"
+     paint-order="fill"
+     d="M 48.5 244.5 L 52.5 244.5 M 48.5 233.5 L 52.5 233.5 M 48.5 221.5 L 52.5 221.5 M 48.5 210.5 L 52.5 210.5 M 48.5 198.5 L 52.5 198.5 M 48.5 187.5 L 52.5 187.5 M 48.5 176.5 L 52.5 176.5 M 48.5 164.5 L 52.5 164.5 M 48.5 153.5 L 52.5 153.5 M 48.5 142.5 L 52.5 142.5 M 48.5 130.5 L 52.5 130.5 M 48.5 119.5 L 52.5 119.5 M 48.5 107.5 L 52.5 107.5 M 48.5 96.5 L 52.5 96.5 M 48.5 85.5 L 52.5 85.5 M 48.5 73.5 L 52.5 73.5 M 48.5 62.5 L 52.5 62.5 M 48.5 51.5 L 52.5 51.5 M 48.5 39.5 L 52.5 39.5 M 48.5 28.5 L 52.5 28.5 M 48.5 16.5 L 52.5 16.5 M 48.5 5.5 L 52.5 5.5"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path429" />
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="34.88333320617676"
+     y="248"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     id="text431">0</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="34.88333320617676"
+     y="248"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text433">0</text>
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="28.766666412353516"
+     y="191.09524536132812"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     id="text435">10</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="28.766666412353516"
+     y="191.09524536132812"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text437">10</text>
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="28.766666412353516"
+     y="134.1904754638672"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     id="text439">20</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="28.766666412353516"
+     y="134.1904754638672"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text441">20</text>
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="28.766666412353516"
+     y="77.28571319580078"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     id="text443">30</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="28.766666412353516"
+     y="77.28571319580078"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text445">30</text>
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="28.766666412353516"
+     y="20.380952835083008"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     id="text447">40</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="11px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="28.766666412353516"
+     y="20.380952835083008"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text449">40</text>
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="13px"
+     font-style="italic"
+     font-weight="normal"
+     text-decoration="normal"
+     x="3.416666"
+     y="120.5"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="rotate(-90,21.266666,124.5)"
+     id="text451"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+       id="tspan758">Count</tspan></text>
+  <path
+     fill="rgb(255,255,255)"
+     stroke="rgb(229,229,229)"
+     paint-order="fill"
+     d="M 287.25 15.5 L 440.5 15.5 L 440.5 126.5 L 287.25 126.5 L 287.25 15.5 Z"
+     fill-opacity="0.9490196078431372"
+     stroke-opacity="0.5019607843137255"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="path455" />
+  <image
+     width="20"
+     height="20"
+     preserveAspectRatio="none"
+     transform="matrix(1, 0, 0, 1, 297.75, 26)"
+     href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAV0lEQVQ4T2NkoDJgpLJ5DHADGRc6nmdiYjIg14J///5d+B+/3xBuIPNi5//kGgbT9zd2L+OogZSF4mgYjqZDMlLQSE82lJaHwLLvwr/YvYjykIw4wKoFAIlJShV6B73hAAAAAElFTkSuQmCC"
+     id="image457" />
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="13px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="322.75"
+     y="41"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     id="text459">Prefers AI pipeline</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="13px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="322.75"
+     y="41"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text461">Prefers AI pipeline</text>
+  <image
+     width="20"
+     height="20"
+     preserveAspectRatio="none"
+     transform="matrix(1, 0, 0, 1, 297.75, 49)"
+     href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAASUlEQVQ4T2NkoDJgpLJ5DHADr/nxnWdgYDQg34L/F7Q2fTJEMpD/P/mGQXRqbfrIOGogZaE4Goaj6ZCMFDSabKhcHpIRB1i1AAAEJkgV4glcyAAAAABJRU5ErkJggg=="
+     id="image463" />
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="13px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="322.75"
+     y="64"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     id="text465">Prefers Expert</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="13px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="322.75"
+     y="64"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text467">Prefers Expert</text>
+  <image
+     width="20"
+     height="20"
+     preserveAspectRatio="none"
+     transform="matrix(1, 0, 0, 1, 297.75, 72)"
+     href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAUElEQVQ4T2NkoDJgpLJ5DHAD+XqunWdkZDAg14L//xkufCrRMoQbyN977T+5hsH0fSzWAroJCkYNJCs4R8NwNB2SkXBGerKhenlIRhxg1QIA5OxKFRlJ4BQAAAAASUVORK5CYII="
+     id="image469" />
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="13px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="322.75"
+     y="87"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     id="text471">Both are good</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="13px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="322.75"
+     y="87"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text473">Both are good</text>
+  <image
+     width="20"
+     height="20"
+     preserveAspectRatio="none"
+     transform="matrix(1, 0, 0, 1, 297.75, 95)"
+     href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAU0lEQVQ4T2NkoDJgpLJ5DHADb/IpnmdgZDIg24L//y6of7pviDCQX/k/2YZBNap/vMs4aiBloTgahqPpkIwUNOKTDcXl4X9geXgPUR6SEQdYtQAAD7VKFfADgZMAAAAASUVORK5CYII="
+     id="image475" />
+  <text
+     fill="#444444"
+     stroke="none"
+     font-family="helvetica"
+     font-size="13px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="322.75"
+     y="110"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     id="text477">Both are bad</text>
+  <text
+     fill="none"
+     stroke="rgb(0,0,0)"
+     font-family="helvetica"
+     font-size="13px"
+     font-style="normal"
+     font-weight="normal"
+     text-decoration="normal"
+     x="322.75"
+     y="110"
+     text-anchor="start"
+     dominant-baseline="alphabetic"
+     transform="matrix(1, 0, 0, 1, 0.5, 0.5)"
+     stroke-opacity="0"
+     stroke-linejoin="bevel"
+     stroke-miterlimit="10"
+     id="text479">Both are bad</text>
+  <rect
+     style="fill:#03a343;fill-opacity:1;stroke:none;stroke-width:1.09847;stroke-linejoin:round;stroke-dasharray:3.2954, 3.2954;stroke-dashoffset:0"
+     id="rect609"
+     width="19.531544"
+     height="19.531544"
+     x="301.07294"
+     y="27.196941"
+     ry="1.944418" />
+  <rect
+     style="fill:#d64e0f;fill-opacity:1;stroke:none;stroke-width:1.09847;stroke-linejoin:round;stroke-dasharray:3.2954, 3.2954;stroke-dashoffset:0"
+     id="rect609-2"
+     width="19.531544"
+     height="19.531544"
+     x="301.07294"
+     y="50.196938"
+     ry="1.944418" />
+  <rect
+     style="fill:#0f8dd6;fill-opacity:1;stroke:none;stroke-width:1.09847;stroke-linejoin:round;stroke-dasharray:3.2954, 3.2954;stroke-dashoffset:0"
+     id="rect609-3"
+     width="19.531544"
+     height="19.531544"
+     x="301.07294"
+     y="73.216438"
+     ry="1.944418" />
+  <rect
+     style="fill:#d90f23;fill-opacity:1;stroke:none;stroke-width:1.09847;stroke-linejoin:round;stroke-dasharray:3.2954, 3.2954;stroke-dashoffset:0"
+     id="rect609-7"
+     width="19.531544"
+     height="19.531544"
+     x="301.07294"
+     y="94.948936"
+     ry="1.944418" />
+</svg>
