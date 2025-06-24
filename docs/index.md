@@ -22,7 +22,7 @@ tools we built to help others stress-test factuality evaluations — including o
 
 ## TruthBench
 
-![_config.yml]({{ site.baseurl }}/images/pipeline.svg){:style="width: 430px; display:block; margin-left: auto;
+![_config.yml]({{ site.baseurl }}/images/pipeline.svg){:style="width: 675px; display:block; margin-left: auto;
 margin-right: auto;"}
 
 To evaluate how well factuality metrics can detect subtle and severe errors, we design a multi-step Factual Perturbation
@@ -66,8 +66,8 @@ that of human experts. Here's how it worked:
 While inter-rater agreement was modest—highlighting how hard this task is even for humans—the overall takeaway is clear:
 our AI performs on par with experts when generating nuanced factual perturbations.
 
-![_config.yml]({{ site.baseurl }}/images/by_expert_preference.svg){:style="width: 350px; vertical-align: middle;"}
-![_config.yml]({{ site.baseurl }}/images/by_level.svg){:style="width: 350px; vertical-align: middle;"}
+![_config.yml]({{ site.baseurl }}/images/by_expert_preference.svg){:style="height: 265px; vertical-align: middle;"}
+![_config.yml]({{ site.baseurl }}/images/by_level.svg){:style="height: 270px; vertical-align: middle;"}
 
 ## TruthScore
 
@@ -110,8 +110,8 @@ using:
 
 Here’s what we found:
 
-![_config.yml]({{ site.baseurl }}/images/score_vs_noise.svg){:style="height: 270px; vertical-align: middle;"}
-![_config.yml]({{ site.baseurl }}/images/pearson_vs_llm_size.svg){:style="height: 270px; vertical-align: middle;"}
+![_config.yml]({{ site.baseurl }}/images/score_vs_noise.svg){:style="height: 220px; vertical-align: middle;"}
+![_config.yml]({{ site.baseurl }}/images/pearson_vs_llm_size.svg){:style="height: 220px; vertical-align: middle;"}
 
 | Method        | LLM                   | Pearson (95% CI)          | Kendall Tau | Kendall (95% CI) |
 |---------------|-----------------------|---------------------------|-------------|------------------|
@@ -202,7 +202,7 @@ truthbench --input-file data.json --output-dir results/
 Use TruthScore to score the factual consistency of responses. It supports OpenAI, local models via Ollama, and optional
 custom NLI models for deeper semantic checks.
 
-```python
+```
 from openai import OpenAI
 from ragas import SingleTurnSample
 from ragas.llms import LangchainLLMWrapper
