@@ -266,7 +266,7 @@ The application will start at [http://127.0.0.1:7860](http://127.0.0.1:7860) whi
     </td>
     <td align="center">
       <a href="https://www.linkedin.com/in/mariia-tokarevaa/">
-        <img src="https://media.licdn.com/dms/image/v2/D4E35AQGa0vDkLrVeZg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1705954682328?e=1749553200&v=beta&t=EMTa9jRcbitJzTfg7OMKHmoubb4l_v7MHWm4ZcqkKKE" width="100px;" alt="Mariia Tokareva"/><br />
+        <img src="https://media.licdn.com/dms/image/v2/D4E35AQGa0vDkLrVeZg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1705954682328?e=1751374800&v=beta&t=V-n9mqAPxvZN8aYrKIz624cvm_oiJylK-FJpVzimzY8" width="100px;" alt="Mariia Tokareva"/><br />
         <sub><b>Mariia Tokareva</b></sub>
       </a><br />
       <a href="https://www.linkedin.com/in/mariia-tokarevaa/">
