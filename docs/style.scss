@@ -283,6 +283,14 @@ footer {
   text-align: center;
 }
 
+.read-time {
+  color: #888;          /* Light gray */
+  font-size: 0.9em;      /* Slightly smaller text */
+  margin-top: -0.5em;    /* Pull closer to the title */
+  margin-bottom: 1em;    /* Space before the body text */
+  font-style: italic;    /* Optional, for a softer look */
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";

@@ -3,6 +3,8 @@ layout: page
 title: Can We Trust the Judges? Validation of Factuality Evaluation Methods via Answer Perturbation
 ---
 
+<p class="read-time">Read time: 6m 50s</p>
+
 Everyone is racing to measure the truthfulness of LLMs — but how trustworthy are those measurements?
 
 As large language models become tools for research, advice, and decision-making, evaluating their factual accuracy is
