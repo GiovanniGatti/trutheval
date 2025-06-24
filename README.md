@@ -2,6 +2,7 @@
 ![Python Versions](https://img.shields.io/badge/Python-3.10%20|%203.11%20|%203.12%20|%203.13-4a006a)
 ![Coverage](https://img.shields.io/badge/Coverage-87%25-brightgreen)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![Static Badge](https://img.shields.io/badge/Read%20-%20%40GitHub%20Pages%20-blue?style=flat&logoColor=white&logo=readme)](https://giovannigatti.github.io/trutheval/)
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/8d30499c-ab58-4e92-8e11-089c01515c63" alt="drawing" style="height:340px"/>
