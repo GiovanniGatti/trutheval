@@ -5,6 +5,8 @@ title: Can We Trust the Judges? Validation of Factuality Evaluation Methods via 
 
 <p class="read-time">Read time: 6m 50s</p>
 
+<p class="author">By Giovanni GATTI PINHEIRO</p>
+
 Everyone is racing to measure the truthfulness of LLMs — but how trustworthy are those measurements?
 
 As large language models become tools for research, advice, and decision-making, evaluating their factual accuracy is
