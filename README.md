@@ -309,3 +309,13 @@ The application will start at [http://127.0.0.1:7860](http://127.0.0.1:7860) whi
 </table>
 
 # Cite this work
+
+```
+@inproceedings{gharsallah2025peut,
+  title={Peut-on faire confiance aux juges? Validation de m{\'e}thodes d’{\'e}valuation de la factualit{\'e} par perturbation des r{\'e}ponses},
+  author={Gharsallah, Sarra and Robaldo, Ad{\`e}le and Tokareva, Mariia and Guendouz, Ilyana and Gatti Pinheiro, Giovanni and Troncy, Raphael and Papotti, Paolo and Michiardi, Pietro},
+  booktitle={Actes de l'atelier {\'E}valuation des mod{\`e}les g{\'e}n{\'e}ratifs (LLM) et challenge 2025 (EvalLLM)},
+  pages={228--252},
+  year={2025}
+}
+```
