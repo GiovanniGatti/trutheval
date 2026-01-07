@@ -4,6 +4,8 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 [![Static Badge](https://img.shields.io/badge/Read%20-%20%40GitHub%20Pages%20-blue?style=flat&logoColor=white&logo=readme)](https://giovannigatti.github.io/trutheval/)
 [![Static Badge](https://img.shields.io/badge/Watch%20-%20%40%20Youtube%20-blue?style=flat&logo=youtube)](https://www.youtube.com/watch?v=f0XJkMuyZlM)
+[![Static Badge](https://img.shields.io/badge/Paper-%40%20AclAnthology-blue?style=flat&logo=arxiv&logoColor=white
+)](https://aclanthology.org/2025.jeptalnrecital-evalllm.19.pdf)
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/8d30499c-ab58-4e92-8e11-089c01515c63" alt="drawing" style="height:340px"/>
