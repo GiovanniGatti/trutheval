@@ -1,11 +1,18 @@
 ---
 layout: page
-title: Can We Trust the Judges? Validation of Factuality Evaluation Methods via Answer Perturbation
+title: Testing factuality metrics under controlled factual degradation
 ---
 
-<p class="read-time">Read time: 6m 50s</p>
+<p class="read-time">Read time: 7m</p>
 
 <p class="author">By Giovanni GATTI PINHEIRO</p>
+
+<p class="byline-note">Based on joint work with Sarra Gharsallah, Adèle Robaldo, Mariia Tokareva, Ilyana Guendouz,
+Raphaël Troncy, Paolo Papotti and Pietro Michiardi, published at
+<a href="https://aclanthology.org/2025.jeptalnrecital-evalllm.19/">EvalLLM 2025</a>.</p>
+
+This post summarises our EvalLLM 2025 paper, *Can We Trust the Judges? Validation of Factuality Evaluation Methods via
+Answer Perturbation*.
 
 Everyone is racing to measure the truthfulness of LLMs — but how trustworthy are those measurements?
 
@@ -21,8 +28,15 @@ they should.
 
 Some do. Others don’t.
 
+We tested factuality metrics across 500 answers for 100 questions in the Google Natural Questions dataset, each
+rewritten at five degradation levels (A0–A4). Metrics built as pipelines tracked that degradation more reliably than
+LLM-as-judge scoring. We found that self-hosted mid-sized open-weight models paired with an NLI step are a
+competitive alternative to RAGAS at a fraction of the cost. RAGAS ran on `gpt-4o-mini` while most of the judges were
+smaller open-weight models, so this is not a like-for-like comparison of backbones.
+
 This blog post walks you through the pipeline, shares what we learned from benchmarking top metrics, and introduces the
-tools we built to help others stress-test factuality evaluations — including our new framework, TruthEval.
+tools we built to help others stress-test factuality evaluations: TruthBench, the framework itself, and truthscore,
+a metric component that ships alongside it.
 
 ## TruthBench
 
@@ -144,9 +158,9 @@ Here’s what we found:
    makes them trustworthy tools for evaluating factuality—especially when factual degradation is subtle or cumulative.
 
 3. **TruthScore (LLM + NLI) performs competitively—and affordably**:
-   TruthScore, our open-weight implementation, doesn’t just hold its own against GPT-4o—it almost matches or even beats
-   it in ranking accuracy. It uses much smaller models, runs on consumer GPUs, and avoids vendor lock-in—all without
-   compromising factuality detection.
+   TruthScore, our open-weight implementation, doesn’t just hold its own against GPT-4o-mini—it almost matches or even
+   beats it in ranking accuracy. It uses much smaller models, runs on consumer GPUs, and avoids vendor lock-in—all
+   without compromising factuality detection.
 
 4. **Size isn’t everything**:
    Surprisingly, larger models don’t always do better. Figure below shows that some mid-sized models outperform their
@@ -183,10 +197,11 @@ While our method provides a structured way to test factuality evaluation, it has
 5. **Prompting Strategies Not Fully Explored**: We have not yet tested more advanced prompting techniques like
    chain-of-thought or instruction tags, which could improve factuality assessments in future work.
 
-## Using TruthEval
+## Getting started
 
-You can use TruthEval to both generate noised examples and evaluate model responses using factuality metrics. It’s split
-into two modules: TruthBench and TruthScore.
+TruthBench is the framework: it generates the noised examples and gives you the harness for meta-evaluating factuality
+metrics against them. TruthScore is one of the metric components you can run under it, an LLM+NLI factual-correctness
+metric, shipped as its own installable package. The two are installed separately.
 
 ### TruthBench
 
@@ -199,6 +214,7 @@ python -m spacy download en_core_web_sm
 truthbench --input-file data.json --output-dir results/
 ```
 
+[truthbench on PyPI](https://pypi.org/project/truthbench/) ·
 [See full TruthBench docs →](https://github.com/GiovanniGatti/trutheval/tree/main/truthbench#readme)
 
 ### TruthScore
@@ -206,7 +222,12 @@ truthbench --input-file data.json --output-dir results/
 Use TruthScore to score the factual consistency of responses. It supports OpenAI, local models via Ollama, and optional
 custom NLI models for deeper semantic checks.
 
+```bash
+pip install truthscore          # lightweight install
+pip install truthscore[open]    # adds Ollama + CrossEncoder NLI support
 ```
+
+```python
 from openai import OpenAI
 from ragas import SingleTurnSample
 from ragas.llms import LangchainLLMWrapper
@@ -219,15 +240,16 @@ metric = OpenFactualCorrectness(llm=evaluator_llm)
 score = metric.single_turn_score(SingleTurnSample(**your_data))
 ```
 
+[truthscore on PyPI](https://pypi.org/project/truthscore/) ·
 [See full TruthScore docs →](https://github.com/GiovanniGatti/trutheval/tree/main/truthscore#readme)
 
 ## Conclusions
 
-TruthEval shows that pipeline-based approaches like RAGAS outperform judge-style LLM methods when it comes to detecting
-factual errors—especially as responses degrade. Interestingly, bigger models aren’t always better: mid-sized open-source
-LLMs combined with NLI can deliver strong results with lower cost and compute.
+Our evaluation shows that pipeline-based approaches like RAGAS outperform judge-style LLM methods when it comes to
+detecting factual errors—especially as responses degrade. Interestingly, bigger models aren’t always better: mid-sized
+open-source LLMs combined with NLI can deliver strong results with lower cost and compute.
 
-More than a benchmark, TruthEval is a practical toolkit. It lets you stress-test factuality metrics, compare them under
+More than a benchmark, TruthBench is a practical toolkit. It lets you stress-test factuality metrics, compare them under
 controlled perturbations, and choose what works best for your task. We hope it helps raise the bar for evaluating
 truthfulness in NLP — and supports building more trustworthy educational tools.
 

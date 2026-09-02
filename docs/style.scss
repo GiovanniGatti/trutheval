@@ -299,6 +299,14 @@ footer {
   font-style: italic;    /* Optional, for a softer look */
 }
 
+.byline-note {
+  color: #999;           /* Lighter than the byline */
+  font-size: 0.85em;     /* Clearly secondary to it */
+  margin-top: -0.75em;   /* Sit just under the byline */
+  margin-bottom: 1.5em;  /* Space before the body text */
+  line-height: 1.5;
+}
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
