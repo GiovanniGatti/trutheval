@@ -7,7 +7,7 @@ permalink: /about/
 ![_config.yml]({{ site.baseurl }}/images/eurecom-logo.png){:style="display:block; margin-left: auto; margin-right:
 auto;"}
 
-This project is developed and maintained by EURECOM Sophia-Antipolis. This work is part of a larger research effort into
+TruthBench is developed and maintained by EURECOM Sophia-Antipolis. This work is part of a larger research effort into
 building RAG systems for learning activities. Our systems can search through internal documents while chatting with
 students so to provide more grounded and insightful answers. You can experiment chatting
 with [EULER](https://euler.eurecom.fr/) if you are interested in learning more about it.

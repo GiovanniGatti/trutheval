@@ -114,7 +114,7 @@ print(score)  # e.g. 1.0
 
 For more details on how to use this library, see the dedicated docs [here](./truthscore/README.md).
 
-# Empirical validation of factuality metrics using `trutheval`
+# Empirical validation of factuality metrics
 
 We evaluated how well different factuality scoring methods track increasing degrees of factual perturbation using 500
 perturbed examples generated from 100 Q&A pairs

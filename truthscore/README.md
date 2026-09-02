@@ -118,7 +118,7 @@ score = metric.single_turn_score(SingleTurnSample(**test_data))
 This metric was evaluated across a 500-example benchmark using perturbation levels A0–A4 on top of the Google Natural
 Questions dataset using [truthbench](https://github.com/GiovanniGatti/trutheval/blob/main/truthbench/README.md).
 
-See full results in the [project overview](https://github.com/GiovanniGatti/trutheval/blob/main/README.md#empirical-validation-of-factuality-metrics-using-trutheval).
+See full results in the [project overview](https://github.com/GiovanniGatti/trutheval/blob/main/README.md#empirical-validation-of-factuality-metrics).
 
 ## Citation
 
