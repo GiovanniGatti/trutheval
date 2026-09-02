@@ -25,9 +25,12 @@ classifiers = [
     "Topic :: Text Processing :: Linguistic"
 ]
 
-[project.urls]
+[tool.poetry.urls]
 Homepage = "https://github.com/GiovanniGatti/trutheval"
+Repository = "https://github.com/GiovanniGatti/trutheval"
 Issues = "https://github.com/GiovanniGatti/trutheval/issues"
+Paper = "https://aclanthology.org/2025.jeptalnrecital-evalllm.19/"
+"Paper (HAL)" = "https://inria.hal.science/hal-05329787v1"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.14"

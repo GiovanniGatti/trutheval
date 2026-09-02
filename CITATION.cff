@@ -1,0 +1,78 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "TruthBench"
+abstract: >-
+  A framework for meta-evaluating factuality metrics through controlled, graded
+  perturbation of ground-truth answers (TruthBench), together with an LLM+NLI
+  factual-correctness metric (truthscore).
+type: software
+license: MIT
+repository-code: "https://github.com/GiovanniGatti/trutheval"
+version: "0.4.0"
+date-released: "2026-09-02"
+authors:
+  - family-names: "Gharsallah"
+    given-names: "Sarra"
+  - family-names: "Robaldo"
+    given-names: "Adèle"
+  - family-names: "Tokareva"
+    given-names: "Mariia"
+  - family-names: "Gatti Pinheiro"
+    given-names: "Giovanni"
+  - family-names: "Guendouz"
+    given-names: "Ilyana"
+  - family-names: "Troncy"
+    given-names: "Raphaël"
+  - family-names: "Papotti"
+    given-names: "Paolo"
+  - family-names: "Michiardi"
+    given-names: "Pietro"
+preferred-citation:
+  type: conference-paper
+  title: "Peut-on faire confiance aux juges ? Validation de méthodes d'évaluation de la factualité par perturbation des réponses"
+  authors:
+    - family-names: "Gharsallah"
+      given-names: "Sarra"
+    - family-names: "Robaldo"
+      given-names: "Adèle"
+    - family-names: "Tokareva"
+      given-names: "Mariia"
+    - family-names: "Gatti Pinheiro"
+      given-names: "Giovanni"
+    - family-names: "Guendouz"
+      given-names: "Ilyana"
+    - family-names: "Troncy"
+      given-names: "Raphaël"
+    - family-names: "Papotti"
+      given-names: "Paolo"
+    - family-names: "Michiardi"
+      given-names: "Pietro"
+  editors:
+    - family-names: "Bechet"
+      given-names: "Frédéric"
+    - family-names: "Chifu"
+      given-names: "Adrian-Gabriel"
+    - family-names: "Pinel-Sauvagnat"
+      given-names: "Karen"
+    - family-names: "Favre"
+      given-names: "Benoit"
+    - family-names: "Maes"
+      given-names: "Eliot"
+    - family-names: "Nurbakova"
+      given-names: "Diana"
+  collection-title: "Actes de l'atelier Évaluation des modèles génératifs (LLM) et challenge 2025 (EvalLLM)"
+  conference:
+    name: "Atelier Évaluation des modèles génératifs (LLM) et challenge 2025 (EvalLLM)"
+    city: "Marseille"
+    country: FR
+  publisher:
+    name: "ATALA & ARIA"
+  location:
+    name: "Marseille, France"
+  year: 2025
+  month: 6
+  start: 228
+  end: 252
+  languages:
+    - fra
+  url: "https://aclanthology.org/2025.jeptalnrecital-evalllm.19/"

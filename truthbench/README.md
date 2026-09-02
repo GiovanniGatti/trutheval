@@ -1,5 +1,17 @@
 # TruthBench
 
+TruthBench is the framework for the *controlled, graded perturbation of ground-truth answers*, built to
+meta-evaluate factuality metrics. It produces corrupted answer variants of known severity so that a metric can be
+scored on how well its judgements track that severity. The framework and its validation are described in
+[our EvalLLM 2025 paper](https://aclanthology.org/2025.jeptalnrecital-evalllm.19/). We also wrote a
+[blog post](https://giovannigatti.github.io/trutheval/) with a shorter walkthrough of the pipeline and of what we
+found when benchmarking existing metrics with it.
+
+[truthscore](https://github.com/GiovanniGatti/trutheval/blob/main/truthscore/README.md) is one of the metric
+components under the TruthBench umbrella: an implementation of an LLM+NLI factual-correctness metric, shipped as its own
+installable package ([PyPI](https://pypi.org/project/truthscore/)) and meta-evaluated with TruthBench. The `truthbench` package is independent of `truthscore`, since it evaluates any factuality metric, `truthscore`
+included.
+
 `truthbench` is a modular pipeline designed to generate controlled factual perturbations of ground-truth answers. These
 perturbations enable fine-grained meta-evaluation of factuality metrics used to assess large language model (LLM)
 outputs.
@@ -236,13 +248,13 @@ The following steps are available:
 
 | **Step Name**                                                                     | **Description**                                                                                 | **Updated Counters**                                                                                   | **Required Fields**                        |
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| [`ParaphraseStep`](truthbench/src/truthbench/steps/paraphrase.py)                 | Generates a faithful paraphrase of the ground-truth answer using the LLM.                       | *(none)*                                                                                               | `ground_truth`                             |
-| [`FactualDataStep`](truthbench/src/truthbench/steps/factual.py)                   | Identifies factual spans in a sentence using spaCy and brackets them.                           | `find_factual_data_error`                                                                              | `answers`                                  |
-| [`BlacklistItemsFromQuestionStep`](truthbench/src/truthbench/steps/blacklist.py)  | Removes factual items from `raw_factual_data` if they appear in the question (minus stopwords). | *(none)*                                                                                               | `question`, `raw_factual_data`             |
-| [`RankFactualDataStep`](truthbench/src/truthbench/steps/rank.py)                  | Uses an LLM to assign an importance ranking to factual terms based on a bracketed sentence.     | `ranked_factual_data`, `index_ranking_error`, `ranking_factual_data_error`, `json_parse_ranking_error` | `question`, `with_brackets`, `raw_factual_data`        |
-| [`FilterFactualDataStep`](truthbench/src/truthbench/steps/filter.py)              | Keeps top-ranked factual items and removes those blacklisted (present in the question).         | *(none)*                                                                                               | `ranked_factual_data`, `blacklisted`       |
-| [`CreateNoiseExamplesStep`](truthbench/src/truthbench/steps/noise.py)             | Generates noisy paraphrases with varying levels of factual degradation using factual spans.     | *(none)*                                                                                               | `factual_data`, `with_brackets`, `answers` |
-| [`CounterStep`](truthbench/src/truthbench/steps/counter.py)                       | Verifies if the expected number of answer levels are present and increments a counter.          | `output_samples`                                                                                       | `answers`                                  |
+| [`ParaphraseStep`](https://github.com/GiovanniGatti/trutheval/blob/main/truthbench/src/truthbench/steps/paraphrase.py)                 | Generates a faithful paraphrase of the ground-truth answer using the LLM.                       | *(none)*                                                                                               | `ground_truth`                             |
+| [`FactualDataStep`](https://github.com/GiovanniGatti/trutheval/blob/main/truthbench/src/truthbench/steps/factual.py)                   | Identifies factual spans in a sentence using spaCy and brackets them.                           | `find_factual_data_error`                                                                              | `answers`                                  |
+| [`BlacklistItemsFromQuestionStep`](https://github.com/GiovanniGatti/trutheval/blob/main/truthbench/src/truthbench/steps/blacklist.py)  | Removes factual items from `raw_factual_data` if they appear in the question (minus stopwords). | *(none)*                                                                                               | `question`, `raw_factual_data`             |
+| [`RankFactualDataStep`](https://github.com/GiovanniGatti/trutheval/blob/main/truthbench/src/truthbench/steps/rank.py)                  | Uses an LLM to assign an importance ranking to factual terms based on a bracketed sentence.     | `ranked_factual_data`, `index_ranking_error`, `ranking_factual_data_error`, `json_parse_ranking_error` | `question`, `with_brackets`, `raw_factual_data`        |
+| [`FilterFactualDataStep`](https://github.com/GiovanniGatti/trutheval/blob/main/truthbench/src/truthbench/steps/filter.py)              | Keeps top-ranked factual items and removes those blacklisted (present in the question).         | *(none)*                                                                                               | `ranked_factual_data`, `blacklisted`       |
+| [`CreateNoiseExamplesStep`](https://github.com/GiovanniGatti/trutheval/blob/main/truthbench/src/truthbench/steps/noise.py)             | Generates noisy paraphrases with varying levels of factual degradation using factual spans.     | *(none)*                                                                                               | `factual_data`, `with_brackets`, `answers` |
+| [`CounterStep`](https://github.com/GiovanniGatti/trutheval/blob/main/truthbench/src/truthbench/steps/counter.py)                       | Verifies if the expected number of answer levels are present and increments a counter.          | `output_samples`                                                                                       | `answers`                                  |
 
 A pipeline also needs a datasource to fetch data. You can declare your own data fetching mechanism by subclassing
 a `Reader`.
@@ -264,7 +276,7 @@ class StaticReader(Reader):
 
 Generally, Readers expect to output at least two fields: `question` and `ground_truth`.
 
-Right now, we made available a [`JsonReader`](truthbench/src/truthbench/readers/json_reader.py) that expects a `json`
+Right now, we made available a [`JsonReader`](https://github.com/GiovanniGatti/trutheval/blob/main/truthbench/src/truthbench/readers/json_reader.py) that expects a `json`
 file with the following structure:
 
 ```jsonc
@@ -278,7 +290,7 @@ file with the following structure:
 ```
 
 Lastly, some steps may need access to a running large language model (LLM). We provide support to OpenAI's ChatGPT with
-`[GPT](truthbench/src/truthbench/llms/openai.py)` (it requires installing `pip install truthbench[openai]`), but you can
+`[GPT](https://github.com/GiovanniGatti/trutheval/blob/main/truthbench/src/truthbench/llms/openai.py)` (it requires installing `pip install truthbench[openai]`), but you can
 implement your own LLM access by subclassing:
 
 ```python
@@ -342,3 +354,35 @@ target text:
   the availability and quality of dependency parsers and language models for the target language. Languages with complex
   morphology or syntax, or those that are low-resource, may experience reduced perturbation accuracy and coverage.
 
+
+## Citation
+
+If you use TruthBench in your research, please cite our EvalLLM 2025 paper:
+
+```bibtex
+@inproceedings{gharsallah-etal-2025-peut,
+    title = "Peut-on faire confiance aux juges ? Validation de m{\'e}thodes d'{\'e}valuation de la factualit{\'e} par perturbation des r{\'e}ponses",
+    author = {Gharsallah, Sarra  and
+      Robaldo, Ad{\`e}le  and
+      Tokareva, Mariia  and
+      Gatti Pinheiro, Giovanni  and
+      Guendouz, Ilyana  and
+      Troncy, Rapha{\"e}l  and
+      Papotti, Paolo  and
+      Michiardi, Pietro},
+    editor = "Bechet, Fr{\'e}d{\'e}ric  and
+      Chifu, Adrian-Gabriel  and
+      Pinel-sauvagnat, Karen  and
+      Favre, Benoit  and
+      Maes, Eliot  and
+      Nurbakova, Diana",
+    booktitle = "Actes de l'atelier {\'E}valuation des mod{\`e}les g{\'e}n{\'e}ratifs (LLM) et challenge 2025 (EvalLLM)",
+    month = "6",
+    year = "2025",
+    address = "Marseille, France",
+    publisher = "ATALA {\&} ARIA",
+    url = "https://aclanthology.org/2025.jeptalnrecital-evalllm.19/",
+    pages = "228--252",
+    language = "fra"
+}
+```
