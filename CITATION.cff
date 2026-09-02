@@ -2,9 +2,10 @@ cff-version: 1.2.0
 message: "If you use this software, please cite the paper below."
 title: "TruthBench"
 abstract: >-
-  A framework for meta-evaluating factuality metrics through controlled, graded
-  perturbation of ground-truth answers (TruthBench), together with an LLM+NLI
-  factual-correctness metric (truthscore).
+  TruthBench is a framework for meta-evaluating factuality metrics through
+  controlled, graded perturbation of ground-truth answers. It ships alongside
+  truthscore, an LLM+NLI factual-correctness metric implemented as a separate
+  package and evaluated with TruthBench like any other metric.
 type: software
 license: MIT
 repository-code: "https://github.com/GiovanniGatti/trutheval"

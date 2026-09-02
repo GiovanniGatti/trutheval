@@ -33,7 +33,9 @@ Our framework includes extensive experimental validation, where we generate data
 perturbations and benchmark diverse evaluation techniques — including open-weight LLMs and specialized
 pipelines — demonstrating strong correlation between perturbation severity and factuality scores.
 
-This work is described in detail in an accepted paper at the EvalLLM 2025 workshop (CORIA-TALN).
+This work is described in detail in [our EvalLLM 2025 paper](https://aclanthology.org/2025.jeptalnrecital-evalllm.19/)
+(CORIA-TALN). We also wrote a [blog post](https://giovannigatti.github.io/trutheval/) with a shorter walkthrough of the
+pipeline and of what we found when benchmarking existing metrics with it.
 
 # Usage
 
