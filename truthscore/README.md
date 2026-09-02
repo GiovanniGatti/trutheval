@@ -1,11 +1,15 @@
 # TruthScore
 
-``truthscore` is a **fast, modular reimplementation of RAGAS's FactualCorrectness metric**, supporting both open-weight
+`truthscore` is a **fast, modular reimplementation of RAGAS's FactualCorrectness metric**, supporting both open-weight
 and hosted LLMs. It evaluates factual consistency between a user response and a reference passage by breaking down
 answers into claims and verifying them using **Natural Language Inference (NLI)**.
 
-It is a component of the [`trutheval`](../README.md) framework and is intended for **scalable, cost-efficient**
-factuality evaluation.
+It is a metric component of the TruthBench framework and is intended for **scalable, cost-efficient** factuality
+evaluation. [TruthBench](https://pypi.org/project/truthbench/) is the meta-evaluation framework: it applies controlled,
+graded perturbations to ground-truth answers so that factuality metrics can be scored on how well their judgements track
+the injected error severity. `truthscore` is an LLM+NLI factual-correctness metric that can be evaluated with it, and is
+shipped as its own installable package. Both are described in
+[our EvalLLM 2025 paper](https://aclanthology.org/2025.jeptalnrecital-evalllm.19/).
 
 ---
 
@@ -26,7 +30,7 @@ see [FactualCorrectness](https://docs.ragas.io/en/stable/concepts/metrics/availa
 - ✅ **Open-weight LLM support**: Works with open-weight models (e.g., Gemma, LLaMA, Mistral via Ollama)
 - 🧠 **Plug-and-play**: Swap in custom NLI models
 - ⚙️ **GPU-accelerated**: Recommended for claim decomposition + NLI
-- 🧪 **Evaluated**: Competitive benchmark results (see [`trutheval`](../README.md))
+- 🧪 **Evaluated**: Competitive benchmark results (see [TruthBench](https://github.com/GiovanniGatti/trutheval/blob/main/README.md))
 
 ---
 
@@ -38,7 +42,7 @@ For full open-weight support (LLM hosted with Ollama + CrossEncoders NLI):
 pip install truthscore[open]
 ```
 
-Otherwise, use the lightweight dependency pick the dependencies that best work for you with:
+Otherwise, install the lightweight version and pick the dependencies that best suit your setup:
 
 ```bash
 pip install truthscore
@@ -51,7 +55,7 @@ Regarding ollama installation, please check [Ollama](https://github.com/ollama/o
 ### 💡 Open-weight (fully local)
 
 ```python
-from langchain_community.llms import OllamaLLM
+from langchain_ollama import OllamaLLM
 from ragas import SingleTurnSample
 from ragas.llms import LangchainLLMWrapper
 
@@ -91,7 +95,7 @@ score = metric.single_turn_score(SingleTurnSample(**test_data))
 
 ```python
 import torch
-from langchain_community.llms import OllamaLLM
+from langchain_ollama import OllamaLLM
 from ragas import SingleTurnSample
 from ragas.llms import LangchainLLMWrapper
 from sentence_transformers import CrossEncoder
@@ -112,6 +116,38 @@ score = metric.single_turn_score(SingleTurnSample(**test_data))
 ## 📊 Background
 
 This metric was evaluated across a 500-example benchmark using perturbation levels A0–A4 on top of the Google Natural
-Questions dataset using [truthbench](../truthbench/README.md).
+Questions dataset using [truthbench](https://github.com/GiovanniGatti/trutheval/blob/main/truthbench/README.md).
 
-See full results in the [trutheval](../README.md#empirical-validation-of-factuality-metrics-using-trutheval) project.
+See full results in the [project overview](https://github.com/GiovanniGatti/trutheval/blob/main/README.md#empirical-validation-of-factuality-metrics-using-trutheval).
+
+## Citation
+
+If you use TruthScore in your research, please cite our EvalLLM 2025 paper:
+
+```bibtex
+@inproceedings{gharsallah-etal-2025-peut,
+    title = "Peut-on faire confiance aux juges ? Validation de m{\'e}thodes d'{\'e}valuation de la factualit{\'e} par perturbation des r{\'e}ponses",
+    author = {Gharsallah, Sarra  and
+      Robaldo, Ad{\`e}le  and
+      Tokareva, Mariia  and
+      Gatti Pinheiro, Giovanni  and
+      Guendouz, Ilyana  and
+      Troncy, Rapha{\"e}l  and
+      Papotti, Paolo  and
+      Michiardi, Pietro},
+    editor = "Bechet, Fr{\'e}d{\'e}ric  and
+      Chifu, Adrian-Gabriel  and
+      Pinel-sauvagnat, Karen  and
+      Favre, Benoit  and
+      Maes, Eliot  and
+      Nurbakova, Diana",
+    booktitle = "Actes de l'atelier {\'E}valuation des mod{\`e}les g{\'e}n{\'e}ratifs (LLM) et challenge 2025 (EvalLLM)",
+    month = "6",
+    year = "2025",
+    address = "Marseille, France",
+    publisher = "ATALA {\&} ARIA",
+    url = "https://aclanthology.org/2025.jeptalnrecital-evalllm.19/",
+    pages = "228--252",
+    language = "fra"
+}
+```
