@@ -9,8 +9,8 @@ abstract: >-
 type: software
 license: MIT
 repository-code: "https://github.com/GiovanniGatti/truthbench"
-version: "0.4.0"
-date-released: "2026-09-02"
+version: "0.4.1"
+date-released: "2026-09-04"
 authors:
   - family-names: "Gharsallah"
     given-names: "Sarra"
