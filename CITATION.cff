@@ -11,6 +11,13 @@ license: MIT
 repository-code: "https://github.com/GiovanniGatti/truthbench"
 version: "0.4.1"
 date-released: "2026-09-04"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22299252
+    description: "This is the archived snapshot of version 0.4.1 of this software."
+  - type: doi
+    value: 10.5281/zenodo.22299251
+    description: "This DOI represents all versions, and will always resolve to the latest one."
 authors:
   - family-names: "Gharsallah"
     given-names: "Sarra"
