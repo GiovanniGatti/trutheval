@@ -137,7 +137,7 @@ If you use TruthScore in your research, please cite our EvalLLM 2025 paper:
       Michiardi, Pietro},
     editor = "Bechet, Fr{\'e}d{\'e}ric  and
       Chifu, Adrian-Gabriel  and
-      Pinel-sauvagnat, Karen  and
+      Pinel-Sauvagnat, Karen  and
       Favre, Benoit  and
       Maes, Eliot  and
       Nurbakova, Diana",
