@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "truthbench"
-version = "0.4.1"
+version = "0.4.2"
 description = "A pipeline-based framework to evaluate factual consistency metrics."
 authors = ["Giovanni Gatti Pinheiro <giovanni.gatti.pinheiro@gmail.com>"]
 readme = "README.md"
@@ -31,6 +31,7 @@ Repository = "https://github.com/GiovanniGatti/truthbench"
 Issues = "https://github.com/GiovanniGatti/truthbench/issues"
 Paper = "https://aclanthology.org/2025.jeptalnrecital-evalllm.19/"
 "Paper (HAL)" = "https://inria.hal.science/hal-05329787v1"
+DOI = "https://doi.org/10.5281/zenodo.22299251"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.14"
