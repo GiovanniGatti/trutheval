@@ -8,7 +8,7 @@ abstract: >-
   package and evaluated with TruthBench like any other metric.
 type: software
 license: MIT
-repository-code: "https://github.com/GiovanniGatti/trutheval"
+repository-code: "https://github.com/GiovanniGatti/truthbench"
 version: "0.4.0"
 date-released: "2026-09-02"
 authors:

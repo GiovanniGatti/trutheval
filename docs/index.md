@@ -215,7 +215,7 @@ truthbench --input-file data.json --output-dir results/
 ```
 
 [truthbench on PyPI](https://pypi.org/project/truthbench/) ·
-[See full TruthBench docs →](https://github.com/GiovanniGatti/trutheval/tree/main/truthbench#readme)
+[See full TruthBench docs →](https://github.com/GiovanniGatti/truthbench/tree/main/truthbench#readme)
 
 ### TruthScore
 
@@ -241,7 +241,7 @@ score = metric.single_turn_score(SingleTurnSample(**your_data))
 ```
 
 [truthscore on PyPI](https://pypi.org/project/truthscore/) ·
-[See full TruthScore docs →](https://github.com/GiovanniGatti/trutheval/tree/main/truthscore#readme)
+[See full TruthScore docs →](https://github.com/GiovanniGatti/truthbench/tree/main/truthscore#readme)
 
 ## Conclusions
 
@@ -253,4 +253,4 @@ More than a benchmark, TruthBench is a practical toolkit. It lets you stress-tes
 controlled perturbations, and choose what works best for your task. We hope it helps raise the bar for evaluating
 truthfulness in NLP — and supports building more trustworthy educational tools.
 
-[👉 Get started on GitHub](https://github.com/GiovanniGatti/trutheval/)
+[👉 Get started on GitHub](https://github.com/GiovanniGatti/truthbench/)

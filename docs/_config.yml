@@ -12,7 +12,7 @@ description: Meta-evaluating factuality metrics with controlled, graded answer p
 author: Giovanni Gatti Pinheiro
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/GiovanniGatti/trutheval/main/docs/images/avatar.png
+avatar: https://raw.githubusercontent.com/GiovanniGatti/truthbench/main/docs/images/avatar.png
 
 #
 # Flags below are optional
@@ -24,7 +24,7 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: GiovanniGatti/trutheval
+  github: GiovanniGatti/truthbench
   instagram:
   linkedin:
   pinterest:
@@ -53,7 +53,7 @@ url: "https://giovannigatti.github.io"
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "/trutheval"
+baseurl: "/truthbench"
 
 #
 # !! You don't need to change any of the configuration flags below !!

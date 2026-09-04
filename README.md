@@ -2,7 +2,7 @@
 ![Python Versions](https://img.shields.io/badge/Python-3.10%20|%203.11%20|%203.12%20|%203.13-4a006a)
 ![Coverage](https://img.shields.io/badge/Coverage-87%25-brightgreen)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-[![Static Badge](https://img.shields.io/badge/Read%20-%20%40GitHub%20Pages%20-blue?style=flat&logoColor=white&logo=readme)](https://giovannigatti.github.io/trutheval/)
+[![Static Badge](https://img.shields.io/badge/Read%20-%20%40GitHub%20Pages%20-blue?style=flat&logoColor=white&logo=readme)](https://giovannigatti.github.io/truthbench/)
 [![Static Badge](https://img.shields.io/badge/Watch%20-%20%40%20Youtube%20-blue?style=flat&logo=youtube)](https://www.youtube.com/watch?v=f0XJkMuyZlM)
 [![Static Badge](https://img.shields.io/badge/Paper-%40%20AclAnthology-blue?style=flat&logo=arxiv&logoColor=white
 )](https://aclanthology.org/2025.jeptalnrecital-evalllm.19.pdf)
@@ -11,9 +11,9 @@
 <img src="https://github.com/user-attachments/assets/8d30499c-ab58-4e92-8e11-089c01515c63" alt="drawing" style="height:340px"/>
 </p>
 
-# TruthEval
+# TruthBench
 
-`trutheval` is a modular framework for generating datasets with graded factual perturbations. These datasets are
+`truthbench` is a modular framework for generating datasets with graded factual perturbations. These datasets are
 designed to test and validate the effectiveness of factuality evaluation pipelines.
 
 It provides:
@@ -34,7 +34,7 @@ perturbations and benchmark diverse evaluation techniques — including open-wei
 pipelines — demonstrating strong correlation between perturbation severity and factuality scores.
 
 This work is described in detail in [our EvalLLM 2025 paper](https://aclanthology.org/2025.jeptalnrecital-evalllm.19/)
-(CORIA-TALN). We also wrote a [blog post](https://giovannigatti.github.io/trutheval/) with a shorter walkthrough of the
+(CORIA-TALN). We also wrote a [blog post](https://giovannigatti.github.io/truthbench/) with a shorter walkthrough of the
 pipeline and of what we found when benchmarking existing metrics with it.
 
 # Usage

@@ -30,7 +30,7 @@ see [FactualCorrectness](https://docs.ragas.io/en/stable/concepts/metrics/availa
 - ✅ **Open-weight LLM support**: Works with open-weight models (e.g., Gemma, LLaMA, Mistral via Ollama)
 - 🧠 **Plug-and-play**: Swap in custom NLI models
 - ⚙️ **GPU-accelerated**: Recommended for claim decomposition + NLI
-- 🧪 **Evaluated**: Competitive benchmark results (see [TruthBench](https://github.com/GiovanniGatti/trutheval/blob/main/README.md))
+- 🧪 **Evaluated**: Competitive benchmark results (see [TruthBench](https://github.com/GiovanniGatti/truthbench/blob/main/README.md))
 
 ---
 
@@ -116,9 +116,9 @@ score = metric.single_turn_score(SingleTurnSample(**test_data))
 ## 📊 Background
 
 This metric was evaluated across a 500-example benchmark using perturbation levels A0–A4 on top of the Google Natural
-Questions dataset using [truthbench](https://github.com/GiovanniGatti/trutheval/blob/main/truthbench/README.md).
+Questions dataset using [truthbench](https://github.com/GiovanniGatti/truthbench/blob/main/truthbench/README.md).
 
-See full results in the [project overview](https://github.com/GiovanniGatti/trutheval/blob/main/README.md#empirical-validation-of-factuality-metrics).
+See full results in the [project overview](https://github.com/GiovanniGatti/truthbench/blob/main/README.md#empirical-validation-of-factuality-metrics).
 
 ## Citation
 
